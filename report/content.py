@@ -647,7 +647,9 @@ tools/llama.cpp/build/bin/llama-server -m models/plamo-0.8b-Q4_K_M.gguf \\
     A("""<div class="card" style="margin-top:36px">
 <b>関連レポート：WOFF2 を超える圧縮手法「GLC」</b><br>
 本レポートが扱ったのは「どのグリフを配るか」だが、<b>「グリフをどう符号化するか」</b>にも改善余地がある。ビルド時に CFF→glyf 変換・CFF デサブルーチン化・縦メトリクス削除・座標量子化を適用する GLC（Glyph-Level Compression）を提案し、Noto Sans JP 静的 400 重み全体で WOFF2 2.303 MB → 1.76 MB（誤差 0.4% em、−23.8%）を実測した。共有辞書やグリフ差分符号化の否定結果、量子化パラメータ（q）のスイープ（サイズ・圧縮時間・画素ノイズ）、描画デモも同時に公開している。<br>
-→ <a href="glc.html">report/glc.html</a>
+→ <a href="glc.html">report/glc.html</a><br>
+<b>インタラクティブデモ（2026-11-12 追加）：</b>自分の文章で推定転送量を試し、ε スライダで量子化の見た目を確認でき、本レポートの配信方式と GLC を組み合わせた実測も掲載している。<br>
+→ <a href="demo.html">report/demo.html</a>
 </div>""")
     A("""<footer>本レポートは 2026-11-11〜12 に実測したデータに基づく。数値の再現手順は付録 B、引用の英日翻訳は Plamo 3 Translate 0.8b（PLaMo Community License）。</footer>""")
 

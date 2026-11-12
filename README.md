@@ -34,6 +34,26 @@ build-time steps that keep the output format unchanged:
 Plus a mandatory **safety valve**: encode before and after, keep the smaller — because quantisation *hurts*
 some fonts (Korean Nanum Gothic grows by 10.5 % at grid 4).
 
+### GLC as a runnable tool
+
+The pipeline above originally existed only inside the benchmark scripts. It is now a single CLI,
+[`tools/glc.py`](tools/glc.py), with the stages as flags, the ε budget as a parameter, a per-stage size
+table, and the safety valve built in:
+
+```bash
+.venv/bin/python tools/glc.py -i 'fonts/NotoSansJP[wght].ttf' --instance wght=400 --epsilon 0.4 -o noto.woff2
+.venv/bin/python tools/glc.py -i fonts/SourceHanSansJP-Regular.otf --subset-file page.txt --desubroutinize -o han.woff2
+.venv/bin/python tools/glc.py -i fonts/NanumGothic-Regular.ttf --subset-file ko.txt --grid 4 -o nanum.woff2   # safety valve keeps stock here
+```
+
+Reproduction status (2026-11-12, [`measure/reproduce_headline.py`](measure/reproduce_headline.py)):
+the Noto Sans JP headline reproduces within ±0.08 % at every grid (2,302,848 → 1,755,444 B measured here
+vs. 2,302,932 → 1,755,656 B published; the residual is the undocumented instancing step, now scripted),
+and the Nanum Gothic safety-valve case reproduces exactly (stock subset 61,928 B; quantised 68,428 B,
++10.5 %, stock kept). One discrepancy: the published M PLUS 1p *quantised* full-font rows do not
+reproduce (grid 0 matches exactly); they appear to come from stale cached intermediates — see
+[`docs/round2-2026-11-12.md`](docs/round2-2026-11-12.md).
+
 ## Negative results (published, not hidden)
 
 1. **Δ-Glyph** (delta against a structurally identical glyph): only 14–37 % of glyphs have a "twin", and the
@@ -59,8 +79,11 @@ python scripts/fetch_assets.py --all      # fonts + PLaMo 3 Translate GGUF + lla
 .venv/bin/python measure/glc_sweep.py               # q sweep: size / time / noise
 .venv/bin/python measure/glc_render.py             # PSNR (FreeType, hinting off)
 .venv/bin/python measure/glc_demo.py               # visual demo PNGs
+.venv/bin/python measure/reproduce_headline.py     # round 2: re-measure the GLC headline from scratch
+.venv/bin/python measure/combined_study.py         # round 2: delivery x encoding, combined
 .venv/bin/python report/content.py                  # build report/index.html
 .venv/bin/python report/glc_content.py             # build report/glc.html
+.venv/bin/python report/build_demo.py              # build report/demo.html (interactive demo)
 ```
 
 Translation (EN ↔ JA) is done locally with **PLaMo 3 Translate 0.8B** (Q4_K_M) through a llama.cpp server:
@@ -82,8 +105,11 @@ tools/llama.cpp/build/bin/llama-server -m models/plamo-0.8b-Q4_K_M.gguf \
 | `report/build_report.py` | shared CSS + inline SVG charts |
 | `measure/` | every measurement script and its JSON results (`measure/out/`) |
 | `measure/out/` | measured results (JSON) — the evidence behind the reports |
+| `tools/glc.py` | **the GLC pipeline as one CLI** (stages as flags, ε parameter, safety valve) |
 | `tools/glyphcodec.py` | outline quantisation / canonicalisation (GLC-4 / GLC-3) |
 | `tools/cff2glyf.py` | CFF → glyf conversion (GLC-0) |
+| `report/demo.html` | interactive demo (subset estimator, ε slider, combined results); built by `report/build_demo.py` |
+| `docs/round2-2026-11-12.md` | round-2 progress report: reproduction, the tool, the combined study |
 | `tools/translate.py` | batch translation client for the local LLM |
 | `fonts/manifest.json` | the 15 CJK fonts: source URL, licence, SHA-256 |
 | `research/sources.md` | research notes: primary sources, quotes, prior art |

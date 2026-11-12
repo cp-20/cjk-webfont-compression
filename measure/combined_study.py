@@ -204,6 +204,7 @@ def main() -> int:
                  "pages": len(pages), "base_size": BASE_N,
                  "base_order": "document frequency over the 31 pages (see docstring)",
                  "full_font_woff2_bytes": full_bytes,
+                 "base500_chars": "".join(chr(c) for c in df_order[:BASE_N]),
                  "base500": base_row},
         "summary": summary, "gains": gains,
         "anchors": anchors, "per_page": rows,
