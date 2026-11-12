@@ -1,0 +1,126 @@
+{
+  "generated": "2026-11-12T14:46:26Z",
+  "method": "fresh work dir, no cache reuse; committed process_font; plus a keep_bbox=False forensic arm",
+  "rows": [
+    {
+      "font": "Noto Sans JP (static 400)",
+      "grid": 0,
+      "bytes": 2302848,
+      "prep_s": 9.74,
+      "published_fullsweep": 2302932,
+      "published_fullfont": 2302932
+    },
+    {
+      "font": "Noto Sans JP (static 400)",
+      "grid": 2,
+      "bytes": 2225624,
+      "prep_s": 12.92,
+      "published_fullsweep": 2225392,
+      "published_fullfont": null
+    },
+    {
+      "font": "Noto Sans JP (static 400)",
+      "grid": 4,
+      "bytes": 1980272,
+      "prep_s": 11.8,
+      "published_fullsweep": 1980856,
+      "published_fullfont": 1921116
+    },
+    {
+      "font": "Noto Sans JP (static 400)",
+      "grid": 8,
+      "bytes": 1755444,
+      "prep_s": 11.57,
+      "published_fullsweep": 1755656,
+      "published_fullfont": 1667400
+    },
+    {
+      "font": "Noto Sans JP (static 400)",
+      "grid": 16,
+      "bytes": 1547056,
+      "prep_s": 12.2,
+      "published_fullsweep": 1545836,
+      "published_fullfont": 1429436
+    },
+    {
+      "font": "Noto Sans JP (static 400)",
+      "grid": 32,
+      "bytes": 1371236,
+      "prep_s": 11.64,
+      "published_fullsweep": 1371932,
+      "published_fullfont": null
+    },
+    {
+      "font": "M PLUS 1p",
+      "grid": 0,
+      "bytes": 699792,
+      "prep_s": 2.17,
+      "published_fullsweep": 699792,
+      "published_fullfont": null
+    },
+    {
+      "font": "M PLUS 1p",
+      "grid": 2,
+      "bytes": 711776,
+      "prep_s": 3.34,
+      "published_fullsweep": 704924,
+      "published_fullfont": null
+    },
+    {
+      "font": "M PLUS 1p",
+      "grid": 4,
+      "bytes": 666212,
+      "prep_s": 3.8,
+      "published_fullsweep": 643020,
+      "published_fullfont": null
+    },
+    {
+      "font": "M PLUS 1p",
+      "grid": 8,
+      "bytes": 614540,
+      "prep_s": 3.9,
+      "published_fullsweep": 579796,
+      "published_fullfont": null
+    },
+    {
+      "font": "M PLUS 1p",
+      "grid": 16,
+      "bytes": 559844,
+      "prep_s": 4.48,
+      "published_fullsweep": 514728,
+      "published_fullfont": null
+    },
+    {
+      "font": "M PLUS 1p",
+      "grid": 32,
+      "bytes": 505212,
+      "prep_s": 9.64,
+      "published_fullsweep": 449352,
+      "published_fullfont": null
+    },
+    {
+      "font": "Noto Sans JP (static 400) [keep_bbox=False]",
+      "grid": 4,
+      "bytes": 1921148,
+      "prep_s": null,
+      "published_fullsweep": 1980856,
+      "published_fullfont": 1921116
+    },
+    {
+      "font": "Noto Sans JP (static 400) [keep_bbox=False]",
+      "grid": 8,
+      "bytes": 1667496,
+      "prep_s": null,
+      "published_fullsweep": 1755656,
+      "published_fullfont": 1667400
+    },
+    {
+      "font": "Noto Sans JP (static 400) [keep_bbox=False]",
+      "grid": 16,
+      "bytes": 1430100,
+      "prep_s": null,
+      "published_fullsweep": 1545836,
+      "published_fullfont": 1429436
+    }
+  ]
+}
