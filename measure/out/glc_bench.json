@@ -1,0 +1,662 @@
+[
+  {
+    "font": "Noto Sans JP",
+    "stage": "WOFF2 (baseline)",
+    "bytes": 481040,
+    "encode_s": 5.08,
+    "delta": 0.0,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "Noto Sans JP",
+    "stage": "GLC-3 canonical (control)",
+    "bytes": 488580,
+    "encode_s": 5.17,
+    "delta": -0.015674372193580588,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "Noto Sans JP",
+    "stage": "GLC-4 quant4",
+    "bytes": 431232,
+    "encode_s": 5.01,
+    "delta": 0.10354232496258109,
+    "max_err_units": 2,
+    "mean_err_units": 1.8179,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 4059,
+        "max_channel_diff": 237,
+        "mean_abs_diff": 2.0956
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 7060,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 3.1533
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 9241,
+        "max_channel_diff": 232,
+        "mean_abs_diff": 1.3481
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 14509,
+        "max_channel_diff": 253,
+        "mean_abs_diff": 1.1148
+      }
+    ]
+  },
+  {
+    "font": "Noto Sans JP",
+    "stage": "GLC-4 quant8",
+    "bytes": 390264,
+    "encode_s": 4.99,
+    "delta": 0.1887077997671711,
+    "max_err_units": 4,
+    "mean_err_units": 3.5507,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 4734,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 2.8602
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 7861,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 3.9216
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 12166,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.4488
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 18726,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 4.0522
+      }
+    ]
+  },
+  {
+    "font": "Noto Sans JP",
+    "stage": "GLC-4 quant16",
+    "bytes": 352848,
+    "encode_s": 4.74,
+    "delta": 0.26648927324131044,
+    "max_err_units": 8,
+    "mean_err_units": 7.021,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 5411,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 7.9373
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 8402,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.2482
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 12878,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 6.7433
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 20001,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.0666
+      }
+    ]
+  },
+  {
+    "font": "M PLUS 1p",
+    "stage": "WOFF2 (baseline)",
+    "bytes": 303108,
+    "encode_s": 3.25,
+    "delta": 0.0,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "M PLUS 1p",
+    "stage": "GLC-3 canonical (control)",
+    "bytes": 296072,
+    "encode_s": 3.31,
+    "delta": 0.0232128482257149,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "M PLUS 1p",
+    "stage": "GLC-4 quant4",
+    "bytes": 286904,
+    "encode_s": 3.09,
+    "delta": 0.05345949298599839,
+    "max_err_units": 2,
+    "mean_err_units": 1.8287,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 6049,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 12.4884
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 9290,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 6.1548
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 14951,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 10.0198
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 22985,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 6.8004
+      }
+    ]
+  },
+  {
+    "font": "M PLUS 1p",
+    "stage": "GLC-4 quant8",
+    "bytes": 263248,
+    "encode_s": 2.91,
+    "delta": 0.13150428230201772,
+    "max_err_units": 4,
+    "mean_err_units": 3.5835,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 5885,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 10.2281
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 9021,
+        "max_channel_diff": 227,
+        "mean_abs_diff": 4.7774
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 12040,
+        "max_channel_diff": 223,
+        "mean_abs_diff": 3.7182
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 20278,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 4.331
+      }
+    ]
+  },
+  {
+    "font": "M PLUS 1p",
+    "stage": "GLC-4 quant16",
+    "bytes": 239840,
+    "encode_s": 3.07,
+    "delta": 0.20873088140200857,
+    "max_err_units": 8,
+    "mean_err_units": 7.0716,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 6000,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 11.1873
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 9402,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 6.8308
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 13758,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 7.1411
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 23681,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 7.4872
+      }
+    ]
+  },
+  {
+    "font": "Zen Kaku Gothic New",
+    "stage": "WOFF2 (baseline)",
+    "bytes": 376472,
+    "encode_s": 3.41,
+    "delta": 0.0,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "Zen Kaku Gothic New",
+    "stage": "GLC-3 canonical (control)",
+    "bytes": 375760,
+    "encode_s": 3.78,
+    "delta": 0.0018912429078390414,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "Zen Kaku Gothic New",
+    "stage": "GLC-4 quant4",
+    "bytes": 343652,
+    "encode_s": 3.37,
+    "delta": 0.08717779808325721,
+    "max_err_units": 2,
+    "mean_err_units": 1.8546,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 3674,
+        "max_channel_diff": 251,
+        "mean_abs_diff": 1.4118
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 10799,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 15.8761
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 11403,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 6.3152
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 15067,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 1.9196
+      }
+    ]
+  },
+  {
+    "font": "Zen Kaku Gothic New",
+    "stage": "GLC-4 quant8",
+    "bytes": 310780,
+    "encode_s": 3.24,
+    "delta": 0.17449372064854762,
+    "max_err_units": 4,
+    "mean_err_units": 3.6547,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 4776,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 9.1799
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 7919,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.4672
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 10924,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 4.114
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 15245,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 1.6289
+      }
+    ]
+  },
+  {
+    "font": "Zen Kaku Gothic New",
+    "stage": "GLC-4 quant16",
+    "bytes": 278424,
+    "encode_s": 3.41,
+    "delta": 0.2604390233536624,
+    "max_err_units": 8,
+    "mean_err_units": 7.1975,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 4741,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 8.3741
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 8257,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 6.8527
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 11123,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 4.435
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 19055,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 4.7358
+      }
+    ]
+  },
+  {
+    "font": "Nanum Gothic",
+    "stage": "WOFF2 (baseline)",
+    "bytes": 61928,
+    "encode_s": 1.27,
+    "delta": 0.0,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "Nanum Gothic",
+    "stage": "GLC-3 canonical (control)",
+    "bytes": 57480,
+    "encode_s": 1.45,
+    "delta": 0.0718253455625888,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": false
+  },
+  {
+    "font": "Nanum Gothic",
+    "stage": "GLC-4 quant4",
+    "bytes": 68448,
+    "encode_s": 1.2,
+    "delta": -0.10528355509624077,
+    "max_err_units": 2,
+    "mean_err_units": 1.9612,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 7689,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 23.097
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 15084,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 27.8339
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 25576,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 30.1834
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 44149,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 24.8001
+      }
+    ]
+  },
+  {
+    "font": "Nanum Gothic",
+    "stage": "GLC-4 quant8",
+    "bytes": 64512,
+    "encode_s": 1.23,
+    "delta": -0.041725875209921215,
+    "max_err_units": 4,
+    "mean_err_units": 3.8694,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 8347,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 28.925
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 14989,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 27.9139
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 25627,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 30.1609
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 47281,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 27.4242
+      }
+    ]
+  },
+  {
+    "font": "Nanum Gothic",
+    "stage": "GLC-4 quant16",
+    "bytes": 60832,
+    "encode_s": 1.27,
+    "delta": 0.017697971838263826,
+    "max_err_units": 8,
+    "mean_err_units": 7.5494,
+    "cff": false,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 6940,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 16.5553
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 14924,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 27.8022
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 25803,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 30.082
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 44276,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 24.7027
+      }
+    ]
+  },
+  {
+    "font": "Source Han Sans JP",
+    "stage": "WOFF2 (baseline)",
+    "bytes": 566656,
+    "encode_s": 6.87,
+    "delta": 0.0,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": true
+  },
+  {
+    "font": "Source Han Sans JP",
+    "stage": "GLC-1 CFF de-subroutinise",
+    "bytes": 530116,
+    "encode_s": 6.89,
+    "delta": 0.06448356674949174,
+    "max_err_units": 0,
+    "mean_err_units": 0.0,
+    "cff": true
+  },
+  {
+    "font": "Source Han Sans JP",
+    "stage": "GLC-0 CFF->glyf",
+    "bytes": 471444,
+    "encode_s": 7.44,
+    "delta": 0.1680243392816806,
+    "max_err_units": 1,
+    "mean_err_units": 0.0,
+    "cff": true
+  },
+  {
+    "font": "Source Han Sans JP",
+    "stage": "GLC-3 canonical (control)",
+    "bytes": 467700,
+    "encode_s": 5.36,
+    "delta": 0.17463152247571723,
+    "max_err_units": 1,
+    "mean_err_units": 0.0,
+    "cff": true
+  },
+  {
+    "font": "Source Han Sans JP",
+    "stage": "GLC-4 quant4",
+    "bytes": 429216,
+    "encode_s": 5.03,
+    "delta": 0.24254574203749713,
+    "max_err_units": 1,
+    "mean_err_units": 0.0,
+    "cff": true,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 6119,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 13.4951
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 10701,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 12.2816
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 13811,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 7.9162
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 19590,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 4.1917
+      }
+    ]
+  },
+  {
+    "font": "Source Han Sans JP",
+    "stage": "GLC-4 quant8",
+    "bytes": 388236,
+    "encode_s": 4.49,
+    "delta": 0.3148647503953016,
+    "max_err_units": 1,
+    "mean_err_units": 0.0,
+    "cff": true,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 6078,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 13.1672
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 10607,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 12.1794
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 12400,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.2878
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 20725,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.3241
+      }
+    ]
+  },
+  {
+    "font": "Source Han Sans JP",
+    "stage": "GLC-4 quant16",
+    "bytes": 353904,
+    "encode_s": 4.44,
+    "delta": 0.3754517732098487,
+    "max_err_units": 1,
+    "mean_err_units": 0.0,
+    "cff": true,
+    "render": [
+      {
+        "px": 16,
+        "nonzero_pixels": 6241,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 14.5439
+      },
+      {
+        "px": 24,
+        "nonzero_pixels": 10534,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 12.2812
+      },
+      {
+        "px": 32,
+        "nonzero_pixels": 12346,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.4416
+      },
+      {
+        "px": 48,
+        "nonzero_pixels": 21090,
+        "max_channel_diff": 255,
+        "mean_abs_diff": 5.8418
+      }
+    ]
+  }
+]

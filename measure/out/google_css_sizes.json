@@ -1,0 +1,50 @@
+{
+  "m_plus_1p": {
+    "css_bytes": 112491,
+    "faces": 126,
+    "unicode_range_bytes": 80323,
+    "gzip_bytes": 30465,
+    "brotli_bytes": 17873,
+    "css_bytes_no_ur": 32168
+  },
+  "noto_sans_jp": {
+    "css_bytes": 116174,
+    "faces": 124,
+    "unicode_range_bytes": 81122,
+    "gzip_bytes": 30738,
+    "brotli_bytes": 17984,
+    "css_bytes_no_ur": 35052
+  },
+  "noto_sans_kr": {
+    "css_bytes": 96634,
+    "faces": 124,
+    "unicode_range_bytes": 61822,
+    "gzip_bytes": 23544,
+    "brotli_bytes": 13693,
+    "css_bytes_no_ur": 34812
+  },
+  "noto_sans_sc": {
+    "css_bytes": 114140,
+    "faces": 101,
+    "unicode_range_bytes": 84232,
+    "gzip_bytes": 31161,
+    "brotli_bytes": 17771,
+    "css_bytes_no_ur": 29908
+  },
+  "noto_serif_jp": {
+    "css_bytes": 116669,
+    "faces": 124,
+    "unicode_range_bytes": 81122,
+    "gzip_bytes": 30745,
+    "brotli_bytes": 18014,
+    "css_bytes_no_ur": 35547
+  },
+  "zen_kaku_gothic_new": {
+    "css_bytes": 111981,
+    "faces": 121,
+    "unicode_range_bytes": 77161,
+    "gzip_bytes": 29348,
+    "brotli_bytes": 17165,
+    "css_bytes_no_ur": 34820
+  }
+}

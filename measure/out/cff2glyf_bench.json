@@ -1,0 +1,24 @@
+[
+  {
+    "font": "Source Han Sans JP",
+    "chars": 3000,
+    "cff_woff2_bytes": 1018508,
+    "cff_encode_s": 17.1,
+    "glyf_woff2_bytes": 849744,
+    "glyf_encode_s": 13.4,
+    "saving": 0.165697274837311,
+    "ttf_bytes": 19986112,
+    "source_bytes": 16560052
+  },
+  {
+    "font": "Source Han Sans JP (subset OTF)",
+    "chars": 3000,
+    "cff_woff2_bytes": 569324,
+    "cff_encode_s": 8.3,
+    "glyf_woff2_bytes": 474368,
+    "glyf_encode_s": 8.2,
+    "saving": 0.16678727754319156,
+    "ttf_bytes": 5426136,
+    "source_bytes": 4562224
+  }
+]

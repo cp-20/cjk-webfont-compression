@@ -1,0 +1,37 @@
+[
+  {
+    "brotli_q": 4,
+    "bytes": 444792,
+    "encode_s": 4.6
+  },
+  {
+    "brotli_q": 5,
+    "bytes": 425112,
+    "encode_s": 2.4
+  },
+  {
+    "brotli_q": 6,
+    "bytes": 421552,
+    "encode_s": 2.43
+  },
+  {
+    "brotli_q": 8,
+    "bytes": 419432,
+    "encode_s": 2.53
+  },
+  {
+    "brotli_q": 9,
+    "bytes": 419028,
+    "encode_s": 2.5
+  },
+  {
+    "brotli_q": 10,
+    "bytes": 394784,
+    "encode_s": 3.28
+  },
+  {
+    "brotli_q": 11,
+    "bytes": 390264,
+    "encode_s": 4.1
+  }
+]

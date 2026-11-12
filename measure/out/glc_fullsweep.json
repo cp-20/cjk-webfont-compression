@@ -1,0 +1,98 @@
+[
+  {
+    "font": "Noto Sans JP (static 400)",
+    "grid": 0,
+    "bytes": 2302932,
+    "prep_s": 5.83,
+    "encode_s": 20.34,
+    "total_s": 26.17
+  },
+  {
+    "font": "Noto Sans JP (static 400)",
+    "grid": 2,
+    "bytes": 2225392,
+    "prep_s": 10.66,
+    "encode_s": 20.55,
+    "total_s": 31.21
+  },
+  {
+    "font": "Noto Sans JP (static 400)",
+    "grid": 4,
+    "bytes": 1980856,
+    "prep_s": 10.57,
+    "encode_s": 20.0,
+    "total_s": 30.57
+  },
+  {
+    "font": "Noto Sans JP (static 400)",
+    "grid": 8,
+    "bytes": 1755656,
+    "prep_s": 10.63,
+    "encode_s": 19.56,
+    "total_s": 30.19
+  },
+  {
+    "font": "Noto Sans JP (static 400)",
+    "grid": 16,
+    "bytes": 1545836,
+    "prep_s": 10.69,
+    "encode_s": 18.73,
+    "total_s": 29.42
+  },
+  {
+    "font": "Noto Sans JP (static 400)",
+    "grid": 32,
+    "bytes": 1371932,
+    "prep_s": 10.91,
+    "encode_s": 18.53,
+    "total_s": 29.44
+  },
+  {
+    "font": "M PLUS 1p",
+    "grid": 0,
+    "bytes": 699792,
+    "prep_s": 1.91,
+    "encode_s": 9.49,
+    "total_s": 11.4
+  },
+  {
+    "font": "M PLUS 1p",
+    "grid": 2,
+    "bytes": 704924,
+    "prep_s": 0.0,
+    "encode_s": 5.83,
+    "total_s": 5.83
+  },
+  {
+    "font": "M PLUS 1p",
+    "grid": 4,
+    "bytes": 643020,
+    "prep_s": 0.0,
+    "encode_s": 5.87,
+    "total_s": 5.87
+  },
+  {
+    "font": "M PLUS 1p",
+    "grid": 8,
+    "bytes": 579796,
+    "prep_s": 0.0,
+    "encode_s": 5.7,
+    "total_s": 5.7
+  },
+  {
+    "font": "M PLUS 1p",
+    "grid": 16,
+    "bytes": 514728,
+    "prep_s": 0.0,
+    "encode_s": 5.4,
+    "total_s": 5.4
+  },
+  {
+    "font": "M PLUS 1p",
+    "grid": 32,
+    "bytes": 449352,
+    "prep_s": 0.0,
+    "encode_s": 8.21,
+    "total_s": 8.21
+  }
+]

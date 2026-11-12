@@ -1,0 +1,50 @@
+{
+  "method": "CJK フォントの輪郭テーブルから 64 KiB サンプルを作り Zstandard 辞書を学習し、held-out フォントで辞書あり／なしを比較した上限試算。",
+  "note": "実運用では WOFF2（Brotli 済み）に外部辞書を適用する手段がないため、そのまま使える技術ではない。フォントを sfnt のまま配信し RFC 9842 の圧縮辞書転送（Chrome の dcb/dcz）を使う場合の実現性を見るための上限試算。",
+  "dictionary_bytes": 1048576,
+  "samples": 680,
+  "rows": [
+    {
+      "target": "Noto Sans JP (target)",
+      "outline_table": "glyf",
+      "outline_raw_bytes": 5355740,
+      "plain_bytes": 2666334,
+      "dict_bytes": 2668480,
+      "saving": -0.0008048504050879313,
+      "brotli_bytes": 2610300,
+      "brotli_dict_bytes": 2600964,
+      "brotli_dict_saving": 0.0035766003907596877,
+      "sfnt_zstd_bytes": 2830249,
+      "sfnt_zstd_dict_bytes": 2834160,
+      "sfnt_zstd_saving": -0.001381857214683313
+    },
+    {
+      "target": "Zen Kaku Gothic New",
+      "outline_table": "glyf",
+      "outline_raw_bytes": 2161183,
+      "plain_bytes": 1217432,
+      "dict_bytes": 1215634,
+      "saving": 0.0014768792014666632,
+      "brotli_bytes": 1192224,
+      "brotli_dict_bytes": 1190341,
+      "brotli_dict_saving": 0.0015794011863542456,
+      "sfnt_zstd_bytes": 1302648,
+      "sfnt_zstd_dict_bytes": 1301122,
+      "sfnt_zstd_saving": 0.0011714599799792502
+    },
+    {
+      "target": "Nanum Gothic",
+      "outline_table": "glyf",
+      "outline_raw_bytes": 1922996,
+      "plain_bytes": 408892,
+      "dict_bytes": 408766,
+      "saving": 0.0003081498292947238,
+      "brotli_bytes": 386731,
+      "brotli_dict_bytes": 386557,
+      "brotli_dict_saving": 0.00044992514176522835,
+      "sfnt_zstd_bytes": 455532,
+      "sfnt_zstd_dict_bytes": 455340,
+      "sfnt_zstd_saving": 0.00042148520850349147
+    }
+  ]
+}

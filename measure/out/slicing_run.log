@@ -1,0 +1,20 @@
+pages=31 train=21 test=10 universe=3208 font_cps=16732 tail=13524
+measuring 308 unique WOFF2 subsets ...
+  [main] 308 subsets in 783s
+  google_like      slices= 190 med=   439.3KiB test_med=   485.6KiB req_med= 17.0 util=0.189 css_int=8566
+  lsa_K16          slices= 116 med=   336.4KiB test_med=   642.6KiB req_med= 12.0 util=0.270 css_int=8606
+  lsa_K32          slices= 132 med=   249.9KiB test_med=   589.7KiB req_med= 19.0 util=0.446 css_int=8647
+  base_plus_lsa32  slices= 133 med=   433.0KiB test_med=   772.8KiB req_med= 20.0 util=0.203 css_int=9365
+  base_only        slices= 101 med=   183.1KiB test_med=   233.6KiB req_med=  1.0 util=0.322 css_int=6276
+  exact_page      median=   102.4 KiB test=    92.3 KiB
+  first1000       median=   102.4 KiB
+Traceback (most recent call last):
+  File "/home/cp20/playground/font-compress/measure/slicing_experiment.py", line 403, in <module>
+    main()
+    ~~~~^^
+  File "/home/cp20/playground/font-compress/measure/slicing_experiment.py", line 369, in main
+    ub = size_of(f"union{n}#{i}")
+  File "/home/cp20/playground/font-compress/measure/slicing_experiment.py", line 311, in size_of
+    return sizes[alias.get(key, key)][0]
+           ~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'union500#0'

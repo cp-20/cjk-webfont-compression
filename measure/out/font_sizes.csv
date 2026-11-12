@@ -1,0 +1,13 @@
+family,file,kind,raw_bytes,gzip9_bytes,brotli11_bytes,woff2_bytes,woff2_encode_s,num_glyphs,units_per_em
+Noto Sans JP,NotoSansJP[wght].ttf,variable,9589900,5830626,4732586,4350080,47.91,17936,1000
+Noto Serif JP,NotoSerifJP[wght].ttf,variable,13574352,8034772,6482436,5965452,101.13,17923,1000
+Noto Sans SC,NotoSansSC[wght].ttf,variable,17772300,11220917,8296764,7782072,352.85,31036,1000
+Noto Sans KR,NotoSansKR[wght].ttf,variable,10414588,5314607,4255887,3908716,670.84,24964,1000
+M PLUS 1p,MPLUS1p-Regular.ttf,static,1758688,1021928,821493,699984,21.79,8676,1000
+Zen Kaku Gothic New,ZenKakuGothicNew-Regular.ttf,static,2360248,1432216,1266178,1052404,33.39,7792,1000
+Kosugi Maru,KosugiMaru-Regular.ttf,static,3565716,2083114,1800352,1547060,62.64,7575,1024
+Shippori Mincho,ShipporiMincho-Regular.ttf,static,8677284,4528840,3718032,3164208,148.95,16359,1000
+Sawarabi Mincho,SawarabiMincho-Regular.ttf,static,3662996,1843776,1363230,1223296,51.28,4792,1000
+LXGW WenKai,LXGWWenKai-Regular.ttf,static,25928940,13034309,8830574,8099268,398.89,47336,1000
+Nanum Gothic,NanumGothic-Regular.ttf,static,2054744,685394,431725,363844,22.56,13297,1000
+Source Han Sans JP,SourceHanSansJP-Full-Regular.otf,cff,16560052,13736484,11293067,11560904,206.99,65535,1000

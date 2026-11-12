@@ -1,0 +1,28 @@
+Noto Sans JP           WOFF2 baseline                        469.8 KiB
+Noto Sans JP           GLC-3 canonical (control)             477.1 KiB ( -1.6% 減)  max_err=0u
+Noto Sans JP           GLC-4 quant4                          421.1 KiB ( 10.4% 減)  max_err=2u
+Noto Sans JP           GLC-4 quant8                          381.1 KiB ( 18.9% 減)  max_err=4u
+Noto Sans JP           GLC-4 quant16                         344.6 KiB ( 26.6% 減)  max_err=8u
+M PLUS 1p              WOFF2 baseline                        296.0 KiB
+M PLUS 1p              GLC-3 canonical (control)             289.1 KiB (  2.3% 減)  max_err=0u
+M PLUS 1p              GLC-4 quant4                          280.2 KiB (  5.3% 減)  max_err=2u
+M PLUS 1p              GLC-4 quant8                          257.1 KiB ( 13.2% 減)  max_err=4u
+M PLUS 1p              GLC-4 quant16                         234.2 KiB ( 20.9% 減)  max_err=8u
+Zen Kaku Gothic New    WOFF2 baseline                        367.6 KiB
+Zen Kaku Gothic New    GLC-3 canonical (control)             367.0 KiB (  0.2% 減)  max_err=0u
+Zen Kaku Gothic New    GLC-4 quant4                          335.6 KiB (  8.7% 減)  max_err=2u
+Zen Kaku Gothic New    GLC-4 quant8                          303.5 KiB ( 17.4% 減)  max_err=4u
+Zen Kaku Gothic New    GLC-4 quant16                         271.9 KiB ( 26.0% 減)  max_err=8u
+Nanum Gothic           WOFF2 baseline                         60.5 KiB
+Nanum Gothic           GLC-3 canonical (control)              56.1 KiB (  7.2% 減)  max_err=0u
+Nanum Gothic           GLC-4 quant4                           66.8 KiB (-10.5% 減)  max_err=2u
+Nanum Gothic           GLC-4 quant8                           63.0 KiB ( -4.2% 減)  max_err=4u
+Nanum Gothic           GLC-4 quant16                          59.4 KiB (  1.8% 減)  max_err=8u
+Source Han Sans JP     WOFF2 baseline                        553.4 KiB
+Source Han Sans JP     GLC-1 CFF de-subroutinise             517.7 KiB (  6.4% 減)
+Source Han Sans JP     GLC-0 CFF->glyf                       460.4 KiB ( 16.8% 減)
+Source Han Sans JP     GLC-3 canonical (control)             456.7 KiB ( 17.5% 減)  max_err=1u
+Source Han Sans JP     GLC-4 quant4                          419.2 KiB ( 24.3% 減)  max_err=1u
+Source Han Sans JP     GLC-4 quant8                          379.1 KiB ( 31.5% 減)  max_err=1u
+Source Han Sans JP     GLC-4 quant16                         345.6 KiB ( 37.5% 減)  max_err=1u
+wrote /home/cp20/playground/font-compress/measure/out/glc_bench.json

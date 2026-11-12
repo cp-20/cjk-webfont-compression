@@ -1,0 +1,426 @@
+[
+  {
+    "family": "Noto Sans JP",
+    "file": "NotoSansJP[wght].ttf",
+    "kind": "variable",
+    "raw_bytes": 9589900,
+    "gzip9_bytes": 5830626,
+    "brotli11_bytes": 4732586,
+    "woff2_bytes": 4350080,
+    "woff2_encode_s": 47.91,
+    "num_glyphs": 17936,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": true,
+      "fvar": true
+    },
+    "axes": [
+      [
+        "wght",
+        100.0,
+        100.0,
+        900.0
+      ]
+    ],
+    "top_tables": {
+      "glyf": 5358785,
+      "gvar": 3749688,
+      "cmap": 130737,
+      "GPOS": 76130,
+      "loca": 71748,
+      "hmtx": 71744,
+      "vmtx": 71088,
+      "HVAR": 35922,
+      "GSUB": 20248,
+      "name": 2294
+    },
+    "load_s": 88.75
+  },
+  {
+    "family": "Noto Serif JP",
+    "file": "NotoSerifJP[wght].ttf",
+    "kind": "variable",
+    "raw_bytes": 13574352,
+    "gzip9_bytes": 8034772,
+    "brotli11_bytes": 6482436,
+    "woff2_bytes": 5965452,
+    "woff2_encode_s": 101.13,
+    "num_glyphs": 17923,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": true,
+      "fvar": true
+    },
+    "axes": [
+      [
+        "wght",
+        200.0,
+        200.0,
+        900.0
+      ]
+    ],
+    "top_tables": {
+      "glyf": 7640685,
+      "gvar": 5426986,
+      "cmap": 131005,
+      "GPOS": 119526,
+      "loca": 71696,
+      "hmtx": 71038,
+      "vmtx": 71038,
+      "GSUB": 20250,
+      "HVAR": 17642,
+      "name": 3006
+    },
+    "load_s": 187.95
+  },
+  {
+    "family": "Noto Sans SC",
+    "file": "NotoSansSC[wght].ttf",
+    "kind": "variable",
+    "raw_bytes": 17772300,
+    "gzip9_bytes": 11220917,
+    "brotli11_bytes": 8296764,
+    "woff2_bytes": 7782072,
+    "woff2_encode_s": 352.85,
+    "num_glyphs": 31036,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": true,
+      "fvar": true
+    },
+    "axes": [
+      [
+        "wght",
+        100.0,
+        100.0,
+        900.0
+      ]
+    ],
+    "top_tables": {
+      "glyf": 10146870,
+      "gvar": 7081744,
+      "loca": 124148,
+      "hmtx": 124144,
+      "vmtx": 123486,
+      "GPOS": 76130,
+      "HVAR": 62122,
+      "cmap": 18789,
+      "GSUB": 11054,
+      "name": 2294
+    },
+    "load_s": 516.88
+  },
+  {
+    "family": "Noto Sans KR",
+    "file": "NotoSansKR[wght].ttf",
+    "kind": "variable",
+    "raw_bytes": 10414588,
+    "gzip9_bytes": 5314607,
+    "brotli11_bytes": 4255887,
+    "woff2_bytes": 3908716,
+    "woff2_encode_s": 670.84,
+    "num_glyphs": 24964,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": true,
+      "fvar": true
+    },
+    "axes": [
+      [
+        "wght",
+        100.0,
+        100.0,
+        900.0
+      ]
+    ],
+    "top_tables": {
+      "glyf": 5750628,
+      "gvar": 4096826,
+      "cmap": 110892,
+      "loca": 99860,
+      "hmtx": 99856,
+      "vmtx": 99200,
+      "GPOS": 76342,
+      "HVAR": 49978,
+      "GSUB": 27188,
+      "name": 2294
+    },
+    "load_s": 932.43
+  },
+  {
+    "family": "M PLUS 1p",
+    "file": "MPLUS1p-Regular.ttf",
+    "kind": "static",
+    "raw_bytes": 1758688,
+    "gzip9_bytes": 1021928,
+    "brotli11_bytes": 821493,
+    "woff2_bytes": 699984,
+    "woff2_encode_s": 21.79,
+    "num_glyphs": 8676,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "glyf": 1475655,
+      "post": 86080,
+      "cmap": 76858,
+      "loca": 34708,
+      "hmtx": 34674,
+      "vmtx": 22880,
+      "GPOS": 14368,
+      "GSUB": 9874,
+      "GDEF": 1564,
+      "name": 768
+    },
+    "load_s": 47.04
+  },
+  {
+    "family": "Zen Kaku Gothic New",
+    "file": "ZenKakuGothicNew-Regular.ttf",
+    "kind": "static",
+    "raw_bytes": 2360248,
+    "gzip9_bytes": 1432216,
+    "brotli11_bytes": 1266178,
+    "woff2_bytes": 1052404,
+    "woff2_encode_s": 33.39,
+    "num_glyphs": 7792,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "glyf": 2161183,
+      "post": 76878,
+      "cmap": 35826,
+      "loca": 31172,
+      "hmtx": 31148,
+      "vmtx": 15586,
+      "GPOS": 3698,
+      "GSUB": 2664,
+      "name": 1060,
+      "GDEF": 240
+    },
+    "load_s": 56.59
+  },
+  {
+    "family": "Kosugi Maru",
+    "file": "KosugiMaru-Regular.ttf",
+    "kind": "static",
+    "raw_bytes": 3565716,
+    "gzip9_bytes": 2083114,
+    "brotli11_bytes": 1800352,
+    "woff2_bytes": 1547060,
+    "woff2_encode_s": 62.64,
+    "num_glyphs": 7575,
+    "units_per_em": 1024,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "glyf": 3376407,
+      "post": 75039,
+      "cmap": 34982,
+      "loca": 30304,
+      "hmtx": 30300,
+      "vmtx": 15152,
+      "GSUB": 2218,
+      "name": 758,
+      "OS/2": 96,
+      "head": 54
+    },
+    "load_s": 89.03
+  },
+  {
+    "family": "Shippori Mincho",
+    "file": "ShipporiMincho-Regular.ttf",
+    "kind": "static",
+    "raw_bytes": 8677284,
+    "gzip9_bytes": 4528840,
+    "brotli11_bytes": 3718032,
+    "woff2_bytes": 3164208,
+    "woff2_encode_s": 148.95,
+    "num_glyphs": 16359,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "glyf": 8180622,
+      "post": 167977,
+      "cmap": 101116,
+      "loca": 65440,
+      "hmtx": 65012,
+      "vmtx": 64980,
+      "GPOS": 15300,
+      "GSUB": 13632,
+      "name": 1863,
+      "GDEF": 778
+    },
+    "load_s": 192.16
+  },
+  {
+    "family": "Sawarabi Mincho",
+    "file": "SawarabiMincho-Regular.ttf",
+    "kind": "static",
+    "raw_bytes": 3662996,
+    "gzip9_bytes": 1843776,
+    "brotli11_bytes": 1363230,
+    "woff2_bytes": 1223296,
+    "woff2_encode_s": 51.28,
+    "num_glyphs": 4792,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "glyf": 3548518,
+      "post": 46490,
+      "cmap": 23676,
+      "loca": 19172,
+      "hmtx": 19166,
+      "fpgm": 3596,
+      "name": 940,
+      "GPOS": 394,
+      "GSUB": 238,
+      "prep": 178
+    },
+    "load_s": 101.61
+  },
+  {
+    "family": "LXGW WenKai",
+    "file": "LXGWWenKai-Regular.ttf",
+    "kind": "static",
+    "raw_bytes": 25928940,
+    "gzip9_bytes": 13034309,
+    "brotli11_bytes": 8830574,
+    "woff2_bytes": 8099268,
+    "woff2_encode_s": 398.89,
+    "num_glyphs": 47336,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "glyf": 24790044,
+      "post": 454386,
+      "cmap": 198811,
+      "loca": 189348,
+      "hmtx": 189340,
+      "vmtx": 94678,
+      "GSUB": 8634,
+      "GPOS": 1736,
+      "name": 1416,
+      "OS/2": 96
+    },
+    "load_s": 812.92
+  },
+  {
+    "family": "Nanum Gothic",
+    "file": "NanumGothic-Regular.ttf",
+    "kind": "static",
+    "raw_bytes": 2054744,
+    "gzip9_bytes": 685394,
+    "brotli11_bytes": 431725,
+    "woff2_bytes": 363844,
+    "woff2_encode_s": 22.56,
+    "num_glyphs": 13297,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": true,
+      "CFF": false,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "glyf": 1922996,
+      "loca": 53192,
+      "hmtx": 53188,
+      "cmap": 19076,
+      "fpgm": 2313,
+      "name": 1773,
+      "cvt ": 868,
+      "prep": 408,
+      "GSUB": 354,
+      "OS/2": 96
+    },
+    "load_s": 38.73
+  },
+  {
+    "family": "Source Han Sans JP",
+    "file": "SourceHanSansJP-Full-Regular.otf",
+    "kind": "cff",
+    "raw_bytes": 16560052,
+    "gzip9_bytes": 13736484,
+    "brotli11_bytes": 11293067,
+    "woff2_bytes": 11560904,
+    "woff2_encode_s": 206.99,
+    "num_glyphs": 65535,
+    "units_per_em": 1000,
+    "tables": {
+      "glyf": false,
+      "CFF": true,
+      "CFF2": false,
+      "gvar": false,
+      "fvar": false
+    },
+    "axes": [],
+    "top_tables": {
+      "CFF ": 15551778,
+      "hmtx": 262068,
+      "vmtx": 261412,
+      "cmap": 257100,
+      "GSUB": 177052,
+      "GPOS": 46568,
+      "name": 2328,
+      "VORG": 920,
+      "BASE": 240,
+      "OS/2": 96
+    },
+    "load_s": 396.1
+  }
+]

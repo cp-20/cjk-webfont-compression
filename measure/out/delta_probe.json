@@ -1,0 +1,42 @@
+[
+  {
+    "font": "NotoSansJP-Regular.ttf",
+    "simple_glyphs": 16727,
+    "glyphs_with_structural_twin": 2949,
+    "twin_ratio": 0.1763017875291445,
+    "sampled_glyphs": 344,
+    "naive_coord_bits": 64838,
+    "delta_coord_bits": 52787,
+    "est_ratio_delta_vs_naive": 0.8141367716462569
+  },
+  {
+    "font": "MPLUS1p-Regular.ttf",
+    "simple_glyphs": 8077,
+    "glyphs_with_structural_twin": 3023,
+    "twin_ratio": 0.3742726259749907,
+    "sampled_glyphs": 527,
+    "naive_coord_bits": 53753,
+    "delta_coord_bits": 58096,
+    "est_ratio_delta_vs_naive": 1.080795490484252
+  },
+  {
+    "font": "NanumGothic-Regular.ttf",
+    "simple_glyphs": 3000,
+    "glyphs_with_structural_twin": 881,
+    "twin_ratio": 0.2936666666666667,
+    "sampled_glyphs": 316,
+    "naive_coord_bits": 71962,
+    "delta_coord_bits": 64947,
+    "est_ratio_delta_vs_naive": 0.9025179956087935
+  },
+  {
+    "font": "ZenKakuGothicNew-Regular.ttf",
+    "simple_glyphs": 7646,
+    "glyphs_with_structural_twin": 1092,
+    "twin_ratio": 0.14281977504577556,
+    "sampled_glyphs": 423,
+    "naive_coord_bits": 65350,
+    "delta_coord_bits": 65645,
+    "est_ratio_delta_vs_naive": 1.00451415455241
+  }
+]

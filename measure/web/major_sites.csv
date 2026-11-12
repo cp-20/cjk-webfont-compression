@@ -1,0 +1,11 @@
+name,genre,url,status,font_face_count,font_family_declarations,providers,self_hosts,preload_font_count,preconnect_font_count,top_families
+Yahoo! JAPAN,portal,https://www.yahoo.co.jp/,200,1,4,,False,0,0,sans-serif (3);Arial (2);Helvetica (2);YJTop Ellipsis (2);ãã©ã®ãè§ã´ ProN (1)
+NHK News,news,https://www3.nhk.or.jp/news/,200,0,1,,False,0,0,BIZ UDPGothic (1);Hiragino Sans (1);sans-serif (1)
+Asahi Shimbun,news,https://www.asahi.com/,200,0,1,,False,0,0,-apple-system (1);BlinkMacSystemFont (1);Segoe UI (1);Roboto (1);Hiragino Kaku Gothic ProN (1)
+Rakuten Ichiba,ecommerce,https://www.rakuten.co.jp/,200,1,13,third-party,False,0,0,Hiragino Kaku Gothic ProN (6);sans-serif (3);MS PGothic (2);ri-iconfont!important (2);Roboto (2)
+Mercari,marketplace,https://jp.mercari.com/,200,0,3,,False,0,0,Helvetica Neue (3);Arial (3);Hiragino Kaku Gothic ProN (3);Hiragino Sans (3);Meiryo sans-serif (3)
+note,blog platform,https://note.com/,200,0,3,,False,0,0,ui-sans-serif (1);system-ui (1);sans-serif (1);Apple Color Emoji (1);Segoe UI Emoji (1)
+Qiita,tech community,https://qiita.com/,200,2,8,Google Fonts;external CDN,False,0,0,YakuHanJPs (4);-apple-system (4);BlinkMacSystemFont (4);Segoe UI (4);Hiragino Kaku Gothic ProN (4)
+Zenn,tech community,https://zenn.dev/,200,2,2,third-party,False,0,0,Inter (2)
+SmartHR Tech Blog,corporate blog,https://tech.smarthr.jp/,200,1,15,external CDN,False,0,0,sans-serif (12);Helvetica (8);Arial (5);ãã©ã®ãè§ã´ Pro W3 (3);Hiragino Kaku Gothic Pro (3)
+CyberAgent Developers Blog,corporate blog,https://developers.cyberagent.co.jp/blog/,200,121,123,Google Fonts;external CDN,False,0,0,Open Sans (80);Raleway (40);FontAwesome (3)

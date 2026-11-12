@@ -1,0 +1,14 @@
+pages=31 train=21 test=10 universe=3208 font_cps=16732 tail=13524
+subsets: 378 unique, 70 not cached
+  measured 20/70
+  measured 40/70
+  measured 60/70
+  measurement done (306s)
+Traceback (most recent call last):
+  File "/home/cp20/playground/font-compress/measure/slicing_experiment.py", line 370, in <module>
+    main()
+    ~~~~^^
+  File "/home/cp20/playground/font-compress/measure/slicing_experiment.py", line 290, in main
+    "train_pages": len(train_pages), "test_pages": len(test_pages),
+                                                       ^^^^^^^^^^
+NameError: name 'test_pages' is not defined. Did you mean: 'train_pages'?

@@ -1,0 +1,32 @@
+[
+  {
+    "grid": 0,
+    "file": "demo_g0.png",
+    "bytes": 13169
+  },
+  {
+    "grid": 2,
+    "file": "demo_g2.png",
+    "bytes": 15620
+  },
+  {
+    "grid": 4,
+    "file": "demo_g4.png",
+    "bytes": 15943
+  },
+  {
+    "grid": 8,
+    "file": "demo_g8.png",
+    "bytes": 16363
+  },
+  {
+    "grid": 16,
+    "file": "demo_g16.png",
+    "bytes": 16418
+  },
+  {
+    "grid": 32,
+    "file": "demo_g32.png",
+    "bytes": 16362
+  }
+]

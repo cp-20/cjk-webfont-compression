@@ -1,0 +1,3722 @@
+{
+  "meta": {
+    "generated": "2026-11-11T08:28:37Z",
+    "font": "measure/out/NotoSansJP-Regular.ttf",
+    "pages": 31,
+    "train_pages": 21,
+    "test_pages": 10,
+    "train_universe": 3208,
+    "font_codepoints": 16732,
+    "cache_entries": 378
+  },
+  "schemes": {
+    "google_like": {
+      "n_slices": 190,
+      "total_bytes_all_slices": 2877472,
+      "css_intervals": 8566,
+      "css_bytes_estimate": 102792,
+      "per_page": [
+        {
+          "bytes": 590920,
+          "requests": 40,
+          "glyphs_fetched": 3060,
+          "chars_used": 1810,
+          "utilisation": 0.5915,
+          "warm_cache_bytes": 590920
+        },
+        {
+          "bytes": 613720,
+          "requests": 53,
+          "glyphs_fetched": 3097,
+          "chars_used": 1572,
+          "utilisation": 0.5076,
+          "warm_cache_bytes": 44244
+        },
+        {
+          "bytes": 1138260,
+          "requests": 56,
+          "glyphs_fetched": 6566,
+          "chars_used": 1238,
+          "utilisation": 0.1885,
+          "warm_cache_bytes": 567556
+        },
+        {
+          "bytes": 501512,
+          "requests": 19,
+          "glyphs_fetched": 2703,
+          "chars_used": 604,
+          "utilisation": 0.2235,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 539040,
+          "requests": 25,
+          "glyphs_fetched": 2868,
+          "chars_used": 1141,
+          "utilisation": 0.3978,
+          "warm_cache_bytes": 1084
+        },
+        {
+          "bytes": 1184000,
+          "requests": 61,
+          "glyphs_fetched": 6581,
+          "chars_used": 1199,
+          "utilisation": 0.1822,
+          "warm_cache_bytes": 414332
+        },
+        {
+          "bytes": 416944,
+          "requests": 17,
+          "glyphs_fetched": 2256,
+          "chars_used": 598,
+          "utilisation": 0.2651,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 501652,
+          "requests": 19,
+          "glyphs_fetched": 2703,
+          "chars_used": 671,
+          "utilisation": 0.2482,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 594536,
+          "requests": 27,
+          "glyphs_fetched": 3350,
+          "chars_used": 854,
+          "utilisation": 0.2549,
+          "warm_cache_bytes": 67996
+        },
+        {
+          "bytes": 452012,
+          "requests": 17,
+          "glyphs_fetched": 2403,
+          "chars_used": 401,
+          "utilisation": 0.1669,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 388096,
+          "requests": 15,
+          "glyphs_fetched": 2103,
+          "chars_used": 230,
+          "utilisation": 0.1094,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 497244,
+          "requests": 19,
+          "glyphs_fetched": 2689,
+          "chars_used": 554,
+          "utilisation": 0.206,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 415744,
+          "requests": 16,
+          "glyphs_fetched": 2253,
+          "chars_used": 495,
+          "utilisation": 0.2197,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 280548,
+          "requests": 10,
+          "glyphs_fetched": 1500,
+          "chars_used": 190,
+          "utilisation": 0.1267,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 373900,
+          "requests": 15,
+          "glyphs_fetched": 2089,
+          "chars_used": 169,
+          "utilisation": 0.0809,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 442884,
+          "requests": 17,
+          "glyphs_fetched": 2403,
+          "chars_used": 633,
+          "utilisation": 0.2634,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 415860,
+          "requests": 16,
+          "glyphs_fetched": 2253,
+          "chars_used": 521,
+          "utilisation": 0.2312,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 551696,
+          "requests": 21,
+          "glyphs_fetched": 2961,
+          "chars_used": 421,
+          "utilisation": 0.1422,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 650116,
+          "requests": 75,
+          "glyphs_fetched": 3165,
+          "chars_used": 2255,
+          "utilisation": 0.7125,
+          "warm_cache_bytes": 23340
+        },
+        {
+          "bytes": 576564,
+          "requests": 30,
+          "glyphs_fetched": 3030,
+          "chars_used": 1114,
+          "utilisation": 0.3677,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 470524,
+          "requests": 19,
+          "glyphs_fetched": 2661,
+          "chars_used": 383,
+          "utilisation": 0.1439,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 147744,
+          "requests": 5,
+          "glyphs_fetched": 750,
+          "chars_used": 39,
+          "utilisation": 0.052,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 414188,
+          "requests": 15,
+          "glyphs_fetched": 2250,
+          "chars_used": 454,
+          "utilisation": 0.2018,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 448020,
+          "requests": 16,
+          "glyphs_fetched": 2386,
+          "chars_used": 269,
+          "utilisation": 0.1127,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 332496,
+          "requests": 12,
+          "glyphs_fetched": 1800,
+          "chars_used": 287,
+          "utilisation": 0.1594,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 328888,
+          "requests": 12,
+          "glyphs_fetched": 1800,
+          "chars_used": 335,
+          "utilisation": 0.1861,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 43196,
+          "requests": 1,
+          "glyphs_fetched": 150,
+          "chars_used": 4,
+          "utilisation": 0.0267,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 578608,
+          "requests": 32,
+          "glyphs_fetched": 3036,
+          "chars_used": 1352,
+          "utilisation": 0.4453,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 43196,
+          "requests": 1,
+          "glyphs_fetched": 150,
+          "chars_used": 3,
+          "utilisation": 0.02,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 173940,
+          "requests": 6,
+          "glyphs_fetched": 900,
+          "chars_used": 56,
+          "utilisation": 0.0622,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 449872,
+          "requests": 16,
+          "glyphs_fetched": 2400,
+          "chars_used": 288,
+          "utilisation": 0.12,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 449872,
+        "mean": 469545.8064516129,
+        "p10": 173940,
+        "p90": 613720,
+        "min": 43196,
+        "max": 1184000,
+        "total": 14555920
+      },
+      "stats_train": {
+        "median": 442884,
+        "mean": 432409.71428571426,
+        "p10": 280548,
+        "p90": 590920,
+        "min": 43196,
+        "max": 650116,
+        "total": 9080604
+      },
+      "stats_test": {
+        "median": 497244,
+        "mean": 547531.6,
+        "p10": 43196,
+        "p90": 1138260,
+        "min": 43196,
+        "max": 1184000,
+        "total": 5475316
+      },
+      "stats_requests": {
+        "median": 17,
+        "mean": 22.677419354838708,
+        "p10": 6,
+        "p90": 53,
+        "min": 1,
+        "max": 75,
+        "total": 703
+      },
+      "stats_utilisation": {
+        "median": 0.1885,
+        "mean": 0.22632258064516128,
+        "p10": 0.0622,
+        "p90": 0.4453,
+        "min": 0.02,
+        "max": 0.7125,
+        "total": 7.016
+      },
+      "session_total_bytes": 14555920,
+      "session_unique_bytes": 1728600,
+      "session_slices_fetched": 137
+    },
+    "lsa_K16": {
+      "n_slices": 116,
+      "total_bytes_all_slices": 2812412,
+      "css_intervals": 8606,
+      "css_bytes_estimate": 103272,
+      "per_page": [
+        {
+          "bytes": 502280,
+          "requests": 15,
+          "glyphs_fetched": 2689,
+          "chars_used": 1810,
+          "utilisation": 0.6731,
+          "warm_cache_bytes": 502280
+        },
+        {
+          "bytes": 454372,
+          "requests": 14,
+          "glyphs_fetched": 2417,
+          "chars_used": 1572,
+          "utilisation": 0.6504,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 1170224,
+          "requests": 42,
+          "glyphs_fetched": 6744,
+          "chars_used": 1238,
+          "utilisation": 0.1836,
+          "warm_cache_bytes": 667944
+        },
+        {
+          "bytes": 267928,
+          "requests": 10,
+          "glyphs_fetched": 1389,
+          "chars_used": 604,
+          "utilisation": 0.4348,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 303192,
+          "requests": 11,
+          "glyphs_fetched": 1594,
+          "chars_used": 1141,
+          "utilisation": 0.7158,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 1208168,
+          "requests": 42,
+          "glyphs_fetched": 6744,
+          "chars_used": 1199,
+          "utilisation": 0.1778,
+          "warm_cache_bytes": 407856
+        },
+        {
+          "bytes": 250020,
+          "requests": 9,
+          "glyphs_fetched": 1293,
+          "chars_used": 598,
+          "utilisation": 0.4625,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 267928,
+          "requests": 10,
+          "glyphs_fetched": 1389,
+          "chars_used": 671,
+          "utilisation": 0.4831,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 780140,
+          "requests": 24,
+          "glyphs_fetched": 4296,
+          "chars_used": 854,
+          "utilisation": 0.1988,
+          "warm_cache_bytes": 66332
+        },
+        {
+          "bytes": 208824,
+          "requests": 7,
+          "glyphs_fetched": 1075,
+          "chars_used": 401,
+          "utilisation": 0.373,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 502280,
+          "requests": 15,
+          "glyphs_fetched": 2689,
+          "chars_used": 230,
+          "utilisation": 0.0855,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 526292,
+          "requests": 16,
+          "glyphs_fetched": 2825,
+          "chars_used": 554,
+          "utilisation": 0.1961,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 157068,
+          "requests": 5,
+          "glyphs_fetched": 794,
+          "chars_used": 495,
+          "utilisation": 0.6234,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 425740,
+          "requests": 13,
+          "glyphs_fetched": 2263,
+          "chars_used": 190,
+          "utilisation": 0.084,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 410512,
+          "requests": 14,
+          "glyphs_fetched": 2204,
+          "chars_used": 169,
+          "utilisation": 0.0767,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 267928,
+          "requests": 10,
+          "glyphs_fetched": 1389,
+          "chars_used": 633,
+          "utilisation": 0.4557,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 227796,
+          "requests": 8,
+          "glyphs_fetched": 1166,
+          "chars_used": 521,
+          "utilisation": 0.4468,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 680968,
+          "requests": 19,
+          "glyphs_fetched": 3616,
+          "chars_used": 421,
+          "utilisation": 0.1164,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 606336,
+          "requests": 16,
+          "glyphs_fetched": 3208,
+          "chars_used": 2255,
+          "utilisation": 0.7029,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 362756,
+          "requests": 12,
+          "glyphs_fetched": 1914,
+          "chars_used": 1114,
+          "utilisation": 0.582,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 658048,
+          "requests": 19,
+          "glyphs_fetched": 3616,
+          "chars_used": 383,
+          "utilisation": 0.1059,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 207848,
+          "requests": 7,
+          "glyphs_fetched": 1072,
+          "chars_used": 39,
+          "utilisation": 0.0364,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 208824,
+          "requests": 7,
+          "glyphs_fetched": 1075,
+          "chars_used": 454,
+          "utilisation": 0.4223,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 529832,
+          "requests": 16,
+          "glyphs_fetched": 2825,
+          "chars_used": 269,
+          "utilisation": 0.0952,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 344468,
+          "requests": 12,
+          "glyphs_fetched": 1815,
+          "chars_used": 287,
+          "utilisation": 0.1581,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 180268,
+          "requests": 6,
+          "glyphs_fetched": 924,
+          "chars_used": 335,
+          "utilisation": 0.3626,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 72388,
+          "requests": 2,
+          "glyphs_fetched": 313,
+          "chars_used": 4,
+          "utilisation": 0.0128,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 391388,
+          "requests": 13,
+          "glyphs_fetched": 2068,
+          "chars_used": 1352,
+          "utilisation": 0.6538,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 101800,
+          "requests": 3,
+          "glyphs_fetched": 473,
+          "chars_used": 3,
+          "utilisation": 0.0063,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 180268,
+          "requests": 6,
+          "glyphs_fetched": 924,
+          "chars_used": 56,
+          "utilisation": 0.0606,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 214728,
+          "requests": 8,
+          "glyphs_fetched": 1068,
+          "chars_used": 288,
+          "utilisation": 0.2697,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 344468,
+        "mean": 408729.4193548387,
+        "p10": 180268,
+        "p90": 680968,
+        "min": 72388,
+        "max": 1208168,
+        "total": 12670612
+      },
+      "stats_train": {
+        "median": 267928,
+        "mean": 307322.4761904762,
+        "p10": 180268,
+        "p90": 502280,
+        "min": 101800,
+        "max": 606336,
+        "total": 6453772
+      },
+      "stats_test": {
+        "median": 658048,
+        "mean": 621684.0,
+        "p10": 72388,
+        "p90": 1170224,
+        "min": 72388,
+        "max": 1208168,
+        "total": 6216840
+      },
+      "stats_requests": {
+        "median": 12,
+        "mean": 13.258064516129032,
+        "p10": 6,
+        "p90": 19,
+        "min": 2,
+        "max": 42,
+        "total": 411
+      },
+      "stats_utilisation": {
+        "median": 0.2697,
+        "mean": 0.3195516129032258,
+        "p10": 0.0606,
+        "p90": 0.6538,
+        "min": 0.0063,
+        "max": 0.7158,
+        "total": 9.9061
+      },
+      "session_total_bytes": 12670612,
+      "session_unique_bytes": 1663540,
+      "session_slices_fetched": 63
+    },
+    "lsa_K32": {
+      "n_slices": 132,
+      "total_bytes_all_slices": 2832752,
+      "css_intervals": 8647,
+      "css_bytes_estimate": 103764,
+      "per_page": [
+        {
+          "bytes": 435732,
+          "requests": 27,
+          "glyphs_fetched": 2260,
+          "chars_used": 1810,
+          "utilisation": 0.8009,
+          "warm_cache_bytes": 435732
+        },
+        {
+          "bytes": 474936,
+          "requests": 30,
+          "glyphs_fetched": 2418,
+          "chars_used": 1572,
+          "utilisation": 0.6501,
+          "warm_cache_bytes": 86888
+        },
+        {
+          "bytes": 1190564,
+          "requests": 58,
+          "glyphs_fetched": 6744,
+          "chars_used": 1238,
+          "utilisation": 0.1836,
+          "warm_cache_bytes": 667944
+        },
+        {
+          "bytes": 267568,
+          "requests": 20,
+          "glyphs_fetched": 1353,
+          "chars_used": 604,
+          "utilisation": 0.4464,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 305268,
+          "requests": 21,
+          "glyphs_fetched": 1565,
+          "chars_used": 1141,
+          "utilisation": 0.7291,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 1228508,
+          "requests": 58,
+          "glyphs_fetched": 6744,
+          "chars_used": 1199,
+          "utilisation": 0.1778,
+          "warm_cache_bytes": 407856
+        },
+        {
+          "bytes": 255900,
+          "requests": 19,
+          "glyphs_fetched": 1298,
+          "chars_used": 598,
+          "utilisation": 0.4607,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 251916,
+          "requests": 18,
+          "glyphs_fetched": 1276,
+          "chars_used": 671,
+          "utilisation": 0.5259,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 740172,
+          "requests": 38,
+          "glyphs_fetched": 3995,
+          "chars_used": 854,
+          "utilisation": 0.2138,
+          "warm_cache_bytes": 66332
+        },
+        {
+          "bytes": 179820,
+          "requests": 13,
+          "glyphs_fetched": 905,
+          "chars_used": 401,
+          "utilisation": 0.4431,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 87896,
+          "requests": 6,
+          "glyphs_fetched": 441,
+          "chars_used": 230,
+          "utilisation": 0.5215,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 508688,
+          "requests": 30,
+          "glyphs_fetched": 2648,
+          "chars_used": 554,
+          "utilisation": 0.2092,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 185208,
+          "requests": 13,
+          "glyphs_fetched": 941,
+          "chars_used": 495,
+          "utilisation": 0.526,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 82240,
+          "requests": 6,
+          "glyphs_fetched": 400,
+          "chars_used": 190,
+          "utilisation": 0.475,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 365068,
+          "requests": 24,
+          "glyphs_fetched": 1917,
+          "chars_used": 169,
+          "utilisation": 0.0882,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 224780,
+          "requests": 16,
+          "glyphs_fetched": 1149,
+          "chars_used": 633,
+          "utilisation": 0.5509,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 239204,
+          "requests": 17,
+          "glyphs_fetched": 1216,
+          "chars_used": 521,
+          "utilisation": 0.4285,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 683584,
+          "requests": 34,
+          "glyphs_fetched": 3523,
+          "chars_used": 421,
+          "utilisation": 0.1195,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 566368,
+          "requests": 30,
+          "glyphs_fetched": 2907,
+          "chars_used": 2255,
+          "utilisation": 0.7757,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 408268,
+          "requests": 27,
+          "glyphs_fetched": 2073,
+          "chars_used": 1114,
+          "utilisation": 0.5374,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 603892,
+          "requests": 32,
+          "glyphs_fetched": 3228,
+          "chars_used": 383,
+          "utilisation": 0.1186,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 9932,
+          "requests": 1,
+          "glyphs_fetched": 39,
+          "chars_used": 39,
+          "utilisation": 1.0,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 199620,
+          "requests": 14,
+          "glyphs_fetched": 1020,
+          "chars_used": 454,
+          "utilisation": 0.4451,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 484876,
+          "requests": 27,
+          "glyphs_fetched": 2520,
+          "chars_used": 269,
+          "utilisation": 0.1067,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 82240,
+          "requests": 6,
+          "glyphs_fetched": 400,
+          "chars_used": 287,
+          "utilisation": 0.7175,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 128576,
+          "requests": 9,
+          "glyphs_fetched": 651,
+          "chars_used": 335,
+          "utilisation": 0.5146,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 35708,
+          "requests": 2,
+          "glyphs_fetched": 177,
+          "chars_used": 4,
+          "utilisation": 0.0226,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 354476,
+          "requests": 24,
+          "glyphs_fetched": 1817,
+          "chars_used": 1352,
+          "utilisation": 0.7441,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 36008,
+          "requests": 2,
+          "glyphs_fetched": 183,
+          "chars_used": 3,
+          "utilisation": 0.0164,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 170640,
+          "requests": 12,
+          "glyphs_fetched": 860,
+          "chars_used": 56,
+          "utilisation": 0.0651,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 146284,
+          "requests": 10,
+          "glyphs_fetched": 740,
+          "chars_used": 288,
+          "utilisation": 0.3892,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 255900,
+        "mean": 352707.7419354839,
+        "p10": 82240,
+        "p90": 683584,
+        "min": 9932,
+        "max": 1228508,
+        "total": 10933940
+      },
+      "stats_train": {
+        "median": 224780,
+        "mean": 234392.38095238095,
+        "p10": 82240,
+        "p90": 435732,
+        "min": 9932,
+        "max": 566368,
+        "total": 4922240
+      },
+      "stats_test": {
+        "median": 603892,
+        "mean": 601170.0,
+        "p10": 35708,
+        "p90": 1190564,
+        "min": 35708,
+        "max": 1228508,
+        "total": 6011700
+      },
+      "stats_requests": {
+        "median": 19,
+        "mean": 20.774193548387096,
+        "p10": 6,
+        "p90": 34,
+        "min": 1,
+        "max": 58,
+        "total": 644
+      },
+      "stats_utilisation": {
+        "median": 0.4464,
+        "mean": 0.41945806451612905,
+        "p10": 0.0882,
+        "p90": 0.7441,
+        "min": 0.0164,
+        "max": 1.0,
+        "total": 13.0032
+      },
+      "session_total_bytes": 10933940,
+      "session_unique_bytes": 1683880,
+      "session_slices_fetched": 79
+    },
+    "base500_only": {
+      "n_slices": 101,
+      "total_bytes_all_slices": 2319284,
+      "css_intervals": 5895,
+      "css_bytes_estimate": 70740,
+      "per_page": [
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 496,
+          "utilisation": 0.992,
+          "warm_cache_bytes": 113208
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 487,
+          "utilisation": 0.974,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 677096,
+          "requests": 27,
+          "glyphs_fetched": 4036,
+          "chars_used": 505,
+          "utilisation": 0.1251,
+          "warm_cache_bytes": 563888
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 335,
+          "utilisation": 0.67,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 450,
+          "utilisation": 0.9,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 715040,
+          "requests": 27,
+          "glyphs_fetched": 4036,
+          "chars_used": 460,
+          "utilisation": 0.114,
+          "warm_cache_bytes": 407856
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 321,
+          "utilisation": 0.642,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 366,
+          "utilisation": 0.732,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 287012,
+          "requests": 9,
+          "glyphs_fetched": 1588,
+          "chars_used": 410,
+          "utilisation": 0.2582,
+          "warm_cache_bytes": 66332
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 269,
+          "utilisation": 0.538,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 162,
+          "utilisation": 0.324,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 137220,
+          "requests": 2,
+          "glyphs_fetched": 636,
+          "chars_used": 324,
+          "utilisation": 0.5094,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 323,
+          "utilisation": 0.646,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 143,
+          "utilisation": 0.286,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 132332,
+          "requests": 2,
+          "glyphs_fetched": 636,
+          "chars_used": 118,
+          "utilisation": 0.1855,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 367,
+          "utilisation": 0.734,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 333,
+          "utilisation": 0.666,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187840,
+          "requests": 4,
+          "glyphs_fetched": 908,
+          "chars_used": 278,
+          "utilisation": 0.3062,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 444,
+          "utilisation": 0.888,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 388,
+          "utilisation": 0.776,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 164920,
+          "requests": 4,
+          "glyphs_fetched": 908,
+          "chars_used": 272,
+          "utilisation": 0.2996,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 34,
+          "utilisation": 0.068,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 316,
+          "utilisation": 0.632,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 140760,
+          "requests": 2,
+          "glyphs_fetched": 636,
+          "chars_used": 204,
+          "utilisation": 0.3208,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 216,
+          "utilisation": 0.432,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 244,
+          "utilisation": 0.488,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 4,
+          "utilisation": 0.008,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 483,
+          "utilisation": 0.966,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 3,
+          "utilisation": 0.006,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 50,
+          "utilisation": 0.1,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 113208,
+          "requests": 1,
+          "glyphs_fetched": 500,
+          "chars_used": 190,
+          "utilisation": 0.38,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 113208,
+        "mean": 162774.32258064515,
+        "p10": 113208,
+        "p90": 187840,
+        "min": 113208,
+        "max": 715040,
+        "total": 5046004
+      },
+      "stats_train": {
+        "median": 113208,
+        "mean": 113208.0,
+        "p10": 113208,
+        "p90": 113208,
+        "min": 113208,
+        "max": 113208,
+        "total": 2377368
+      },
+      "stats_test": {
+        "median": 164920,
+        "mean": 266863.6,
+        "p10": 113208,
+        "p90": 677096,
+        "min": 113208,
+        "max": 715040,
+        "total": 2668636
+      },
+      "stats_requests": {
+        "median": 1,
+        "mean": 3.225806451612903,
+        "p10": 1,
+        "p90": 4,
+        "min": 1,
+        "max": 27,
+        "total": 100
+      },
+      "stats_utilisation": {
+        "median": 0.488,
+        "mean": 0.48279999999999995,
+        "p10": 0.1,
+        "p90": 0.9,
+        "min": 0.006,
+        "max": 0.992,
+        "total": 14.9668
+      },
+      "session_total_bytes": 5046004,
+      "session_unique_bytes": 1170412,
+      "session_slices_fetched": 48
+    },
+    "base1000_only": {
+      "n_slices": 101,
+      "total_bytes_all_slices": 2393524,
+      "css_intervals": 6276,
+      "css_bytes_estimate": 75312,
+      "per_page": [
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 963,
+          "utilisation": 0.963,
+          "warm_cache_bytes": 187448
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 881,
+          "utilisation": 0.881,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 751336,
+          "requests": 27,
+          "glyphs_fetched": 4536,
+          "chars_used": 886,
+          "utilisation": 0.1953,
+          "warm_cache_bytes": 563888
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 491,
+          "utilisation": 0.491,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 784,
+          "utilisation": 0.784,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 789280,
+          "requests": 27,
+          "glyphs_fetched": 4536,
+          "chars_used": 828,
+          "utilisation": 0.1825,
+          "warm_cache_bytes": 407856
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 490,
+          "utilisation": 0.49,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 556,
+          "utilisation": 0.556,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 361252,
+          "requests": 9,
+          "glyphs_fetched": 2088,
+          "chars_used": 672,
+          "utilisation": 0.3218,
+          "warm_cache_bytes": 66332
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 358,
+          "utilisation": 0.358,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 209,
+          "utilisation": 0.209,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 211460,
+          "requests": 2,
+          "glyphs_fetched": 1136,
+          "chars_used": 481,
+          "utilisation": 0.4234,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 437,
+          "utilisation": 0.437,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 180,
+          "utilisation": 0.18,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 206572,
+          "requests": 2,
+          "glyphs_fetched": 1136,
+          "chars_used": 150,
+          "utilisation": 0.132,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 551,
+          "utilisation": 0.551,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 434,
+          "utilisation": 0.434,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 262080,
+          "requests": 4,
+          "glyphs_fetched": 1408,
+          "chars_used": 367,
+          "utilisation": 0.2607,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 881,
+          "utilisation": 0.881,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 644,
+          "utilisation": 0.644,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 239160,
+          "requests": 4,
+          "glyphs_fetched": 1408,
+          "chars_used": 342,
+          "utilisation": 0.2429,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 37,
+          "utilisation": 0.037,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 412,
+          "utilisation": 0.412,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 215000,
+          "requests": 2,
+          "glyphs_fetched": 1136,
+          "chars_used": 247,
+          "utilisation": 0.2174,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 267,
+          "utilisation": 0.267,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 306,
+          "utilisation": 0.306,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 4,
+          "utilisation": 0.004,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 878,
+          "utilisation": 0.878,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 3,
+          "utilisation": 0.003,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 55,
+          "utilisation": 0.055,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 187448,
+          "requests": 1,
+          "glyphs_fetched": 1000,
+          "chars_used": 247,
+          "utilisation": 0.247,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 187448,
+        "mean": 237014.32258064515,
+        "p10": 187448,
+        "p90": 262080,
+        "min": 187448,
+        "max": 789280,
+        "total": 7347444
+      },
+      "stats_train": {
+        "median": 187448,
+        "mean": 187448.0,
+        "p10": 187448,
+        "p90": 187448,
+        "min": 187448,
+        "max": 187448,
+        "total": 3936408
+      },
+      "stats_test": {
+        "median": 239160,
+        "mean": 341103.6,
+        "p10": 187448,
+        "p90": 751336,
+        "min": 187448,
+        "max": 789280,
+        "total": 3411036
+      },
+      "stats_requests": {
+        "median": 1,
+        "mean": 3.225806451612903,
+        "p10": 1,
+        "p90": 4,
+        "min": 1,
+        "max": 27,
+        "total": 100
+      },
+      "stats_utilisation": {
+        "median": 0.3218,
+        "mean": 0.3885161290322581,
+        "p10": 0.055,
+        "p90": 0.878,
+        "min": 0.003,
+        "max": 0.963,
+        "total": 12.044
+      },
+      "session_total_bytes": 7347444,
+      "session_unique_bytes": 1244652,
+      "session_slices_fetched": 48
+    },
+    "base2000_only": {
+      "n_slices": 101,
+      "total_bytes_all_slices": 2544936,
+      "css_intervals": 7034,
+      "css_bytes_estimate": 84408,
+      "per_page": [
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 1544,
+          "utilisation": 0.772,
+          "warm_cache_bytes": 338860
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 1292,
+          "utilisation": 0.646,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 902748,
+          "requests": 27,
+          "glyphs_fetched": 5536,
+          "chars_used": 1188,
+          "utilisation": 0.2146,
+          "warm_cache_bytes": 563888
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 592,
+          "utilisation": 0.296,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 1083,
+          "utilisation": 0.5415,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 940692,
+          "requests": 27,
+          "glyphs_fetched": 5536,
+          "chars_used": 1147,
+          "utilisation": 0.2072,
+          "warm_cache_bytes": 407856
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 583,
+          "utilisation": 0.2915,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 656,
+          "utilisation": 0.328,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 512664,
+          "requests": 9,
+          "glyphs_fetched": 3088,
+          "chars_used": 843,
+          "utilisation": 0.273,
+          "warm_cache_bytes": 66332
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 395,
+          "utilisation": 0.1975,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 228,
+          "utilisation": 0.114,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 362872,
+          "requests": 2,
+          "glyphs_fetched": 2136,
+          "chars_used": 545,
+          "utilisation": 0.2551,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 486,
+          "utilisation": 0.243,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 189,
+          "utilisation": 0.0945,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 357984,
+          "requests": 2,
+          "glyphs_fetched": 2136,
+          "chars_used": 167,
+          "utilisation": 0.0782,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 623,
+          "utilisation": 0.3115,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 507,
+          "utilisation": 0.2535,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 413492,
+          "requests": 4,
+          "glyphs_fetched": 2408,
+          "chars_used": 415,
+          "utilisation": 0.1723,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 1631,
+          "utilisation": 0.8155,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 977,
+          "utilisation": 0.4885,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 390572,
+          "requests": 4,
+          "glyphs_fetched": 2408,
+          "chars_used": 380,
+          "utilisation": 0.1578,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 39,
+          "utilisation": 0.0195,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 449,
+          "utilisation": 0.2245,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 366412,
+          "requests": 2,
+          "glyphs_fetched": 2136,
+          "chars_used": 266,
+          "utilisation": 0.1245,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 285,
+          "utilisation": 0.1425,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 332,
+          "utilisation": 0.166,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 4,
+          "utilisation": 0.002,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 1271,
+          "utilisation": 0.6355,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 3,
+          "utilisation": 0.0015,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 56,
+          "utilisation": 0.028,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 338860,
+          "requests": 1,
+          "glyphs_fetched": 2000,
+          "chars_used": 283,
+          "utilisation": 0.1415,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 338860,
+        "mean": 388426.32258064515,
+        "p10": 338860,
+        "p90": 413492,
+        "min": 338860,
+        "max": 940692,
+        "total": 12041216
+      },
+      "stats_train": {
+        "median": 338860,
+        "mean": 338860.0,
+        "p10": 338860,
+        "p90": 338860,
+        "min": 338860,
+        "max": 338860,
+        "total": 7116060
+      },
+      "stats_test": {
+        "median": 390572,
+        "mean": 492515.6,
+        "p10": 338860,
+        "p90": 902748,
+        "min": 338860,
+        "max": 940692,
+        "total": 4925156
+      },
+      "stats_requests": {
+        "median": 1,
+        "mean": 3.225806451612903,
+        "p10": 1,
+        "p90": 4,
+        "min": 1,
+        "max": 27,
+        "total": 100
+      },
+      "stats_utilisation": {
+        "median": 0.2146,
+        "mean": 0.26570000000000005,
+        "p10": 0.028,
+        "p90": 0.6355,
+        "min": 0.0015,
+        "max": 0.8155,
+        "total": 8.2367
+      },
+      "session_total_bytes": 12041216,
+      "session_unique_bytes": 1396064,
+      "session_slices_fetched": 48
+    },
+    "base3000_only": {
+      "n_slices": 101,
+      "total_bytes_all_slices": 2704516,
+      "css_intervals": 7704,
+      "css_bytes_estimate": 92448,
+      "per_page": [
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 1776,
+          "utilisation": 0.592,
+          "warm_cache_bytes": 498440
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 1505,
+          "utilisation": 0.5017,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 1062328,
+          "requests": 27,
+          "glyphs_fetched": 6536,
+          "chars_used": 1238,
+          "utilisation": 0.1894,
+          "warm_cache_bytes": 563888
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 602,
+          "utilisation": 0.2007,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 1140,
+          "utilisation": 0.38,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 1100272,
+          "requests": 27,
+          "glyphs_fetched": 6536,
+          "chars_used": 1199,
+          "utilisation": 0.1834,
+          "warm_cache_bytes": 407856
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 598,
+          "utilisation": 0.1993,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 671,
+          "utilisation": 0.2237,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 672244,
+          "requests": 9,
+          "glyphs_fetched": 4088,
+          "chars_used": 854,
+          "utilisation": 0.2089,
+          "warm_cache_bytes": 66332
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 401,
+          "utilisation": 0.1337,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 230,
+          "utilisation": 0.0767,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 522452,
+          "requests": 2,
+          "glyphs_fetched": 3136,
+          "chars_used": 554,
+          "utilisation": 0.1767,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 495,
+          "utilisation": 0.165,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 190,
+          "utilisation": 0.0633,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 517564,
+          "requests": 2,
+          "glyphs_fetched": 3136,
+          "chars_used": 169,
+          "utilisation": 0.0539,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 632,
+          "utilisation": 0.2107,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 521,
+          "utilisation": 0.1737,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 573072,
+          "requests": 4,
+          "glyphs_fetched": 3408,
+          "chars_used": 421,
+          "utilisation": 0.1235,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 2130,
+          "utilisation": 0.71,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 1089,
+          "utilisation": 0.363,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 550152,
+          "requests": 4,
+          "glyphs_fetched": 3408,
+          "chars_used": 383,
+          "utilisation": 0.1124,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 39,
+          "utilisation": 0.013,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 454,
+          "utilisation": 0.1513,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 525992,
+          "requests": 2,
+          "glyphs_fetched": 3136,
+          "chars_used": 269,
+          "utilisation": 0.0858,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 287,
+          "utilisation": 0.0957,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 335,
+          "utilisation": 0.1117,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 4,
+          "utilisation": 0.0013,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 1345,
+          "utilisation": 0.4483,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 3,
+          "utilisation": 0.001,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 56,
+          "utilisation": 0.0187,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 498440,
+          "requests": 1,
+          "glyphs_fetched": 3000,
+          "chars_used": 287,
+          "utilisation": 0.0957,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 498440,
+        "mean": 548006.3225806452,
+        "p10": 498440,
+        "p90": 573072,
+        "min": 498440,
+        "max": 1100272,
+        "total": 16988196
+      },
+      "stats_train": {
+        "median": 498440,
+        "mean": 498440.0,
+        "p10": 498440,
+        "p90": 498440,
+        "min": 498440,
+        "max": 498440,
+        "total": 10467240
+      },
+      "stats_test": {
+        "median": 550152,
+        "mean": 652095.6,
+        "p10": 498440,
+        "p90": 1062328,
+        "min": 498440,
+        "max": 1100272,
+        "total": 6520956
+      },
+      "stats_requests": {
+        "median": 1,
+        "mean": 3.225806451612903,
+        "p10": 1,
+        "p90": 4,
+        "min": 1,
+        "max": 27,
+        "total": 100
+      },
+      "stats_utilisation": {
+        "median": 0.165,
+        "mean": 0.19561935483870965,
+        "p10": 0.0187,
+        "p90": 0.4483,
+        "min": 0.001,
+        "max": 0.71,
+        "total": 6.0642
+      },
+      "session_total_bytes": 16988196,
+      "session_unique_bytes": 1555644,
+      "session_slices_fetched": 48
+    },
+    "base1000_lsa32": {
+      "n_slices": 133,
+      "total_bytes_all_slices": 3020200,
+      "css_intervals": 9365,
+      "css_bytes_estimate": 112380,
+      "per_page": [
+        {
+          "bytes": 623180,
+          "requests": 28,
+          "glyphs_fetched": 3260,
+          "chars_used": 1810,
+          "utilisation": 0.5552,
+          "warm_cache_bytes": 623180
+        },
+        {
+          "bytes": 662384,
+          "requests": 31,
+          "glyphs_fetched": 3418,
+          "chars_used": 1572,
+          "utilisation": 0.4599,
+          "warm_cache_bytes": 86888
+        },
+        {
+          "bytes": 1378012,
+          "requests": 59,
+          "glyphs_fetched": 7744,
+          "chars_used": 1238,
+          "utilisation": 0.1599,
+          "warm_cache_bytes": 667944
+        },
+        {
+          "bytes": 455016,
+          "requests": 21,
+          "glyphs_fetched": 2353,
+          "chars_used": 604,
+          "utilisation": 0.2567,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 492716,
+          "requests": 22,
+          "glyphs_fetched": 2565,
+          "chars_used": 1141,
+          "utilisation": 0.4448,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 1415956,
+          "requests": 59,
+          "glyphs_fetched": 7744,
+          "chars_used": 1199,
+          "utilisation": 0.1548,
+          "warm_cache_bytes": 407856
+        },
+        {
+          "bytes": 443348,
+          "requests": 20,
+          "glyphs_fetched": 2298,
+          "chars_used": 598,
+          "utilisation": 0.2602,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 439364,
+          "requests": 19,
+          "glyphs_fetched": 2276,
+          "chars_used": 671,
+          "utilisation": 0.2948,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 927620,
+          "requests": 39,
+          "glyphs_fetched": 4995,
+          "chars_used": 854,
+          "utilisation": 0.171,
+          "warm_cache_bytes": 66332
+        },
+        {
+          "bytes": 367268,
+          "requests": 14,
+          "glyphs_fetched": 1905,
+          "chars_used": 401,
+          "utilisation": 0.2105,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 275344,
+          "requests": 7,
+          "glyphs_fetched": 1441,
+          "chars_used": 230,
+          "utilisation": 0.1596,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 696136,
+          "requests": 31,
+          "glyphs_fetched": 3648,
+          "chars_used": 554,
+          "utilisation": 0.1519,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 372656,
+          "requests": 14,
+          "glyphs_fetched": 1941,
+          "chars_used": 495,
+          "utilisation": 0.255,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 269688,
+          "requests": 7,
+          "glyphs_fetched": 1400,
+          "chars_used": 190,
+          "utilisation": 0.1357,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 552516,
+          "requests": 25,
+          "glyphs_fetched": 2917,
+          "chars_used": 169,
+          "utilisation": 0.0579,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 412228,
+          "requests": 17,
+          "glyphs_fetched": 2149,
+          "chars_used": 633,
+          "utilisation": 0.2946,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 426652,
+          "requests": 18,
+          "glyphs_fetched": 2216,
+          "chars_used": 521,
+          "utilisation": 0.2351,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 871032,
+          "requests": 35,
+          "glyphs_fetched": 4523,
+          "chars_used": 421,
+          "utilisation": 0.0931,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 753816,
+          "requests": 31,
+          "glyphs_fetched": 3907,
+          "chars_used": 2255,
+          "utilisation": 0.5772,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 595716,
+          "requests": 28,
+          "glyphs_fetched": 3073,
+          "chars_used": 1114,
+          "utilisation": 0.3625,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 791340,
+          "requests": 33,
+          "glyphs_fetched": 4228,
+          "chars_used": 383,
+          "utilisation": 0.0906,
+          "warm_cache_bytes": 19128
+        },
+        {
+          "bytes": 197380,
+          "requests": 2,
+          "glyphs_fetched": 1039,
+          "chars_used": 39,
+          "utilisation": 0.0375,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 387068,
+          "requests": 15,
+          "glyphs_fetched": 2020,
+          "chars_used": 454,
+          "utilisation": 0.2248,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 672324,
+          "requests": 28,
+          "glyphs_fetched": 3520,
+          "chars_used": 269,
+          "utilisation": 0.0764,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 269688,
+          "requests": 7,
+          "glyphs_fetched": 1400,
+          "chars_used": 287,
+          "utilisation": 0.205,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 316024,
+          "requests": 10,
+          "glyphs_fetched": 1651,
+          "chars_used": 335,
+          "utilisation": 0.2029,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 223156,
+          "requests": 3,
+          "glyphs_fetched": 1177,
+          "chars_used": 4,
+          "utilisation": 0.0034,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 541924,
+          "requests": 25,
+          "glyphs_fetched": 2817,
+          "chars_used": 1352,
+          "utilisation": 0.4799,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 223456,
+          "requests": 3,
+          "glyphs_fetched": 1183,
+          "chars_used": 3,
+          "utilisation": 0.0025,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 358088,
+          "requests": 13,
+          "glyphs_fetched": 1860,
+          "chars_used": 56,
+          "utilisation": 0.0301,
+          "warm_cache_bytes": 0
+        },
+        {
+          "bytes": 333732,
+          "requests": 11,
+          "glyphs_fetched": 1740,
+          "chars_used": 288,
+          "utilisation": 0.1655,
+          "warm_cache_bytes": 0
+        }
+      ],
+      "stats_all": {
+        "median": 443348,
+        "mean": 540155.7419354839,
+        "p10": 269688,
+        "p90": 871032,
+        "min": 197380,
+        "max": 1415956,
+        "total": 16744828
+      },
+      "stats_train": {
+        "median": 412228,
+        "mean": 421840.38095238095,
+        "p10": 269688,
+        "p90": 623180,
+        "min": 197380,
+        "max": 753816,
+        "total": 8858648
+      },
+      "stats_test": {
+        "median": 791340,
+        "mean": 788618.0,
+        "p10": 223156,
+        "p90": 1378012,
+        "min": 223156,
+        "max": 1415956,
+        "total": 7886180
+      },
+      "stats_requests": {
+        "median": 20,
+        "mean": 21.774193548387096,
+        "p10": 7,
+        "p90": 35,
+        "min": 2,
+        "max": 59,
+        "total": 675
+      },
+      "stats_utilisation": {
+        "median": 0.2029,
+        "mean": 0.21964516129032258,
+        "p10": 0.0375,
+        "p90": 0.4599,
+        "min": 0.0025,
+        "max": 0.5772,
+        "total": 6.809
+      },
+      "session_total_bytes": 16744828,
+      "session_unique_bytes": 1871328,
+      "session_slices_fetched": 80
+    }
+  },
+  "exact_subsets": {
+    "per_page": [
+      {
+        "bytes": 310940,
+        "chars": 1810
+      },
+      {
+        "bytes": 277524,
+        "chars": 1572
+      },
+      {
+        "bytes": 223728,
+        "chars": 1238
+      },
+      {
+        "bytes": 120792,
+        "chars": 604
+      },
+      {
+        "bytes": 210036,
+        "chars": 1141
+      },
+      {
+        "bytes": 214928,
+        "chars": 1199
+      },
+      {
+        "bytes": 115628,
+        "chars": 598
+      },
+      {
+        "bytes": 137568,
+        "chars": 671
+      },
+      {
+        "bytes": 170828,
+        "chars": 854
+      },
+      {
+        "bytes": 99204,
+        "chars": 401
+      },
+      {
+        "bytes": 49752,
+        "chars": 230
+      },
+      {
+        "bytes": 119568,
+        "chars": 554
+      },
+      {
+        "bytes": 102724,
+        "chars": 495
+      },
+      {
+        "bytes": 39280,
+        "chars": 190
+      },
+      {
+        "bytes": 36532,
+        "chars": 169
+      },
+      {
+        "bytes": 130204,
+        "chars": 633
+      },
+      {
+        "bytes": 120188,
+        "chars": 521
+      },
+      {
+        "bytes": 94520,
+        "chars": 421
+      },
+      {
+        "bytes": 388232,
+        "chars": 2255
+      },
+      {
+        "bytes": 204436,
+        "chars": 1114
+      },
+      {
+        "bytes": 87360,
+        "chars": 383
+      },
+      {
+        "bytes": 9932,
+        "chars": 39
+      },
+      {
+        "bytes": 104852,
+        "chars": 454
+      },
+      {
+        "bytes": 71076,
+        "chars": 269
+      },
+      {
+        "bytes": 70820,
+        "chars": 287
+      },
+      {
+        "bytes": 82432,
+        "chars": 335
+      },
+      {
+        "bytes": 1620,
+        "chars": 4
+      },
+      {
+        "bytes": 243520,
+        "chars": 1352
+      },
+      {
+        "bytes": 1852,
+        "chars": 3
+      },
+      {
+        "bytes": 14472,
+        "chars": 56
+      },
+      {
+        "bytes": 68024,
+        "chars": 288
+      }
+    ],
+    "stats_all": {
+      "median": 104852,
+      "mean": 126534.58064516129,
+      "p10": 14472,
+      "p90": 243520,
+      "min": 1620,
+      "max": 388232,
+      "total": 3922572
+    },
+    "stats_train": {
+      "median": 115628,
+      "mean": 137520.95238095237,
+      "p10": 39280,
+      "p90": 277524,
+      "min": 1852,
+      "max": 388232,
+      "total": 2887940
+    },
+    "stats_test": {
+      "median": 94520,
+      "mean": 103463.2,
+      "p10": 1620,
+      "p90": 214928,
+      "min": 1620,
+      "max": 223728,
+      "total": 1034632
+    }
+  },
+  "first1000_subsets": {
+    "per_page": [
+      {
+        "bytes": 186316,
+        "chars": 1000
+      },
+      {
+        "bytes": 177400,
+        "chars": 1000
+      },
+      {
+        "bytes": 184412,
+        "chars": 1000
+      },
+      {
+        "bytes": 120792,
+        "chars": 604
+      },
+      {
+        "bytes": 189016,
+        "chars": 1000
+      },
+      {
+        "bytes": 184408,
+        "chars": 1000
+      },
+      {
+        "bytes": 115628,
+        "chars": 598
+      },
+      {
+        "bytes": 137568,
+        "chars": 671
+      },
+      {
+        "bytes": 170828,
+        "chars": 854
+      },
+      {
+        "bytes": 99204,
+        "chars": 401
+      },
+      {
+        "bytes": 49752,
+        "chars": 230
+      },
+      {
+        "bytes": 119568,
+        "chars": 554
+      },
+      {
+        "bytes": 102724,
+        "chars": 495
+      },
+      {
+        "bytes": 39280,
+        "chars": 190
+      },
+      {
+        "bytes": 36532,
+        "chars": 169
+      },
+      {
+        "bytes": 130204,
+        "chars": 633
+      },
+      {
+        "bytes": 120188,
+        "chars": 521
+      },
+      {
+        "bytes": 94520,
+        "chars": 421
+      },
+      {
+        "bytes": 172324,
+        "chars": 1000
+      },
+      {
+        "bytes": 180256,
+        "chars": 1000
+      },
+      {
+        "bytes": 87360,
+        "chars": 383
+      },
+      {
+        "bytes": 9932,
+        "chars": 39
+      },
+      {
+        "bytes": 104852,
+        "chars": 454
+      },
+      {
+        "bytes": 71076,
+        "chars": 269
+      },
+      {
+        "bytes": 70820,
+        "chars": 287
+      },
+      {
+        "bytes": 82432,
+        "chars": 335
+      },
+      {
+        "bytes": 1620,
+        "chars": 4
+      },
+      {
+        "bytes": 191140,
+        "chars": 1000
+      },
+      {
+        "bytes": 1852,
+        "chars": 3
+      },
+      {
+        "bytes": 14472,
+        "chars": 56
+      },
+      {
+        "bytes": 68024,
+        "chars": 288
+      }
+    ],
+    "stats_all": {
+      "median": 104852,
+      "mean": 106919.35483870968,
+      "p10": 14472,
+      "p90": 184412,
+      "min": 1620,
+      "max": 191140,
+      "total": 3314500
+    },
+    "stats_test": {
+      "median": 94520,
+      "mean": 96479.6,
+      "p10": 1620,
+      "p90": 184408,
+      "min": 1620,
+      "max": 184412,
+      "total": 964796
+    }
+  },
+  "ift_sim": {
+    "500": {
+      "base_bytes": 113208,
+      "per_page": [
+        {
+          "base": 113208,
+          "patch": 198392,
+          "total": 311600
+        },
+        {
+          "base": 113208,
+          "patch": 166756,
+          "total": 279964
+        },
+        {
+          "base": 113208,
+          "patch": 114276,
+          "total": 227484
+        },
+        {
+          "base": 113208,
+          "patch": 41532,
+          "total": 154740
+        },
+        {
+          "base": 113208,
+          "patch": 106048,
+          "total": 219256
+        },
+        {
+          "base": 113208,
+          "patch": 116888,
+          "total": 230096
+        },
+        {
+          "base": 113208,
+          "patch": 40264,
+          "total": 153472
+        },
+        {
+          "base": 113208,
+          "patch": 50180,
+          "total": 163388
+        },
+        {
+          "base": 113208,
+          "patch": 72380,
+          "total": 185588
+        },
+        {
+          "base": 113208,
+          "patch": 25344,
+          "total": 138552
+        },
+        {
+          "base": 113208,
+          "patch": 11216,
+          "total": 124424
+        },
+        {
+          "base": 113208,
+          "patch": 37232,
+          "total": 150440
+        },
+        {
+          "base": 113208,
+          "patch": 25696,
+          "total": 138904
+        },
+        {
+          "base": 113208,
+          "patch": 8504,
+          "total": 121712
+        },
+        {
+          "base": 113208,
+          "patch": 7868,
+          "total": 121076
+        },
+        {
+          "base": 113208,
+          "patch": 45252,
+          "total": 158460
+        },
+        {
+          "base": 113208,
+          "patch": 31668,
+          "total": 144876
+        },
+        {
+          "base": 113208,
+          "patch": 23448,
+          "total": 136656
+        },
+        {
+          "base": 113208,
+          "patch": 286504,
+          "total": 399712
+        },
+        {
+          "base": 113208,
+          "patch": 115068,
+          "total": 228276
+        },
+        {
+          "base": 113208,
+          "patch": 16948,
+          "total": 130156
+        },
+        {
+          "base": 113208,
+          "patch": 1140,
+          "total": 114348
+        },
+        {
+          "base": 113208,
+          "patch": 22584,
+          "total": 135792
+        },
+        {
+          "base": 113208,
+          "patch": 12536,
+          "total": 125744
+        },
+        {
+          "base": 113208,
+          "patch": 11460,
+          "total": 124668
+        },
+        {
+          "base": 113208,
+          "patch": 16716,
+          "total": 129924
+        },
+        {
+          "base": 113208,
+          "patch": 0,
+          "total": 113208
+        },
+        {
+          "base": 113208,
+          "patch": 132776,
+          "total": 245984
+        },
+        {
+          "base": 113208,
+          "patch": 0,
+          "total": 113208
+        },
+        {
+          "base": 113208,
+          "patch": 2048,
+          "total": 115256
+        },
+        {
+          "base": 113208,
+          "patch": 17392,
+          "total": 130600
+        }
+      ],
+      "session_total_bytes": 5267564,
+      "stats_all": {
+        "median": 138904,
+        "mean": 169921.4193548387,
+        "p10": 115256,
+        "p90": 245984,
+        "min": 113208,
+        "max": 399712,
+        "total": 5267564
+      },
+      "stats_test": {
+        "median": 136656,
+        "mean": 153570.4,
+        "p10": 113208,
+        "p90": 227484,
+        "min": 113208,
+        "max": 230096,
+        "total": 1535704
+      }
+    },
+    "1000": {
+      "base_bytes": 187448,
+      "per_page": [
+        {
+          "base": 187448,
+          "patch": 128572,
+          "total": 316020
+        },
+        {
+          "base": 187448,
+          "patch": 106856,
+          "total": 294304
+        },
+        {
+          "base": 187448,
+          "patch": 57024,
+          "total": 244472
+        },
+        {
+          "base": 187448,
+          "patch": 17392,
+          "total": 204840
+        },
+        {
+          "base": 187448,
+          "patch": 53596,
+          "total": 241044
+        },
+        {
+          "base": 187448,
+          "patch": 59136,
+          "total": 246584
+        },
+        {
+          "base": 187448,
+          "patch": 14828,
+          "total": 202276
+        },
+        {
+          "base": 187448,
+          "patch": 18048,
+          "total": 205496
+        },
+        {
+          "base": 187448,
+          "patch": 29160,
+          "total": 216608
+        },
+        {
+          "base": 187448,
+          "patch": 8696,
+          "total": 196144
+        },
+        {
+          "base": 187448,
+          "patch": 2328,
+          "total": 189776
+        },
+        {
+          "base": 187448,
+          "patch": 11256,
+          "total": 198704
+        },
+        {
+          "base": 187448,
+          "patch": 8272,
+          "total": 195720
+        },
+        {
+          "base": 187448,
+          "patch": 1380,
+          "total": 188828
+        },
+        {
+          "base": 187448,
+          "patch": 2284,
+          "total": 189732
+        },
+        {
+          "base": 187448,
+          "patch": 13788,
+          "total": 201236
+        },
+        {
+          "base": 187448,
+          "patch": 12420,
+          "total": 199868
+        },
+        {
+          "base": 187448,
+          "patch": 8368,
+          "total": 195816
+        },
+        {
+          "base": 187448,
+          "patch": 220724,
+          "total": 408172
+        },
+        {
+          "base": 187448,
+          "patch": 74072,
+          "total": 261520
+        },
+        {
+          "base": 187448,
+          "patch": 5760,
+          "total": 193208
+        },
+        {
+          "base": 187448,
+          "patch": 28,
+          "total": 187476
+        },
+        {
+          "base": 187448,
+          "patch": 6500,
+          "total": 193948
+        },
+        {
+          "base": 187448,
+          "patch": 3792,
+          "total": 191240
+        },
+        {
+          "base": 187448,
+          "patch": 2476,
+          "total": 189924
+        },
+        {
+          "base": 187448,
+          "patch": 5088,
+          "total": 192536
+        },
+        {
+          "base": 187448,
+          "patch": 0,
+          "total": 187448
+        },
+        {
+          "base": 187448,
+          "patch": 71444,
+          "total": 258892
+        },
+        {
+          "base": 187448,
+          "patch": 0,
+          "total": 187448
+        },
+        {
+          "base": 187448,
+          "patch": 740,
+          "total": 188188
+        },
+        {
+          "base": 187448,
+          "patch": 6096,
+          "total": 193544
+        }
+      ],
+      "session_total_bytes": 6761012,
+      "stats_all": {
+        "median": 196144,
+        "mean": 218097.16129032258,
+        "p10": 188188,
+        "p90": 261520,
+        "min": 187448,
+        "max": 408172,
+        "total": 6761012
+      },
+      "stats_test": {
+        "median": 195816,
+        "mean": 205200.0,
+        "p10": 187448,
+        "p90": 244472,
+        "min": 187448,
+        "max": 246584,
+        "total": 2052000
+      }
+    },
+    "2000": {
+      "base_bytes": 338860,
+      "per_page": [
+        {
+          "base": 338860,
+          "patch": 39060,
+          "total": 377920
+        },
+        {
+          "base": 338860,
+          "patch": 48600,
+          "total": 387460
+        },
+        {
+          "base": 338860,
+          "patch": 10984,
+          "total": 349844
+        },
+        {
+          "base": 338860,
+          "patch": 2304,
+          "total": 341164
+        },
+        {
+          "base": 338860,
+          "patch": 9160,
+          "total": 348020
+        },
+        {
+          "base": 338860,
+          "patch": 11136,
+          "total": 349996
+        },
+        {
+          "base": 338860,
+          "patch": 2088,
+          "total": 340948
+        },
+        {
+          "base": 338860,
+          "patch": 2444,
+          "total": 341304
+        },
+        {
+          "base": 338860,
+          "patch": 3116,
+          "total": 341976
+        },
+        {
+          "base": 338860,
+          "patch": 1360,
+          "total": 340220
+        },
+        {
+          "base": 338860,
+          "patch": 256,
+          "total": 339116
+        },
+        {
+          "base": 338860,
+          "patch": 1364,
+          "total": 340224
+        },
+        {
+          "base": 338860,
+          "patch": 1388,
+          "total": 340248
+        },
+        {
+          "base": 338860,
+          "patch": 432,
+          "total": 339292
+        },
+        {
+          "base": 338860,
+          "patch": 688,
+          "total": 339548
+        },
+        {
+          "base": 338860,
+          "patch": 1932,
+          "total": 340792
+        },
+        {
+          "base": 338860,
+          "patch": 2772,
+          "total": 341632
+        },
+        {
+          "base": 338860,
+          "patch": 1580,
+          "total": 340440
+        },
+        {
+          "base": 338860,
+          "patch": 106564,
+          "total": 445424
+        },
+        {
+          "base": 338860,
+          "patch": 24360,
+          "total": 363220
+        },
+        {
+          "base": 338860,
+          "patch": 992,
+          "total": 339852
+        },
+        {
+          "base": 338860,
+          "patch": 0,
+          "total": 338860
+        },
+        {
+          "base": 338860,
+          "patch": 816,
+          "total": 339676
+        },
+        {
+          "base": 338860,
+          "patch": 1172,
+          "total": 340032
+        },
+        {
+          "base": 338860,
+          "patch": 500,
+          "total": 339360
+        },
+        {
+          "base": 338860,
+          "patch": 388,
+          "total": 339248
+        },
+        {
+          "base": 338860,
+          "patch": 0,
+          "total": 338860
+        },
+        {
+          "base": 338860,
+          "patch": 12160,
+          "total": 351020
+        },
+        {
+          "base": 338860,
+          "patch": 0,
+          "total": 338860
+        },
+        {
+          "base": 338860,
+          "patch": 0,
+          "total": 338860
+        },
+        {
+          "base": 338860,
+          "patch": 1148,
+          "total": 340008
+        }
+      ],
+      "session_total_bytes": 10793424,
+      "stats_all": {
+        "median": 340248,
+        "mean": 348174.96774193546,
+        "p10": 338860,
+        "p90": 363220,
+        "min": 338860,
+        "max": 445424,
+        "total": 10793424
+      },
+      "stats_test": {
+        "median": 340224,
+        "mean": 341963.2,
+        "p10": 338860,
+        "p90": 349844,
+        "min": 338860,
+        "max": 349996,
+        "total": 3419632
+      }
+    },
+    "3000": {
+      "base_bytes": 498440,
+      "per_page": [
+        {
+          "base": 498440,
+          "patch": 5700,
+          "total": 504140
+        },
+        {
+          "base": 498440,
+          "patch": 11312,
+          "total": 509752
+        },
+        {
+          "base": 498440,
+          "patch": 440,
+          "total": 498880
+        },
+        {
+          "base": 498440,
+          "patch": 472,
+          "total": 498912
+        },
+        {
+          "base": 498440,
+          "patch": 56,
+          "total": 498496
+        },
+        {
+          "base": 498440,
+          "patch": 2528,
+          "total": 500968
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 44,
+          "total": 498484
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 476,
+          "total": 498916
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 23784,
+          "total": 522224
+        },
+        {
+          "base": 498440,
+          "patch": 4628,
+          "total": 503068
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 332,
+          "total": 498772
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 1124,
+          "total": 499564
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        },
+        {
+          "base": 498440,
+          "patch": 0,
+          "total": 498440
+        }
+      ],
+      "session_total_bytes": 15502536,
+      "stats_all": {
+        "median": 498440,
+        "mean": 500081.8064516129,
+        "p10": 498440,
+        "p90": 503068,
+        "min": 498440,
+        "max": 522224,
+        "total": 15502536
+      },
+      "stats_test": {
+        "median": 498440,
+        "mean": 498774.4,
+        "p10": 498440,
+        "p90": 498880,
+        "min": 498440,
+        "max": 500968,
+        "total": 4987744
+      }
+    }
+  },
+  "google_fonts_measured": [
+    {
+      "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E",
+      "bytes": 2339196,
+      "slices": 106,
+      "unique_chars": 1865,
+      "coverage_pct": 98.5
+    },
+    {
+      "url": "https://ja.wikipedia.org/wiki/%E6%BC%A2%E5%AD%97",
+      "bytes": 2680184,
+      "slices": 113,
+      "unique_chars": 1620,
+      "coverage_pct": 97.59
+    },
+    {
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC",
+      "bytes": 1131620,
+      "slices": 71,
+      "unique_chars": 1238,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www3.nhk.or.jp/news/",
+      "bytes": 535748,
+      "slices": 45,
+      "unique_chars": 604,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.asahi.com/",
+      "bytes": 1011164,
+      "slices": 66,
+      "unique_chars": 1141,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.yomiuri.co.jp/",
+      "bytes": 1014800,
+      "slices": 67,
+      "unique_chars": 1199,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.sankei.com/",
+      "bytes": 629468,
+      "slices": 49,
+      "unique_chars": 598,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.nikkei.com/",
+      "bytes": 659004,
+      "slices": 49,
+      "unique_chars": 671,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.itmedia.co.jp/",
+      "bytes": 577992,
+      "slices": 49,
+      "unique_chars": 854,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.gizmodo.jp/",
+      "bytes": 473296,
+      "slices": 40,
+      "unique_chars": 401,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.kantei.go.jp/",
+      "bytes": 393724,
+      "slices": 33,
+      "unique_chars": 230,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.soumu.go.jp/",
+      "bytes": 532712,
+      "slices": 45,
+      "unique_chars": 554,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.bunka.go.jp/",
+      "bytes": 460556,
+      "slices": 39,
+      "unique_chars": 495,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.ndl.go.jp/",
+      "bytes": 312784,
+      "slices": 26,
+      "unique_chars": 190,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.jma.go.jp/jma/index.html",
+      "bytes": 381064,
+      "slices": 32,
+      "unique_chars": 169,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.metro.tokyo.lg.jp/",
+      "bytes": 507532,
+      "slices": 43,
+      "unique_chars": 633,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.u-tokyo.ac.jp/ja/index.html",
+      "bytes": 529600,
+      "slices": 45,
+      "unique_chars": 521,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.kyoto-u.ac.jp/ja",
+      "bytes": 583548,
+      "slices": 47,
+      "unique_chars": 421,
+      "coverage_pct": 99.76
+    },
+    {
+      "url": "https://www.aozora.gr.jp/cards/000148/files/789_14547.html",
+      "bytes": 2577432,
+      "slices": 107,
+      "unique_chars": 2255,
+      "coverage_pct": 99.96
+    },
+    {
+      "url": "https://www.aozora.gr.jp/cards/000081/files/456_15050.html",
+      "bytes": 2064248,
+      "slices": 94,
+      "unique_chars": 1114,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://qiita.com/",
+      "bytes": 440180,
+      "slices": 37,
+      "unique_chars": 383,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://zenn.dev/",
+      "bytes": 125444,
+      "slices": 9,
+      "unique_chars": 39,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://developer.mozilla.org/ja/docs/Web/CSS/font-family",
+      "bytes": 521392,
+      "slices": 37,
+      "unique_chars": 454,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://developers.cyberagent.co.jp/blog/",
+      "bytes": 388912,
+      "slices": 30,
+      "unique_chars": 269,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://tech.smarthr.jp/",
+      "bytes": 348392,
+      "slices": 29,
+      "unique_chars": 287,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://blog.recruit.co.jp/",
+      "bytes": 416440,
+      "slices": 35,
+      "unique_chars": 335,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://note.com/",
+      "bytes": 22932,
+      "slices": 2,
+      "unique_chars": 4,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://b.hatena.ne.jp/",
+      "bytes": 1037496,
+      "slices": 70,
+      "unique_chars": 1369,
+      "coverage_pct": 98.83
+    },
+    {
+      "url": "https://jp.mercari.com/",
+      "bytes": 42684,
+      "slices": 1,
+      "unique_chars": 3,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.rakuten.co.jp/",
+      "bytes": 122636,
+      "slices": 9,
+      "unique_chars": 56,
+      "coverage_pct": 100.0
+    },
+    {
+      "url": "https://www.yahoo.co.jp/",
+      "bytes": 474716,
+      "slices": 40,
+      "unique_chars": 288,
+      "coverage_pct": 100.0
+    }
+  ],
+  "google_fonts_measured_summary": {
+    "stats_all": {
+      "median": 521392,
+      "mean": 752803.0967741936,
+      "p10": 125444,
+      "p90": 2064248,
+      "min": 22932,
+      "max": 2680184,
+      "total": 23336896
+    },
+    "stats_train": {
+      "median": 521392,
+      "mean": 863833.3333333334,
+      "p10": 312784,
+      "p90": 2339196,
+      "min": 42684,
+      "max": 2680184,
+      "total": 18140500
+    },
+    "stats_test": {
+      "median": 532712,
+      "mean": 519639.6,
+      "p10": 22932,
+      "p90": 1014800,
+      "min": 22932,
+      "max": 1131620,
+      "total": 5196396
+    },
+    "slices": {
+      "median": 43,
+      "mean": 47.25806451612903,
+      "p10": 9,
+      "p90": 94,
+      "min": 1,
+      "max": 113,
+      "total": 1465
+    }
+  }
+}

@@ -1,0 +1,3833 @@
+[
+  {
+    "name": "Yahoo! JAPAN",
+    "genre": "portal",
+    "url": "https://www.yahoo.co.jp/",
+    "fetched_utc": "2026-11-11T07:35:10Z",
+    "status": 200,
+    "final_url": "https://www.yahoo.co.jp/",
+    "html_bytes": 166617,
+    "response_headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "X-Xss-Protection": "1; mode=block",
+      "Cache-Control": "private, no-cache, must-revalidate",
+      "Expires": "-1",
+      "Vary": "Accept-Encoding",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Accept-Ranges": "none",
+      "Content-Encoding": "br",
+      "Date": "Wed, 11 Nov 2026 07:35:11 GMT",
+      "Accept-CH": "Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Arch",
+      "Permissions-Policy": "ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-platform-version=*, ch-ua-arch=*, unload=()",
+      "Set-Cookie": "A=dau8539lf86lf&sd=A&t=1794382511&u=1794382511&v=1; expires=Thu, 11 Nov 2027 07:35:11 GMT; domain=.yahoo.co.jp; path=/; httponly; secure, XA=dau8539lf86lf&sd=A&t=1794382511&u=1794382511&v=1; expires=Thu, 11 Nov 2027 07:35:11 GMT; domain=.yahoo.co.jp; path=/; httponly; secure; samesite=none, B=6d9fd6d0-dda2-11f1-b0a4-0fdb48f7912c&v=6&u=1794382511&s=41; expires=Sat, 11-Nov-2028 07:35:11 GMT; path=/; domain=.yahoo.co.jp; secure, XB=6d9fd6d0-dda2-11f1-b0a4-0fdb48f7912c&v=6&u=1794382511&s=41; expires=Sat, 11-Nov-2028 07:35:11 GMT; path=/; domain=.yahoo.co.jp; secure; samesite=none",
+      "Age": "0",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive"
+    },
+    "title": "Yahoo! JAPAN",
+    "preloads": [],
+    "preconnects": [
+      {
+        "href": "//s.yimg.jp",
+        "rel": "dns-prefetch"
+      },
+      {
+        "href": "//yads.c.yimg.jp",
+        "rel": "dns-prefetch"
+      },
+      {
+        "href": "//logql.yahoo.co.jp",
+        "rel": "preconnect"
+      },
+      {
+        "href": "//yeas.yahoo.co.jp",
+        "rel": "preconnect"
+      },
+      {
+        "href": "//cas.criteo.com",
+        "rel": "preconnect"
+      },
+      {
+        "href": "//ybx-test.yahoo.co.jp",
+        "rel": "preconnect"
+      },
+      {
+        "href": "//quriosity.yahoo.co.jp",
+        "rel": "preconnect"
+      }
+    ],
+    "stylesheet_links_total": 1,
+    "stylesheets_fetched": [
+      {
+        "url": "https://s.yimg.jp/images/yjtop-pc/orion/20261106-072131/bundle_20261106-072131.css",
+        "status": 200,
+        "bytes": 1836437,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": null
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 4,
+    "top_font_family_values": [
+      [
+        "Arial,Helvetica,sans-serif",
+        2
+      ],
+      [
+        "YJTop Ellipsis",
+        1
+      ],
+      [
+        "YJTop Ellipsis,ãã©ã®ãè§ã´ ProN,Hiragino Kaku Gothic ProN,ã¡ã¤ãªãª,Meiryo,Osaka,ï¼­ï¼³ ï¼°ã´ã·ãã¯,MS PGothic,sans-serif",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "sans-serif",
+        3
+      ],
+      [
+        "Arial",
+        2
+      ],
+      [
+        "Helvetica",
+        2
+      ],
+      [
+        "YJTop Ellipsis",
+        2
+      ],
+      [
+        "ãã©ã®ãè§ã´ ProN",
+        1
+      ],
+      [
+        "Hiragino Kaku Gothic ProN",
+        1
+      ],
+      [
+        "ã¡ã¤ãªãª",
+        1
+      ],
+      [
+        "Meiryo",
+        1
+      ],
+      [
+        "Osaka",
+        1
+      ],
+      [
+        "ï¼­ï¼³ ï¼°ã´ã·ãã¯",
+        1
+      ],
+      [
+        "MS PGothic",
+        1
+      ]
+    ],
+    "unique_individual_families": 11,
+    "font_face_count": 1,
+    "font_faces": [
+      {
+        "family": "YJTop Ellipsis",
+        "style": null,
+        "weight": null,
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [],
+        "src_hosts": [],
+        "providers": [],
+        "source_css": "https://s.yimg.jp/images/yjtop-pc/orion/20261106-072131/bundle_20261106-072131.css"
+      }
+    ],
+    "font_face_providers": {},
+    "font_face_hosts": {},
+    "font_scripts": [],
+    "providers_detected": [],
+    "self_hosts_fonts": false,
+    "font_probes": []
+  },
+  {
+    "name": "NHK News",
+    "genre": "news",
+    "url": "https://www3.nhk.or.jp/news/",
+    "fetched_utc": "2026-11-11T07:35:12Z",
+    "status": 200,
+    "final_url": "https://news.web.nhk/newsweb",
+    "html_bytes": 1210797,
+    "response_headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "ETag": "W/\"pxT6tHTUevlWaVunzly-JQ\"",
+      "Link": "<https://imgu.web.nhk/news/u/nwo/top/bb1841df-97b9-41d3-8adc-1f5757c4eb25.jpeg>; rel=preload; as=\"image\", <https://imgu.web.nhk/news/u/nwo/top/f0ad0259-136c-404b-b358-d4c486f85bde.jpeg>; rel=preload; as=\"image\", <https://imgu.web.nhk/news/u/news/nd/kiji/20261111de73933/20261111de73933_E0000162834_1_l.jpg>; rel=preload; as=\"image\", <https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74142/20261111de74142_E0000163515_1_s.jpg>; rel=preload; as=\"image\", <https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74181/20261111de74181_E0000163597_1_s.jpg>; rel=preload; as=\"image\"",
+      "Content-Encoding": "gzip",
+      "Content-Length": "200486",
+      "Cache-Control": "public, max-age=60",
+      "Expires": "Wed, 11 Nov 2026 07:36:14 GMT",
+      "Date": "Wed, 11 Nov 2026 07:35:14 GMT",
+      "Connection": "keep-alive",
+      "Alt-Svc": "h3=\":443\"; ma=93600",
+      "x-content-type-options": "nosniff",
+      "x-robots-tag": "noarchive, max-image-preview:large",
+      "x-ua-compatible": "IE=edge",
+      "Content-Security-Policy": "upgrade-insecure-requests; frame-ancestors 'self' https://*.nhk https://*.nhk.jp https://*.nhk.or.jp;",
+      "Strict-Transport-Security": "max-age=63072000 ; includeSubDomains ; preload",
+      "Vary": "Accept-Encoding, Origin, Cookie, RSC, Next-Router-Prefetch, Next-Router-State-Tree, Next-Url, Next-Router-Segment-Prefetch, x-deployment-id",
+      "Akamai-GRN": "0.d8a93417.1794382514.408da17f"
+    },
+    "title": "NHKニュース 速報・最新情報",
+    "preloads": [
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de73934/20261111de73934_E0000162531_1_s.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74168/20261111de74168_E0000163590_1_s.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74183/20261111de74183_E0000163583_1_s.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74160/20261111de74160_E0000163568_1_s.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74128/20261111de74128_E0000163470_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74027/20261111de74027_E0000163175_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261110de73809/20261110de73809_E0000162540_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de74092/20261111de74092_E0000163373_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de73964/20261111de73964_E0000162701_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261111de73858/20261111de73858_E0000162182_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://news.web.nhk/_next/static/chunks/0td1v6n16kj2j.js?dpl=65ecdf6278b4078c2401b6b68f572439a8dfe84c",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://news.web.nhk/_next/static/chunks/2a1adyp8y6pc5.css?dpl=65ecdf6278b4078c2401b6b68f572439a8dfe84c",
+        "as": "style",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261109de72816/20261109de72816_E0000159233_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261109de72814/20261109de72814_E0000155204_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/news/nd/kiji/20261108de72314/20261108de72314_E0000163415_1_l.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://news.web.nhk/weather/tenki/tenki_01.jpg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/b996b304-5701-40b3-a8eb-16399e2d0ea3.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/4ae1927b-163d-4e8b-a38f-f6877ce1e624.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/c21d8f4f-4373-43e5-a59b-acfcef02e4d9.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/742ef074-f09a-485d-826d-ade80ae1e2e5.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/efd92741-db27-471d-b36c-b12412e5a129.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/fea211dd-9aac-4838-9386-ed2413e6fada.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/540192a5-8939-46d5-9987-0e8f8b83ecbb.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/74521c34-4657-4ea2-8907-f43110ba6681.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/e567a46b-dcde-4658-b052-9587e43293d8.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/0155c475-2fb2-4a92-9426-cfea6b6c8de1.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/7342f9fe-8d63-4d5f-a40d-75cca1610004.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/5c5517c5-5f1c-44be-b923-5911fe005a52.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/f0afc4df-43d4-47f0-abe6-73027f882708.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/9d6db5d4-a2dc-4ac7-9a2a-dffe7ce50ffd.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/1614a5f7-cc9c-478c-a809-b7ba717ed976.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/6b22daaa-f153-4118-a757-9e7fbbbbda50.jpeg",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://imgu.web.nhk/news/u/nwo/sp/pl/editorial-nwa-0000000130/a19350c4-aafc-43a2-8504-410c2c6d2f80.png",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      }
+    ],
+    "preconnects": [],
+    "stylesheet_links_total": 46,
+    "stylesheets_fetched": [
+      {
+        "url": "https://news.web.nhk/_next/static/chunks/2ttie3tyfckt-.css?dpl=65ecdf6278b4078c2401b6b68f572439a8dfe84c",
+        "status": 200,
+        "bytes": 123499,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": null
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 1,
+    "top_font_family_values": [
+      [
+        "BIZ UDPGothic\", \"Hiragino Sans\", sans-serif",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "BIZ UDPGothic",
+        1
+      ],
+      [
+        "Hiragino Sans",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "unique_individual_families": 3,
+    "font_face_count": 0,
+    "font_faces": [],
+    "font_face_providers": {},
+    "font_face_hosts": {},
+    "font_scripts": [],
+    "providers_detected": [],
+    "self_hosts_fonts": false,
+    "font_probes": []
+  },
+  {
+    "name": "Asahi Shimbun",
+    "genre": "news",
+    "url": "https://www.asahi.com/",
+    "fetched_utc": "2026-11-11T07:35:14Z",
+    "status": 200,
+    "final_url": "https://www.asahi.com/",
+    "html_bytes": 286179,
+    "response_headers": {
+      "Server": "nginx",
+      "Content-Type": "text/html",
+      "Set-Cookie": "LocChecked=1;expires=Wed, 11 Nov 2026 07:35:17 GMT; path=/;, bm_s=YAAQRlLNF1zpgrmhAQAAvlOIyQYDvUk6MUxHwkHOS8LwbhmHyf4lp4gXOQ00VnjwLTmSzxv+d0oK5hqfi+07m84JNc5QFxH8KqF9ssbwPP8Ldb9QrsE5Ks9I2svfk9Ie7Tk0sO5JCiKBqIgW2adlGzA3HJZBTGidhdrWHMbTSdswz+JVSC4AYSGlkqvOMJzyjm1FPWkU04cPDQ3GNfu1qAgxXNTn0ux0CvI0gT9b9az/QrrsCvNQqeLerkTXh5RaJlBcEdpgifpJo/tbDf4QdTLI/Nmmr5xCppkgL1fhBo5687FBkvt5K3EVgXaciH43RVf/0s/SH8De2RYgrm5OR+MRJUZf7jrgjIc1+gGtUkAnFHuEwdMJiuxqJuxdpju1GygaHT7Y3l5VY439By1h6/EnucA1SMkB2KU6c+l4nrVlv/Jdh3VkTynG4bIdUIlFpPJyqqGOb+DRt3+VZo4E3Ccoxv2IKGHfxecxLzs+NmrhudxjWXJY3JOmVjlBwC5BHfgUAG9KRcqszbEG2bJnyf/SIwv8uEBO3PkFLSgJ0cSG9/2zTR7gFk9TIhficMdl7hH8R0Qc4cwO53JiBg7cFJkqjmSURHEJOL7fEDfME67t8ZG15uzXxw==; Domain=.www.asahi.com; Path=/; Expires=Sat, 12 Dec 2026 07:35:17 GMT; Max-Age=2678400; SameSite=None; Secure; HttpOnly, bm_so=1A83792E100DB66251180B362BC974E1A680D4A1D570C37445F5BA02DCE1F353~YAAQRlLNF13pgrmhAQAAvlOIyQnuvaxr0kXHWauN7yj5dhyRqhZLz3nBlpapcFLTsbqCc+DE8vjgqm/Rsql36Y7a0Css4QK+QNna6j8Togc/x7JF80bWzFQJpDtkYIXAaRQRDNoV+OOOcRzHHxFDx1LUGWGh/P8wGof9gz4G1gt8TXkxokN4+FXOkFhgj15NuydfEGsq4JID+6Liwuvo9cXSHlFm9dn7sYMiyET1txbTjM0tUG1bzK+IHUIC2cay0VUpSYQCdMuf9uTkjNfVZjDIiTQaY/7U1ev/zQFxWtHZQZZValWGYMLlbrQBKS8WZ3tAHO9WD+aXUgOdbjvGq+oJsK6plRlabi/y/FZtUyZonRUJ12Qs+fr0fgnUA86MZB7+yMk/lECfZSA6MllxUm3+Sb75akqZxuPa4NHD90W8HD7w9ISK4WZBC2/cl9RKzDl4qA9W28GVxAgcHTX/cDQZqKJIgDxI5YH9LIdcCDqq6upkbviXtQ==~2; Domain=.www.asahi.com; Path=/; Expires=Thu, 12 Nov 2026 07:35:16 GMT; Max-Age=86399; SameSite=None; Secure",
+      "ETag": "W/\"6af41a0c-fef0\"",
+      "Vary": "Accept-Encoding",
+      "X-Akamai-Transformed": "0 286016 0 -",
+      "Content-Encoding": "gzip",
+      "Expires": "Wed, 11 Nov 2026 07:35:17 GMT",
+      "Cache-Control": "max-age=0, no-cache",
+      "Pragma": "no-cache",
+      "Date": "Wed, 11 Nov 2026 07:35:17 GMT",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive, Transfer-Encoding"
+    },
+    "title": "朝日新聞：朝日新聞社のニュースサイト",
+    "preloads": [],
+    "preconnects": [],
+    "stylesheet_links_total": 1,
+    "stylesheets_fetched": [
+      {
+        "url": "https://www.asahicom.jp/css/top.min.css",
+        "status": 200,
+        "bytes": 87674,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": "PWS/8.3.1.0.8"
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 1,
+    "top_font_family_values": [
+      [
+        "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Hiragino Kaku Gothic ProN\", \"Noto Sans JP\", \"Meiryo\", sans-serif",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "-apple-system",
+        1
+      ],
+      [
+        "BlinkMacSystemFont",
+        1
+      ],
+      [
+        "Segoe UI",
+        1
+      ],
+      [
+        "Roboto",
+        1
+      ],
+      [
+        "Hiragino Kaku Gothic ProN",
+        1
+      ],
+      [
+        "Noto Sans JP",
+        1
+      ],
+      [
+        "Meiryo",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ]
+    ],
+    "unique_individual_families": 8,
+    "font_face_count": 0,
+    "font_faces": [],
+    "font_face_providers": {},
+    "font_face_hosts": {},
+    "font_scripts": [],
+    "providers_detected": [],
+    "self_hosts_fonts": false,
+    "font_probes": []
+  },
+  {
+    "name": "Rakuten Ichiba",
+    "genre": "ecommerce",
+    "url": "https://www.rakuten.co.jp/",
+    "fetched_utc": "2026-11-11T07:35:16Z",
+    "status": 200,
+    "final_url": "https://www.rakuten.co.jp/",
+    "html_bytes": 172843,
+    "response_headers": {
+      "Server": "Apache",
+      "Pragma": "no-cache",
+      "Cache-Control": "private",
+      "Content-Encoding": "gzip",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "DENY",
+      "Content-Length": "29114",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Date": "Wed, 11 Nov 2026 07:35:23 GMT",
+      "Connection": "keep-alive",
+      "Vary": "Accept-Encoding, User-Agent"
+    },
+    "title": "【楽天市場】Shopping is Entertainment! ： インターネット最大級の通信販売、通販オンラインショッピングコミュニティ",
+    "preloads": [],
+    "preconnects": [],
+    "stylesheet_links_total": 3,
+    "stylesheets_fetched": [
+      {
+        "url": "https://r.r10s.jp/com/inc/home/20080930/spt/common/css/ichiba_top-1.6.3.min.css?v=20260730",
+        "status": 200,
+        "bytes": 71419,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": "cloudflare"
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 13,
+    "top_font_family_values": [
+      [
+        "Hiragino Kaku Gothic ProN",
+        5
+      ],
+      [
+        "ri-iconfont!important",
+        2
+      ],
+      [
+        "Roboto",
+        2
+      ],
+      [
+        "sans-serif",
+        1
+      ],
+      [
+        "Meiryo,Hiragino Kaku Gothic ProN,MS PGothic,sans-serif",
+        1
+      ],
+      [
+        "ri-iconfont",
+        1
+      ],
+      [
+        "MS PGothic,Osaka,Arial,sans-serif",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "Hiragino Kaku Gothic ProN",
+        6
+      ],
+      [
+        "sans-serif",
+        3
+      ],
+      [
+        "MS PGothic",
+        2
+      ],
+      [
+        "ri-iconfont!important",
+        2
+      ],
+      [
+        "Roboto",
+        2
+      ],
+      [
+        "Meiryo",
+        1
+      ],
+      [
+        "ri-iconfont",
+        1
+      ],
+      [
+        "Osaka",
+        1
+      ],
+      [
+        "Arial",
+        1
+      ]
+    ],
+    "unique_individual_families": 9,
+    "font_face_count": 1,
+    "font_faces": [
+      {
+        "family": "ri-iconfont",
+        "style": "normal",
+        "weight": "400",
+        "display": "block",
+        "unicode_range": false,
+        "src_urls": [
+          "https://r.r10s.jp/com/inc/smart/fonts/2.1.0/ri-iconfont.eot?9mpo4l"
+        ],
+        "src_hosts": [
+          "r.r10s.jp"
+        ],
+        "providers": [
+          "third-party"
+        ],
+        "source_css": "https://r.r10s.jp/com/inc/home/20080930/spt/common/css/ichiba_top-1.6.3.min.css?v=20260730"
+      }
+    ],
+    "font_face_providers": {
+      "third-party": 1
+    },
+    "font_face_hosts": {
+      "r.r10s.jp": 1
+    },
+    "font_scripts": [],
+    "providers_detected": [
+      "third-party"
+    ],
+    "self_hosts_fonts": false,
+    "font_probes": []
+  },
+  {
+    "name": "Mercari",
+    "genre": "marketplace",
+    "url": "https://jp.mercari.com/",
+    "fetched_utc": "2026-11-11T07:35:22Z",
+    "status": 200,
+    "final_url": "https://jp.mercari.com/",
+    "html_bytes": 531688,
+    "response_headers": {
+      "Date": "Wed, 11 Nov 2026 07:35:25 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "Set-Cookie": "mercari-shd-uuid-lb=0d160645-96ac-4a5d-be4c-25a97855caf4; Path=/; Expires=Thu, 11 Nov 2027 07:35:25 GMT; Domain=mercari.com; Secure; SameSite=lax, version=main; path=/; max-age=7200, country_code=JP; path=/; Secure; max-age=2592000, __cf_bm=pSmzMKpLcKR7G0oJ29z0u6f6.JEdK.t.q7SMT4j8vBk-1794382525.4432385-1.0.1.1-Y18ly4pSOJeJspV_AqUoXDzU2MeJpzbjWdWW06eB9ayGJZRsfSO1Mcs2bzFZvbvRw6gfDQyQlKOWYcBg2ZrMtjscCV6O8hmKvbaI8LLBX8.IJbCg8t5qIcm_rOX2wBUj; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=jp.mercari.com; Expires=Wed, 11 Nov 2026 08:05:25 GMT, _cfuvid=gyf9ExLy0j.eV6GSSxEj2yWLw8Hgp9tQGnRQoi.O8GU-1794382525.4432385-1.0.1.1-R3OMV7sCWfpodPMaSY.JJXaoNxjvRegwZg23YztsXUo; HttpOnly; SameSite=None; Secure; Path=/; Domain=jp.mercari.com",
+      "CF-Ray": "a58b9ec00855e469-NRT",
+      "CF-Cache-Status": "DYNAMIC",
+      "Cache-Control": "no-cache",
+      "Content-Encoding": "gzip",
+      "Server": "cloudflare",
+      "x-middleware-rewrite": "/ja/",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "Via": "1.1 google",
+      "X-Frame-Options": "SAMEORIGIN",
+      "accept-ch": "Sec-CH-Prefers-Color-Scheme",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "content-security-policy-report-only": "object-src 'none'; frame-ancestors 'none'; base-uri 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.mercdn.net https://www.google.com https://*.adtrafficquality.google https://*.g.doubleclick.net https://analytics.tiktok.com https://b99.yahoo.co.jp https://bat.bing.com https://*.smartnews-ads.com https://connect.facebook.net https://ct.pinterest.com https://d.line-scdn.net https://dmp.im-apps.net https://dynamic.criteo.com https://h.accesstrade.net https://s.pinimg.com https://s.yimg.jp https://*.criteo.com https://static.ads-twitter.com https://statics.a8.net https://*.blob.core.windows.net https://trj.valuecommerce.com https://*.google-analytics.com https://apps.rokt.com https://apps.rokt-api.com https://apps.roktecommerce.com https://sourcemaps-wsdk.roktinternal.com https://*.forter.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://*.mercdn.net https://fonts.googleapis.com; font-src https://fonts.gstatic.com;",
+      "x-envoy-upstream-service-time": "474"
+    },
+    "title": "メルカリ - 日本最大のフリマサービス",
+    "preloads": [
+      {
+        "href": "https://web-jp-assets-v2.mercdn.net/_next/static/chunks/webpack-5b787585bca80393.js?dpl=0d4ab0923e23960c4d7ff1e2582ae5b58bd18ce4",
+        "as": "script",
+        "type": null,
+        "crossorigin": ""
+      },
+      {
+        "href": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://www.google.com/adsense/search/ads.js",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      }
+    ],
+    "preconnects": [
+      {
+        "href": "https://web-jp-assets-v2.mercdn.net",
+        "rel": "preconnect"
+      },
+      {
+        "href": "https://auth.mercari.com",
+        "rel": "preconnect"
+      }
+    ],
+    "stylesheet_links_total": 4,
+    "stylesheets_fetched": [
+      {
+        "url": "https://web-jp-assets-v2.mercdn.net/_next/static/css/d44740eb8efb1500.css?dpl=0d4ab0923e23960c4d7ff1e2582ae5b58bd18ce4",
+        "status": 200,
+        "bytes": 168707,
+        "content_type": "text/css",
+        "content_encoding": "br",
+        "server": "cloudflare"
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 3,
+    "top_font_family_values": [
+      [
+        "Helvetica Neue,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo sans-serif",
+        2
+      ],
+      [
+        "Helvetica Neue,Arial,PingFang TC,Noto Sans TC,Microsoft JhengHei,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo sans-serif",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "Helvetica Neue",
+        3
+      ],
+      [
+        "Arial",
+        3
+      ],
+      [
+        "Hiragino Kaku Gothic ProN",
+        3
+      ],
+      [
+        "Hiragino Sans",
+        3
+      ],
+      [
+        "Meiryo sans-serif",
+        3
+      ],
+      [
+        "PingFang TC",
+        1
+      ],
+      [
+        "Noto Sans TC",
+        1
+      ],
+      [
+        "Microsoft JhengHei",
+        1
+      ]
+    ],
+    "unique_individual_families": 8,
+    "font_face_count": 0,
+    "font_faces": [],
+    "font_face_providers": {},
+    "font_face_hosts": {},
+    "font_scripts": [],
+    "providers_detected": [],
+    "self_hosts_fonts": false,
+    "font_probes": []
+  },
+  {
+    "name": "note",
+    "genre": "blog platform",
+    "url": "https://note.com/",
+    "fetched_utc": "2026-11-11T07:35:24Z",
+    "status": 200,
+    "final_url": "https://note.com/",
+    "html_bytes": 108184,
+    "response_headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "Date": "Wed, 11 Nov 2026 07:35:27 GMT",
+      "x-envoy-upstream-service-time": "32",
+      "content-encoding": "br",
+      "x-content-type-options": "nosniff",
+      "strict-transport-security": "max-age=31536000",
+      "cache-control": "private, no-cache, max-age=0, must-revalidate",
+      "content-security-policy": "script-src 'self' https: 'nonce-Y2Y1OTc4YzctZGMxNi00NjM3LTk0MmEtOGU2YWRkY2ExNDlj' 'strict-dynamic' 'unsafe-inline' https://note.com https://frontend.st-note.com https://d291vdycu0ht11.cloudfront.net https://d2l930y2yx77uc.cloudfront.net https://cdn.st-note.com https://www.googletagmanager.com https://www.google-analytics.com https://www.googleanalytics.com https://www.googleoptimize.com https://optimize.google.com https://*.facebook.net https://*.instagram.com https://platform.twitter.com https://*.twimg.com https://cdn.iframe.ly https://iframely.net https://cdn.embedly.com https://*.tiktok.com https://*.tiktokcdn.com https://*.ibytedtos.com https://speakerdeck.com https://*.flickr.com https://*.mul-pay.jp https://stage-travel.fraudprevention.jp https://travel.fraudprevention.jp https://www.datadoghq-browser-agent.com http://cloudfront.loggly.com https://*.canva.com https://*.ttwstatic.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://assets.kurashiru.com/ https://*.hsadspixel.net https://*.hs-analytics.net https://js.hscta.net https://*.hubspot.com https://static.hsappstatic.net https://*.usemessages.com https://*.hs-banner.com https://*.hubspotusercontent00.net https://*.hubspotusercontent10.net https://*.hubspotusercontent20.net https://*.hubspotusercontent30.net https://*.hubspotusercontent40.net https://*.hubspot.net https://*.hscollectedforms.net https://*.hsleadflows.net https://*.hsforms.net https://*.hsforms.com https://*.hs-scripts.com https://*.hubspotfeedback.com https://feedback.hubapi.com https://static.ads-twitter.com https://static.paypay.ne.jp; object-src 'none'; base-uri 'self'; frame-ancestors 'self' https://*.note.com;",
+      "set-cookie": "note_gql_auth_token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Domain=.note.com, _note_session_v5=83b03a04647c0d2f809145cffd672dc1; Path=/; Expires=Wed, 18 Nov 2026 06:56:58 GMT; Domain=.note.com; Secure; HttpOnly, note_web_visitor_id=c18d3cbc-4823-49a9-a3f4-c06660a48d04; Path=/; Expires=Thu, 11 Nov 2027 07:35:27 GMT; Max-Age=31536000; Domain=.note.com; Secure; HttpOnly; SameSite=lax",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "link": "<https://assets.st-note.com/poc-image/manual/note-common-images/production/illust/bg_singup.png?height=92>; rel=preload; as=\"image\"; fetchpriority=\"high\", <https://frontend.st-note.com/next/_next/static/css/879bf88004d1ca04.css>; rel=preload; as=\"style\"; nonce=\"Y2Y1OTc4YzctZGMxNi00NjM3LTk0MmEtOGU2YWRkY2ExNDlj\", <https://frontend.st-note.com/next/_next/static/css/fc1a10cec848c2d4.css>; rel=preload; as=\"style\"; nonce=\"Y2Y1OTc4YzctZGMxNi00NjM3LTk0MmEtOGU2YWRkY2ExNDlj\"",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 e305d35a45c21e7fc596b47057d6990a.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "NRT20-P2",
+      "X-Amz-Cf-Id": "M9a21mJjMnAe7m5LtrswU67Ii3eFzjjaScm8CXg9iFhmLj_JFpsmzQ=="
+    },
+    "title": "note ――つくる、つながる、とどける。",
+    "preloads": [
+      {
+        "href": "https://frontend.st-note.com/next/_next/static/chunks/webpack-c6b5211bd1f19067.js",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://www.googletagmanager.com/gtag/js?id=G-J9CPC3WE56",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      }
+    ],
+    "preconnects": [
+      {
+        "href": "https://d2l930y2yx77uc.cloudfront.net",
+        "rel": "preconnect"
+      },
+      {
+        "href": "https://assets.st-note.com",
+        "rel": "preconnect"
+      },
+      {
+        "href": "https://www.google-analytics.com",
+        "rel": "preconnect"
+      }
+    ],
+    "stylesheet_links_total": 4,
+    "stylesheets_fetched": [
+      {
+        "url": "https://frontend.st-note.com/next/_next/static/css/879bf88004d1ca04.css",
+        "status": 200,
+        "bytes": 174576,
+        "content_type": "text/css",
+        "content_encoding": "br",
+        "server": "AmazonS3"
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 3,
+    "top_font_family_values": [
+      [
+        "ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji",
+        1
+      ],
+      [
+        "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace",
+        1
+      ],
+      [
+        "Hiragino Sans",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "ui-sans-serif",
+        1
+      ],
+      [
+        "system-ui",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ],
+      [
+        "Apple Color Emoji",
+        1
+      ],
+      [
+        "Segoe UI Emoji",
+        1
+      ],
+      [
+        "Segoe UI Symbol",
+        1
+      ],
+      [
+        "Noto Color Emoji",
+        1
+      ],
+      [
+        "ui-monospace",
+        1
+      ],
+      [
+        "SFMono-Regular",
+        1
+      ],
+      [
+        "Menlo",
+        1
+      ],
+      [
+        "Monaco",
+        1
+      ],
+      [
+        "Consolas",
+        1
+      ],
+      [
+        "Liberation Mono",
+        1
+      ],
+      [
+        "Courier New",
+        1
+      ],
+      [
+        "monospace",
+        1
+      ]
+    ],
+    "unique_individual_families": 16,
+    "font_face_count": 0,
+    "font_faces": [],
+    "font_face_providers": {},
+    "font_face_hosts": {},
+    "font_scripts": [],
+    "providers_detected": [],
+    "self_hosts_fonts": false,
+    "font_probes": []
+  },
+  {
+    "name": "Qiita",
+    "genre": "tech community",
+    "url": "https://qiita.com/",
+    "fetched_utc": "2026-11-11T07:35:26Z",
+    "status": 200,
+    "final_url": "https://qiita.com/",
+    "html_bytes": 381523,
+    "response_headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "Date": "Wed, 11 Nov 2026 07:35:29 GMT",
+      "Strict-Transport-Security": "max-age=2592000",
+      "Content-Encoding": "gzip",
+      "Server": "nginx",
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-XSS-Protection": "0",
+      "X-Content-Type-Options": "nosniff",
+      "X-Permitted-Cross-Domain-Policies": "none",
+      "Referrer-Policy": "strict-origin-when-cross-origin",
+      "link": "<https://cdn.qiita.com/assets/public/home-fc738adac0e5384f835e91da6ef14c0f.min.css>; rel=preload; as=style; nopush,<https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0..1,-25..0>; rel=preload; as=style; nopush",
+      "ETag": "W/\"4d2f99345b3cab6a95229fe9ae8052ab\"",
+      "Cache-Control": "max-age=0, private, must-revalidate",
+      "Set-Cookie": "_qiita_login_session=s9BQWUsVdGta%2BMh2VInJKLq8tpYrBxK%2FQWnhVwjBJ8G2EmchgNR6Bvzl4kZ1IB%2Fibc3exFrvc%2BQBeq1zJ%2B8onjom40Yf%2F2HV6PS9%2FUaVnIMHddJAJsbHPEvi5snVCxwn6BNKJLRI3wmkwri1RyRzw8ijLpxWM7cVUHBppsm39XPYruP7ymym0SSOFV36QbZf6jKcFSwkmmMgI3SM4DrkCDWUeB7xxP03H43zhRINpCIvOSZ%2F8i8DljZnXI4cduO%2FnCYBwZ%2BjoW1HxJlR7UxsC%2BNm2ayzaHJ38IpyETECpgwf9rFEK%2FafN7qrnAwlLlS2Dc0%3D--ImPpkH5DTBkIg6uD--THFxMaGEUsfDADN6iXNLQg%3D%3D; domain=qiita.com; path=/; expires=Thu, 11 Nov 2027 07:35:29 GMT; HttpOnly; SameSite=Lax",
+      "X-Request-Id": "8f897906-8193-4502-b339-d2671a022564",
+      "X-Runtime": "0.300173",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 3bf00a4dd6a940e1f87d382806e0bd00.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "NRT57-P3",
+      "X-Amz-Cf-Id": "J1JKBdIIImo0dQcI17SAk3jrGSuySn3nsoQbo8VJVwayt3D9nFgAiQ=="
+    },
+    "title": "Qiita",
+    "preloads": [
+      {
+        "href": "https://www.googletagservices.com/tag/js/gpt.js",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://fam.adingo.jp/bid-strap/qiita/pb.js",
+        "as": "script",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://qiita-official-contents.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-official-event-image%2F10a84e41871be185042c45cc78734a78cbaa8299%2Foriginal.jpg%3F1793276424?ixlib=rb-4.1.1&auto=compress%2Cformat&s=c6ef22e147c27b620dfe333398b31715",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://qiita-official-contents.imgix.net/https%3A%2F%2Fs3-ap-northeast-1.amazonaws.com%2Fqiita-official-event-image%2Fbe1614e33c3acdc0559da25e4b7123b257a0958e%2Foriginal.jpg%3F1793276424?ixlib=rb-4.1.1&auto=compress%2Cformat&s=6cfa2e180c283c6337302ab96729e9e0",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+        "as": "style",
+        "type": null,
+        "crossorigin": "anonymous"
+      }
+    ],
+    "preconnects": [
+      {
+        "href": "https://securepubads.g.doubleclick.net",
+        "rel": "preconnect"
+      }
+    ],
+    "stylesheet_links_total": 3,
+    "stylesheets_fetched": [
+      {
+        "url": "https://cdn.qiita.com/assets/public/home-fc738adac0e5384f835e91da6ef14c0f.min.css",
+        "status": 200,
+        "bytes": 92002,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": "AmazonS3"
+      },
+      {
+        "url": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0..1,-25..0",
+        "status": 200,
+        "bytes": 662,
+        "content_type": "text/css; charset=utf-8",
+        "content_encoding": "gzip",
+        "server": "ESF"
+      },
+      {
+        "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+        "status": 200,
+        "bytes": 31000,
+        "content_type": "text/css; charset=utf-8",
+        "content_encoding": "br",
+        "server": "cloudflare"
+      }
+    ],
+    "font_service_links": [
+      "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0..1,-25..0"
+    ],
+    "font_family_declaration_count": 8,
+    "top_font_family_values": [
+      [
+        "YakuHanJPs\",\"-apple-system\",\"BlinkMacSystemFont\",\"Segoe UI\",\"Hiragino Sans\",\"Hiragino Kaku Gothic ProN\",\"Meiryo\",sans-serif",
+        3
+      ],
+      [
+        "Material Symbols Outlined",
+        2
+      ],
+      [
+        "YakuHanJPs\",\"-apple-system\",\"BlinkMacSystemFont\",\"Segoe UI\",\"Hiragino Kaku Gothic ProN\",\"Hiragino Sans\",\"Noto Sans JP\",\"BIZ UDPGothic\",\"Meiryo\",sans-serif",
+        1
+      ],
+      [
+        "monospace,monospace",
+        1
+      ],
+      [
+        "FontAwesome",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "YakuHanJPs",
+        4
+      ],
+      [
+        "-apple-system",
+        4
+      ],
+      [
+        "BlinkMacSystemFont",
+        4
+      ],
+      [
+        "Segoe UI",
+        4
+      ],
+      [
+        "Hiragino Kaku Gothic ProN",
+        4
+      ],
+      [
+        "Hiragino Sans",
+        4
+      ],
+      [
+        "Meiryo",
+        4
+      ],
+      [
+        "sans-serif",
+        4
+      ],
+      [
+        "monospace",
+        2
+      ],
+      [
+        "Material Symbols Outlined",
+        2
+      ],
+      [
+        "Noto Sans JP",
+        1
+      ],
+      [
+        "BIZ UDPGothic",
+        1
+      ],
+      [
+        "FontAwesome",
+        1
+      ]
+    ],
+    "unique_individual_families": 13,
+    "font_face_count": 2,
+    "font_faces": [
+      {
+        "family": "Material Symbols Outlined",
+        "style": "normal",
+        "weight": "500",
+        "display": null,
+        "unicode_range": false,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/materialsymbolsoutlined/v383/kJEPBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzB_guZ5QyRzayHcfdY40yxrjGyv3fzR1BO1Q.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0..1,-25..0"
+      },
+      {
+        "family": "FontAwesome",
+        "style": "normal",
+        "weight": "normal",
+        "display": null,
+        "unicode_range": false,
+        "src_urls": [
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0"
+        ],
+        "src_hosts": [
+          "cdnjs.cloudflare.com"
+        ],
+        "providers": [
+          "external CDN"
+        ],
+        "source_css": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      }
+    ],
+    "font_face_providers": {
+      "Google Fonts": 1,
+      "external CDN": 1
+    },
+    "font_face_hosts": {
+      "fonts.gstatic.com": 1,
+      "cdnjs.cloudflare.com": 1
+    },
+    "font_scripts": [],
+    "providers_detected": [
+      "Google Fonts",
+      "external CDN"
+    ],
+    "self_hosts_fonts": false,
+    "font_probes": [
+      {
+        "url": "https://fonts.gstatic.com/s/materialsymbolsoutlined/v383/kJEPBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzB_guZ5QyRzayHcfdY40yxrjGyv3fzR1BO1Q.woff2",
+        "status": 200,
+        "final_url": "https://fonts.gstatic.com/s/materialsymbolsoutlined/v383/kJEPBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzB_guZ5QyRzayHcfdY40yxrjGyv3fzR1BO1Q.woff2",
+        "content_length": 1134820,
+        "content_type": "font/woff2",
+        "server": "sffe",
+        "cache_control": "public, max-age=31536000",
+        "access_control_allow_origin": "*",
+        "last_modified": "Mon, 02 Nov 2026 18:58:47 GMT",
+        "etag": null,
+        "via": null,
+        "x_cache": null,
+        "provider": "Google Fonts"
+      }
+    ]
+  },
+  {
+    "name": "Zenn",
+    "genre": "tech community",
+    "url": "https://zenn.dev/",
+    "fetched_utc": "2026-11-11T07:35:31Z",
+    "status": 200,
+    "final_url": "https://zenn.dev/",
+    "html_bytes": 274842,
+    "response_headers": {
+      "Date": "Wed, 11 Nov 2026 07:35:31 GMT",
+      "Content-Type": "text/html; charset=utf-8",
+      "Transfer-Encoding": "chunked",
+      "Connection": "keep-alive",
+      "x-frame-options": "SAMEORIGIN",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "Cache-Control": "public, max-age=0, s-maxage=900",
+      "content-security-policy": "script-src 'self' https: 'strict-dynamic' 'nonce-aDsxZ/MR28WZn8G0W2/XfZnBJIfeX0GRW/vrbLq6cNQ=' https://embed.zenn.studio/js/listen-embed-event.js www.googletagmanager.com https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js;object-src 'none';base-uri 'none';report-uri https://asia-northeast1-zenn-dev-production.cloudfunctions.net/csp-logger;",
+      "x-powered-by": "Next.js",
+      "etag": "\"ycbd2yz7pd5978\"",
+      "vary": "Accept-Encoding",
+      "Content-Encoding": "gzip",
+      "Server": "cloudflare",
+      "via": "1.1 google",
+      "Age": "734",
+      "cf-cache-status": "HIT",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9WLZxeiXxMKtsDiB3ZyE8a26%2B4cgfzQvQQL4Cf98dTEx5%2BnT24CRofWRgEa%2FAlVfd%2B%2B5RETgmSTxdEPGNU46VJO6ZA%2BKcLy4eWAtTz%2FyIQK7RiTCHc%2FH6s3A\"}]}",
+      "CF-RAY": "a58b9ee8be10e379-NRT"
+    },
+    "title": "Zenn｜エンジニアのための情報共有コミュニティ",
+    "preloads": [
+      {
+        "href": "https://static.zenn.studio/_next/static/chunks/3jz7s_pu4iopl.css",
+        "as": "style",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://static.zenn.studio/_next/static/chunks/2b0o6t7amkok6.css",
+        "as": "style",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://static.zenn.studio/_next/static/chunks/0pbw5ml5imdu9.css",
+        "as": "style",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://static.zenn.studio/_next/static/chunks/1xbo748hbwtff.css",
+        "as": "style",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://static.zenn.studio/_next/static/chunks/3s1tzsz43gujp.css",
+        "as": "style",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://static.zenn.studio/_next/static/chunks/13p2sg1nc9ijg.css",
+        "as": "style",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://static.zenn.studio/permanent/event/zennfes-autumn-2026/thumbnail.png",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://storage.googleapis.com/zenn-dev-production-static-asset/permanent/hackathon/google-cloud-japan-ai-hackathon-vol5/bannerIcon.png",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://static.zenn.studio/images/arrow-proceed.png",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      }
+    ],
+    "preconnects": [],
+    "stylesheet_links_total": 6,
+    "stylesheets_fetched": [
+      {
+        "url": "https://static.zenn.studio/_next/static/chunks/3jz7s_pu4iopl.css",
+        "status": 200,
+        "bytes": 2023,
+        "content_type": "text/css; charset=UTF-8",
+        "content_encoding": "gzip",
+        "server": "cloudflare"
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 2,
+    "top_font_family_values": [
+      [
+        "Inter",
+        2
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "Inter",
+        2
+      ]
+    ],
+    "unique_individual_families": 1,
+    "font_face_count": 2,
+    "font_faces": [
+      {
+        "family": "Inter",
+        "style": null,
+        "weight": "600",
+        "display": "swap",
+        "unicode_range": false,
+        "src_urls": [
+          "https://static.zenn.studio/fonts/inter-v3-latin-600.woff2"
+        ],
+        "src_hosts": [
+          "static.zenn.studio"
+        ],
+        "providers": [
+          "third-party"
+        ],
+        "source_css": "https://zenn.dev/"
+      },
+      {
+        "family": "Inter",
+        "style": null,
+        "weight": "700",
+        "display": "swap",
+        "unicode_range": false,
+        "src_urls": [
+          "https://static.zenn.studio/fonts/inter-v3-latin-700.woff2"
+        ],
+        "src_hosts": [
+          "static.zenn.studio"
+        ],
+        "providers": [
+          "third-party"
+        ],
+        "source_css": "https://zenn.dev/"
+      }
+    ],
+    "font_face_providers": {
+      "third-party": 2
+    },
+    "font_face_hosts": {
+      "static.zenn.studio": 2
+    },
+    "font_scripts": [],
+    "providers_detected": [
+      "third-party"
+    ],
+    "self_hosts_fonts": false,
+    "font_probes": [
+      {
+        "url": "https://static.zenn.studio/fonts/inter-v3-latin-600.woff2",
+        "status": 200,
+        "final_url": "https://static.zenn.studio/fonts/inter-v3-latin-600.woff2",
+        "content_length": 18096,
+        "content_type": "font/woff2",
+        "server": "cloudflare",
+        "cache_control": "public, max-age=259200",
+        "access_control_allow_origin": "*",
+        "last_modified": "Tue, 10 Nov 2026 07:57:22 GMT",
+        "etag": "W/\"46b0-1a1c4762ed0\"",
+        "via": "1.1 google",
+        "x_cache": null,
+        "provider": "third-party"
+      },
+      {
+        "url": "https://static.zenn.studio/fonts/inter-v3-latin-700.woff2",
+        "status": 200,
+        "final_url": "https://static.zenn.studio/fonts/inter-v3-latin-700.woff2",
+        "content_length": 18020,
+        "content_type": "font/woff2",
+        "server": "cloudflare",
+        "cache_control": "public, max-age=259200",
+        "access_control_allow_origin": "*",
+        "last_modified": "Tue, 10 Nov 2026 07:57:22 GMT",
+        "etag": "W/\"4664-1a1c4762ed0\"",
+        "via": "1.1 google",
+        "x_cache": null,
+        "provider": "third-party"
+      }
+    ]
+  },
+  {
+    "name": "SmartHR Tech Blog",
+    "genre": "corporate blog",
+    "url": "https://tech.smarthr.jp/",
+    "fetched_utc": "2026-11-11T07:35:33Z",
+    "status": 200,
+    "final_url": "https://tech.smarthr.jp/",
+    "html_bytes": 85069,
+    "response_headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Length": "11437",
+      "Connection": "keep-alive",
+      "Server": "nginx",
+      "Date": "Wed, 11 Nov 2026 07:35:33 GMT",
+      "Cache-Control": "private",
+      "Vary": "Accept-Encoding, Accept-Encoding",
+      "Access-Control-Allow-Origin": "*",
+      "Content-Security-Policy": "frame-ancestors 'none'; upgrade-insecure-requests",
+      "Content-Security-Policy-Report-Only": "block-all-mixed-content; report-uri https://blog.hatena.ne.jp/api/csp_report",
+      "P3P": "CP=\"OTI CUR OUR BUS STA\"",
+      "X-Cache-Only-Varnish": "1",
+      "X-Content-Type-Options": "nosniff",
+      "X-Frame-Options": "DENY",
+      "X-Revision": "9a80ae089eb7c358342ea26bc2dd71",
+      "X-XSS-Protection": "1",
+      "X-Runtime": "0.086416",
+      "Content-Encoding": "gzip",
+      "X-Varnish": "670396 853135",
+      "Accept-Ranges": "bytes",
+      "X-Proxy-Revision": "9a80ae089eb7c358342ea26bc2dd71b57557959d",
+      "X-Cache": "Miss from cloudfront",
+      "Via": "1.1 ae5cd16816f13348a49200028329438a.cloudfront.net (CloudFront)",
+      "X-Amz-Cf-Pop": "NRT57-P3",
+      "X-Amz-Cf-Id": "-Bjy55Yu7EwgNZFb4cL_lJF8uAK_Yg_5O1tMmCwQh8jZ35qZ8GFNTA==",
+      "Age": "4909"
+    },
+    "title": "SmartHR Tech Blog",
+    "preloads": [
+      {
+        "href": "https://cdn-ak.f.st-hatena.com/images/fotolife/m/masuP/20210610/20210610124634.png",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      },
+      {
+        "href": "https://cdn.image.st-hatena.com/image/scale/c72d89bb56c072ed5ee3fa5c00a6980e669b3953/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fsmarthr%2F20261111%2F20261111120338.png",
+        "as": "image",
+        "type": null,
+        "crossorigin": null
+      }
+    ],
+    "preconnects": [],
+    "stylesheet_links_total": 2,
+    "stylesheets_fetched": [
+      {
+        "url": "https://cdn.blog.st-hatena.com/css/blog.css?version=9a80ae089eb7c358342ea26bc2dd71",
+        "status": 200,
+        "bytes": 66186,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": "nginx"
+      }
+    ],
+    "font_service_links": [],
+    "font_family_declaration_count": 15,
+    "top_font_family_values": [
+      [
+        "Monaco,Consolas,Courier New,Courier,monospace,sans-serif",
+        3
+      ],
+      [
+        "Helvetica Neue,Helvetica,Arial,ãã©ã®ãè§ã´ Pro W3,Hiragino Kaku Gothic Pro,ã¡ã¤ãªãª,Meiryo,ï¼­ï¼³ ï¼°ã´ã·ãã¯,MS PGothic,sans-serif",
+        2
+      ],
+      [
+        "blogicon",
+        2
+      ],
+      [
+        "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif",
+        2
+      ],
+      [
+        "Helvetica,Ariel,sans-serif",
+        1
+      ],
+      [
+        "Helvetica",
+        1
+      ],
+      [
+        "Mona,IPA MONAPGOTHIC,MS PGothic,ï¼­ï¼³ ï¼°ã´ã·ãã¯,MS Pï½ºï¾ï½¼ï½¯ï½¸,MS Pã´ã·ãã¯,sans-serif",
+        1
+      ],
+      [
+        "Helvetica,Arial,ãã©ã®ãè§ã´ Pro W3,Hiragino Kaku Gothic Pro,sans-serif",
+        1
+      ],
+      [
+        "sans-serif",
+        1
+      ],
+      [
+        "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,æ¸¸ã´ã·ãã¯ä½,YuGothic,æ¸¸ã´ã·ãã¯ Medium,Yu Gothic Medium,æ¸¸ã´ã·ãã¯,Yu Gothic,ã¡ã¤ãªãª,Meiryo,sans-serif",
+        1
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "sans-serif",
+        12
+      ],
+      [
+        "Helvetica",
+        8
+      ],
+      [
+        "Arial",
+        5
+      ],
+      [
+        "ãã©ã®ãè§ã´ Pro W3",
+        3
+      ],
+      [
+        "Hiragino Kaku Gothic Pro",
+        3
+      ],
+      [
+        "ã¡ã¤ãªãª",
+        3
+      ],
+      [
+        "Meiryo",
+        3
+      ],
+      [
+        "ï¼­ï¼³ ï¼°ã´ã·ãã¯",
+        3
+      ],
+      [
+        "MS PGothic",
+        3
+      ],
+      [
+        "Monaco",
+        3
+      ],
+      [
+        "Consolas",
+        3
+      ],
+      [
+        "Courier New",
+        3
+      ],
+      [
+        "Courier",
+        3
+      ],
+      [
+        "monospace",
+        3
+      ],
+      [
+        "-apple-system",
+        3
+      ]
+    ],
+    "unique_individual_families": 30,
+    "font_face_count": 1,
+    "font_faces": [
+      {
+        "family": "blogicon",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": false,
+        "src_urls": [
+          "https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.woff?version=9a80ae089eb7c358342ea26bc2dd71",
+          "https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.otf?version=9a80ae089eb7c358342ea26bc2dd71"
+        ],
+        "src_hosts": [
+          "cdn.blog.st-hatena.com"
+        ],
+        "providers": [
+          "external CDN"
+        ],
+        "source_css": "https://cdn.blog.st-hatena.com/css/blog.css?version=9a80ae089eb7c358342ea26bc2dd71"
+      }
+    ],
+    "font_face_providers": {
+      "external CDN": 1
+    },
+    "font_face_hosts": {
+      "cdn.blog.st-hatena.com": 1
+    },
+    "font_scripts": [],
+    "providers_detected": [
+      "external CDN"
+    ],
+    "self_hosts_fonts": false,
+    "font_probes": [
+      {
+        "url": "https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.woff?version=9a80ae089eb7c358342ea26bc2dd71",
+        "status": 200,
+        "final_url": "https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.woff?version=9a80ae089eb7c358342ea26bc2dd71",
+        "content_length": 22828,
+        "content_type": "font/woff",
+        "server": "nginx",
+        "cache_control": "max-age=315360000",
+        "access_control_allow_origin": "*",
+        "last_modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "etag": "\"c5fbd702af35da734a8e92e55d70ed45\"",
+        "via": "1.1 31c766ca012c76de76b26ec9e2a74486.cloudfront.net (CloudFront)",
+        "x_cache": "Hit from cloudfront",
+        "provider": "external CDN"
+      },
+      {
+        "url": "https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.otf?version=9a80ae089eb7c358342ea26bc2dd71",
+        "status": 200,
+        "final_url": "https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.otf?version=9a80ae089eb7c358342ea26bc2dd71",
+        "content_length": 23310,
+        "content_type": "font/otf",
+        "server": "nginx",
+        "cache_control": "max-age=315360000",
+        "access_control_allow_origin": "*",
+        "last_modified": "Thu, 01 Jan 1970 00:00:00 GMT",
+        "etag": "\"97182c85c69eeef92b75b361ad2119ae\"",
+        "via": "1.1 31c766ca012c76de76b26ec9e2a74486.cloudfront.net (CloudFront)",
+        "x_cache": "Hit from cloudfront",
+        "provider": "external CDN"
+      }
+    ]
+  },
+  {
+    "name": "CyberAgent Developers Blog",
+    "genre": "corporate blog",
+    "url": "https://developers.cyberagent.co.jp/blog/",
+    "fetched_utc": "2026-11-11T07:35:35Z",
+    "status": 200,
+    "final_url": "https://developers.cyberagent.co.jp/blog/",
+    "html_bytes": 90090,
+    "response_headers": {
+      "Date": "Wed, 11 Nov 2026 07:35:36 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Length": "14389",
+      "Connection": "keep-alive",
+      "Set-Cookie": "AWSALB=cDBxvNXHTmxtSHcg3Ui4g8XSAc+puN9srGQyifVKWbdxtC/nTuOS7vxXNY2dKPmTSSsVpp4iyFfhTy/fFrvRdq9B0xMyeo6feJM//feYNNVUegfUh69zVdI9iEnn; Expires=Wed, 18 Nov 2026 07:35:36 GMT; Path=/, AWSALBCORS=cDBxvNXHTmxtSHcg3Ui4g8XSAc+puN9srGQyifVKWbdxtC/nTuOS7vxXNY2dKPmTSSsVpp4iyFfhTy/fFrvRdq9B0xMyeo6feJM//feYNNVUegfUh69zVdI9iEnn; Expires=Wed, 18 Nov 2026 07:35:36 GMT; Path=/; SameSite=None; Secure",
+      "Vary": "Accept-Encoding,Cookie",
+      "Link": "<https://developers.cyberagent.co.jp/blog/wp-json/>; rel=\"https://api.w.org/\", <https://developers.cyberagent.co.jp/blog/wp-json/wp/v2/pages/2>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://developers.cyberagent.co.jp/blog/>; rel=shortlink",
+      "Content-Encoding": "gzip",
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS, PUT, DELETE, CONNECT, PATCH",
+      "Access-Control-Allow-Headers": "X-Requested-With, Origin, X-Csrftoken, Content-Type, Authorization, Accept",
+      "Access-Control-Allow-Credentials": "true"
+    },
+    "title": "CyberAgent Developers Blog | サイバーエージェント デベロッパーズブログ",
+    "preloads": [],
+    "preconnects": [],
+    "stylesheet_links_total": 10,
+    "stylesheets_fetched": [
+      {
+        "url": "https://developers.cyberagent.co.jp/blog/wp-content/plugins/simple-author-box/css/simple-author-box.min.css?ver=v1.5",
+        "status": 200,
+        "bytes": 29804,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": null
+      },
+      {
+        "url": "https://developers.cyberagent.co.jp/blog/wp-content/themes/onepress/assets/css/animate.min.css?ver=1.0.0",
+        "status": 200,
+        "bytes": 55317,
+        "content_type": "text/css",
+        "content_encoding": "gzip",
+        "server": null
+      },
+      {
+        "url": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext",
+        "status": 200,
+        "bytes": 60132,
+        "content_type": "text/css; charset=utf-8",
+        "content_encoding": "gzip",
+        "server": "ESF"
+      },
+      {
+        "url": "https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+        "status": 200,
+        "bytes": 31000,
+        "content_type": "text/css; charset=utf-8",
+        "content_encoding": "br",
+        "server": "cloudflare"
+      }
+    ],
+    "font_service_links": [
+      "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+    ],
+    "font_family_declaration_count": 123,
+    "top_font_family_values": [
+      [
+        "Open Sans",
+        80
+      ],
+      [
+        "Raleway",
+        40
+      ],
+      [
+        "FontAwesome",
+        3
+      ]
+    ],
+    "top_individual_families": [
+      [
+        "Open Sans",
+        80
+      ],
+      [
+        "Raleway",
+        40
+      ],
+      [
+        "FontAwesome",
+        3
+      ]
+    ],
+    "unique_individual_families": 3,
+    "font_face_count": 121,
+    "font_faces": [
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "italic",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Open Sans",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "100",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "100",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "100",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "100",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "100",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "300",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "400",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "500",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "500",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "500",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "500",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "500",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "600",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "700",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "800",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "800",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "800",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "800",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "800",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "900",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCAIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "900",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCkIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "900",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCIIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "900",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyCMIT5lu.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "Raleway",
+        "style": "normal",
+        "weight": "900",
+        "display": null,
+        "unicode_range": true,
+        "src_urls": [
+          "https://fonts.gstatic.com/s/raleway/v37/1Ptug8zYS_SKggPNyC0ITw.woff2"
+        ],
+        "src_hosts": [
+          "fonts.gstatic.com"
+        ],
+        "providers": [
+          "Google Fonts"
+        ],
+        "source_css": "https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700%2C300%2C100%2C800%2C900%7COpen+Sans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic&subset=latin%2Clatin-ext"
+      },
+      {
+        "family": "FontAwesome",
+        "style": "normal",
+        "weight": "normal",
+        "display": null,
+        "unicode_range": false,
+        "src_urls": [
+          "https://netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0"
+        ],
+        "src_hosts": [
+          "netdna.bootstrapcdn.com"
+        ],
+        "providers": [
+          "external CDN"
+        ],
+        "source_css": "https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      }
+    ],
+    "font_face_providers": {
+      "Google Fonts": 120,
+      "external CDN": 1
+    },
+    "font_face_hosts": {
+      "fonts.gstatic.com": 120,
+      "netdna.bootstrapcdn.com": 1
+    },
+    "font_scripts": [],
+    "providers_detected": [
+      "Google Fonts",
+      "external CDN"
+    ],
+    "self_hosts_fonts": false,
+    "font_probes": [
+      {
+        "url": "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2",
+        "status": 200,
+        "final_url": "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2",
+        "content_length": 54944,
+        "content_type": "font/woff2",
+        "server": "sffe",
+        "cache_control": "public, max-age=31536000",
+        "access_control_allow_origin": "*",
+        "last_modified": "Mon, 15 Sep 2025 16:30:19 GMT",
+        "etag": null,
+        "via": null,
+        "x_cache": null,
+        "provider": "Google Fonts"
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2",
+        "status": 200,
+        "final_url": "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2",
+        "content_length": 32016,
+        "content_type": "font/woff2",
+        "server": "sffe",
+        "cache_control": "public, max-age=31536000",
+        "access_control_allow_origin": "*",
+        "last_modified": "Mon, 15 Sep 2025 16:31:03 GMT",
+        "etag": null,
+        "via": null,
+        "x_cache": null,
+        "provider": "Google Fonts"
+      },
+      {
+        "url": "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2",
+        "status": 200,
+        "final_url": "https://fonts.gstatic.com/s/opensans/v44/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2",
+        "content_length": 4844,
+        "content_type": "font/woff2",
+        "server": "sffe",
+        "cache_control": "public, max-age=31536000",
+        "access_control_allow_origin": "*",
+        "last_modified": "Mon, 15 Sep 2025 16:30:51 GMT",
+        "etag": null,
+        "via": null,
+        "x_cache": null,
+        "provider": "Google Fonts"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+Noto Sans JP         grid= 0 woff2=   469.8 KiB enc=  7.3s prep=  0.0s err<=  0u px24: chg= 0.000% psnr=  infdB
+Noto Sans JP         grid= 2 woff2=   463.3 KiB enc=  4.9s prep=  0.0s err<=  1u px24: chg= 7.019% psnr= 47.4dB
+Noto Sans JP         grid= 4 woff2=   421.1 KiB enc=  4.3s prep=  0.0s err<=  2u px24: chg= 9.007% psnr= 42.7dB
+Noto Sans JP         grid= 8 woff2=   381.1 KiB enc=  4.2s prep=  0.0s err<=  4u px24: chg=10.252% psnr= 37.2dB
+Noto Sans JP         grid=16 woff2=   344.6 KiB enc=  4.0s prep=  0.0s err<=  8u px24: chg=11.162% psnr= 31.2dB
+Noto Sans JP         grid=32 woff2=   309.9 KiB enc=  4.0s prep=  0.0s err<= 16u px24: chg=12.167% psnr= 25.6dB
+M PLUS 1p            grid= 0 woff2=   296.0 KiB enc=  2.8s prep=  0.0s err<=  0u px24: chg= 0.000% psnr=  infdB
+M PLUS 1p            grid= 2 woff2=   299.7 KiB enc=  2.7s prep=  0.0s err<=  1u px24: chg= 7.142% psnr= 46.5dB
+M PLUS 1p            grid= 4 woff2=   280.2 KiB enc=  2.8s prep=  0.0s err<=  2u px24: chg= 8.995% psnr= 42.5dB
+M PLUS 1p            grid= 8 woff2=   257.1 KiB enc=  2.7s prep=  0.0s err<=  4u px24: chg=10.333% psnr= 36.6dB
+M PLUS 1p            grid=16 woff2=   234.2 KiB enc=  2.6s prep=  0.0s err<=  8u px24: chg=11.104% psnr= 31.1dB
+M PLUS 1p            grid=32 woff2=   209.4 KiB enc=  2.6s prep=  0.0s err<= 16u px24: chg=12.142% psnr= 25.4dB
+Nanum Gothic         grid= 0 woff2=    60.5 KiB enc=  1.2s prep=  0.0s err<=  0u px24: chg= 0.000% psnr=  infdB
+Nanum Gothic         grid= 2 woff2=    71.7 KiB enc=  1.3s prep=  0.0s err<=  1u px24: chg= 1.310% psnr= 54.3dB
+Nanum Gothic         grid= 4 woff2=    66.8 KiB enc=  1.1s prep=  0.0s err<=  2u px24: chg= 1.602% psnr= 50.6dB
+Nanum Gothic         grid= 8 woff2=    63.0 KiB enc=  1.1s prep=  0.0s err<=  4u px24: chg= 1.887% psnr= 43.8dB
+Nanum Gothic         grid=16 woff2=    59.4 KiB enc=  1.1s prep=  0.0s err<=  8u px24: chg= 2.034% psnr= 39.1dB
+Nanum Gothic         grid=32 woff2=    54.3 KiB enc=  1.1s prep=  0.0s err<= 16u px24: chg= 2.254% psnr= 33.4dB
+Source Han Sans JP   grid= 0 woff2=   460.3 KiB enc=  4.5s prep=  0.0s err<=  0u px24: chg= 0.000% psnr=  infdB
+Source Han Sans JP   grid= 2 woff2=   458.4 KiB enc=  4.1s prep=  0.0s err<=  1u px24: chg= 7.171% psnr= 47.2dB
+Source Han Sans JP   grid= 4 woff2=   419.2 KiB enc=  7.0s prep=  0.0s err<=  2u px24: chg= 9.111% psnr= 42.7dB
+Source Han Sans JP   grid= 8 woff2=   379.5 KiB enc=  4.1s prep=  0.0s err<=  4u px24: chg=10.263% psnr= 37.3dB
+Source Han Sans JP   grid=16 woff2=   345.8 KiB enc=  4.1s prep=  0.0s err<=  8u px24: chg=11.173% psnr= 31.4dB
+Source Han Sans JP   grid=32 woff2=   309.9 KiB enc=  4.2s prep=  0.0s err<= 16u px24: chg=12.187% psnr= 25.7dB
+Traceback (most recent call last):
+  File "/home/cp20/playground/font-compress/measure/glc_sweep.py", line 235, in <module>
+    main()
+    ~~~~^^
+  File "/home/cp20/playground/font-compress/measure/glc_sweep.py", line 227, in main
+    size, enc_s = subset_woff2(ttf, w, top_chars("ja", N_CHARS), brotli_q=q)
+                  ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cp20/playground/font-compress/measure/glc_sweep.py", line 67, in subset_woff2
+    raise RuntimeError(r.stderr[-500:])
+RuntimeError: usage: fonttools subset font-file [glyph...] [--option=value]...
+Try fonttools subset --help for more information.
+
+ERROR: Unknown option 'compress-level=5'
+

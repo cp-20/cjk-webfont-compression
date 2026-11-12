@@ -1,0 +1,26 @@
+[
+  {
+    "font": "Noto Sans JP (static 400, full)",
+    "variant": "woff2_baseline",
+    "bytes": 2302932,
+    "encode_s": 20.4
+  },
+  {
+    "font": "Noto Sans JP (static 400, full)",
+    "variant": "glc_g4",
+    "bytes": 1921116,
+    "encode_s": 20.0
+  },
+  {
+    "font": "Noto Sans JP (static 400, full)",
+    "variant": "glc_g8",
+    "bytes": 1667400,
+    "encode_s": 21.1
+  },
+  {
+    "font": "Noto Sans JP (static 400, full)",
+    "variant": "glc_g16",
+    "bytes": 1429436,
+    "encode_s": 20.7
+  }
+]

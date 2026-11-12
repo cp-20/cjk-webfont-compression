@@ -1,0 +1,24 @@
+[
+  {
+    "font": "Noto Sans JP (TrueType, static 400)",
+    "variant": "full",
+    "bytes": 2289716,
+    "glyphs": 17936,
+    "encode_s": null,
+    "note": "計測クロックの同期ずれのため生成時間は記録しない"
+  },
+  {
+    "font": "Noto Sans JP (TrueType, static 400)",
+    "variant": "no_hinting",
+    "bytes": 2290008,
+    "glyphs": 17936,
+    "encode_s": 45.3
+  },
+  {
+    "font": "Noto Sans JP (TrueType, static 400)",
+    "variant": "no_hinting_no_layout",
+    "bytes": 2270616,
+    "glyphs": 17936,
+    "encode_s": 40.1
+  }
+]

@@ -1,0 +1,13 @@
+Noto Sans JP (static 400)  grid= 0  2.303 MB  prep=  5.8s enc= 20.3s
+Noto Sans JP (static 400)  grid= 2  2.225 MB  prep= 10.7s enc= 20.6s
+Noto Sans JP (static 400)  grid= 4  1.981 MB  prep= 10.6s enc= 20.0s
+Noto Sans JP (static 400)  grid= 8  1.756 MB  prep= 10.6s enc= 19.6s
+Noto Sans JP (static 400)  grid=16  1.546 MB  prep= 10.7s enc= 18.7s
+Noto Sans JP (static 400)  grid=32  1.372 MB  prep= 10.9s enc= 18.5s
+M PLUS 1p                  grid= 0  0.700 MB  prep=  1.9s enc=  9.5s
+M PLUS 1p                  grid= 2  0.705 MB  prep=  0.0s enc=  5.8s
+M PLUS 1p                  grid= 4  0.643 MB  prep=  0.0s enc=  5.9s
+M PLUS 1p                  grid= 8  0.580 MB  prep=  0.0s enc=  5.7s
+M PLUS 1p                  grid=16  0.515 MB  prep=  0.0s enc=  5.4s
+M PLUS 1p                  grid=32  0.449 MB  prep=  0.0s enc=  8.2s
+wrote /home/cp20/playground/font-compress/measure/out/glc_fullsweep.json
