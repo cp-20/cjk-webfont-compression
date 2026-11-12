@@ -2,25 +2,25 @@
   {
     "font": "Noto Sans JP (static 400, full)",
     "variant": "woff2_baseline",
-    "bytes": 2302932,
-    "encode_s": 20.4
+    "bytes": 2302848,
+    "encode_s": 44.6
   },
   {
     "font": "Noto Sans JP (static 400, full)",
     "variant": "glc_g4",
-    "bytes": 1921116,
-    "encode_s": 20.0
+    "bytes": 1980272,
+    "encode_s": 45.2
   },
   {
     "font": "Noto Sans JP (static 400, full)",
     "variant": "glc_g8",
-    "bytes": 1667400,
-    "encode_s": 21.1
+    "bytes": 1755444,
+    "encode_s": 42.3
   },
   {
     "font": "Noto Sans JP (static 400, full)",
     "variant": "glc_g16",
-    "bytes": 1429436,
-    "encode_s": 20.7
+    "bytes": 1547056,
+    "encode_s": 50.3
   }
 ]

@@ -2,97 +2,97 @@
   {
     "font": "Noto Sans JP (static 400)",
     "grid": 0,
-    "bytes": 2302932,
-    "prep_s": 5.83,
-    "encode_s": 20.34,
-    "total_s": 26.17
+    "bytes": 2302848,
+    "prep_s": 6.91,
+    "encode_s": 28.64,
+    "total_s": 35.55
   },
   {
     "font": "Noto Sans JP (static 400)",
     "grid": 2,
-    "bytes": 2225392,
-    "prep_s": 10.66,
-    "encode_s": 20.55,
-    "total_s": 31.21
+    "bytes": 2225624,
+    "prep_s": 12.09,
+    "encode_s": 29.42,
+    "total_s": 41.51
   },
   {
     "font": "Noto Sans JP (static 400)",
     "grid": 4,
-    "bytes": 1980856,
-    "prep_s": 10.57,
-    "encode_s": 20.0,
-    "total_s": 30.57
+    "bytes": 1980272,
+    "prep_s": 12.08,
+    "encode_s": 26.64,
+    "total_s": 38.72
   },
   {
     "font": "Noto Sans JP (static 400)",
     "grid": 8,
-    "bytes": 1755656,
-    "prep_s": 10.63,
-    "encode_s": 19.56,
-    "total_s": 30.19
+    "bytes": 1755444,
+    "prep_s": 12.11,
+    "encode_s": 26.03,
+    "total_s": 38.14
   },
   {
     "font": "Noto Sans JP (static 400)",
     "grid": 16,
-    "bytes": 1545836,
-    "prep_s": 10.69,
-    "encode_s": 18.73,
-    "total_s": 29.42
+    "bytes": 1547056,
+    "prep_s": 17.01,
+    "encode_s": 53.8,
+    "total_s": 70.81
   },
   {
     "font": "Noto Sans JP (static 400)",
     "grid": 32,
-    "bytes": 1371932,
-    "prep_s": 10.91,
-    "encode_s": 18.53,
-    "total_s": 29.44
+    "bytes": 1371236,
+    "prep_s": 23.47,
+    "encode_s": 56.83,
+    "total_s": 80.3
   },
   {
     "font": "M PLUS 1p",
     "grid": 0,
     "bytes": 699792,
-    "prep_s": 1.91,
-    "encode_s": 9.49,
-    "total_s": 11.4
+    "prep_s": 4.58,
+    "encode_s": 15.6,
+    "total_s": 20.18
   },
   {
     "font": "M PLUS 1p",
     "grid": 2,
-    "bytes": 704924,
-    "prep_s": 0.0,
-    "encode_s": 5.83,
-    "total_s": 5.83
+    "bytes": 711776,
+    "prep_s": 4.74,
+    "encode_s": 13.32,
+    "total_s": 18.06
   },
   {
     "font": "M PLUS 1p",
     "grid": 4,
-    "bytes": 643020,
-    "prep_s": 0.0,
-    "encode_s": 5.87,
-    "total_s": 5.87
+    "bytes": 666212,
+    "prep_s": 4.78,
+    "encode_s": 15.65,
+    "total_s": 20.43
   },
   {
     "font": "M PLUS 1p",
     "grid": 8,
-    "bytes": 579796,
-    "prep_s": 0.0,
-    "encode_s": 5.7,
-    "total_s": 5.7
+    "bytes": 614540,
+    "prep_s": 5.37,
+    "encode_s": 11.59,
+    "total_s": 16.96
   },
   {
     "font": "M PLUS 1p",
     "grid": 16,
-    "bytes": 514728,
-    "prep_s": 0.0,
-    "encode_s": 5.4,
-    "total_s": 5.4
+    "bytes": 559844,
+    "prep_s": 4.81,
+    "encode_s": 12.8,
+    "total_s": 17.61
   },
   {
     "font": "M PLUS 1p",
     "grid": 32,
-    "bytes": 449352,
-    "prep_s": 0.0,
-    "encode_s": 8.21,
-    "total_s": 8.21
+    "bytes": 505212,
+    "prep_s": 4.8,
+    "encode_s": 12.08,
+    "total_s": 16.88
   }
 ]
