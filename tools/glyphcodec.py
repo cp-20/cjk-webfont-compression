@@ -179,6 +179,71 @@ def process_font(path: str, out: str, canonical: bool = True, grid: int = 0,
     return stats
 
 
+def process_variable_font(path: str, out: str, grid: int = 0,
+                          drop_vertical: bool = False) -> dict:
+    """Quantise a variable font's *default* outlines in place (GLC for VF).
+
+    gvar addresses glyph points by index, so this path is deliberately
+    more conservative than process_font:
+
+      * simple glyphs are quantised with the same bbox-preserving
+        quantiser; point counts and order never change;
+      * composite glyphs are left entirely alone -- their point layout
+        (component transforms + phantom points) is what gvar indexes;
+      * hinting is stripped (fpgm/prep/cvt /cvar deleted, glyph programs
+        emptied) WITHOUT expand(), which would decompile/restructure
+        glyphs;
+      * gvar, fvar, HVAR and STAT are untouched.
+
+    Measured caveat (round 3, measure/variable_glc.py): the MEAN outline
+    error stays at the static-font level at every weight (~2.6 units at
+    grid 8), but the MAX point error grows with distance from the
+    default weight -- 4 units at wght=100 (Noto Sans JP's default) vs
+    138 units at wght=900 -- because gvar stores deltas for only a
+    subset of points and interpolates the rest (IUP) from the default
+    outline; perturbing the default perturbs the interpolation. The
+    static guarantee (error <= grid/2 everywhere) does NOT hold here.
+    """
+    from fontTools.ttLib.tables.ttProgram import Program
+    font = TTFont(path, recalcBBoxes=False, recalcTimestamp=False)
+    if "fvar" not in font:
+        raise ValueError("process_variable_font: input is not a variable font")
+    glyf = font["glyf"]
+    stats = {"quantized": 0, "glyphs": 0, "composites_kept": 0}
+    for gn in font.getGlyphOrder():
+        if gn not in glyf.glyphs:
+            continue
+        g = glyf[gn]  # indexing decompiles the lazy glyph
+        if g.numberOfContours > 0:
+            stats["glyphs"] += 1
+            if grid and quantize_glyph(g, grid):
+                stats["quantized"] += 1
+                try:
+                    g.recalcBounds(glyf)
+                except Exception:
+                    pass
+        elif g.numberOfContours == -1:
+            stats["composites_kept"] += 1
+    for tag in ("fpgm", "prep", "cvt ", "cvar"):
+        if tag in font:
+            del font[tag]
+    for gn in font.getGlyphOrder():
+        if gn not in glyf.glyphs:
+            continue
+        g = glyf[gn]
+        if hasattr(g, "program"):
+            try:
+                g.program = Program()
+            except Exception:
+                pass
+    if drop_vertical:
+        for tag in ("vhea", "vmtx"):
+            if tag in font:
+                del font[tag]
+    font.save(out)
+    return stats
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--input", required=True)
