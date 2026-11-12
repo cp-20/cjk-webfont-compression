@@ -215,13 +215,13 @@ def build():
          "横書き専用サイト", "可逆（用途による）", "−0.7%"],
         ["<b>GLC-3</b>", "輪郭の正準化（参考実装あり）",
          "任意", "可逆", "±0%（不採用）"],
-        ["<b>GLC-4</b>", "座標を指定格子へ量子化（誤差予算で格子幅を決める／BBOx は保持）",
+        ["<b>GLC-4</b>", "座標を指定格子へ量子化（誤差予算で格子幅を決める／BBox は保持）",
          "任意", "<b>不可逆</b>（誤差は格子幅の半分に厳密に収まる）", "−8〜33%"],
     ]))
     A("""<h3>4.1 誤差予算から格子幅を決める</h3>
 <p>GLC-4 の格子幅 <i>g</i> は「許容誤差 ε（em 単位）」から <i>g</i> = 2ε × unitsPerEm で決める。Noto Sans JP（upm 1000）では ε=0.2% なら g=4、ε=0.4% なら g=8、ε=0.8% なら g=16。丸めにより<b>最大誤差は厳密に g/2 以下</b>に収まる（実測で最大 2 / 4 / 8 単位と一致）。</p>
 <p>画面上の見え方は ε × 文字サイズで決まる。24px で ε=0.4% なら 0.096px 未満であり、グリフの位置が 1 ピクセルずれる量は生じない。</p>""")
-    A("""<p><b>BBOx を保持することが重要。</b>TrueType では adv（文字送り幅）は輪郭の BBOx から算出される phantom point に依存するため、量子化で BBOx が 1 単位動くと adv も同じだけ動き、行の折り返し位置が変わる可能性がある。そこで GLC-4 は、xMin / xMax / yMin / yMax を達成する点を元の座標に固定し、BBOx を厳密に保つ。この処理を入れる前（ 単なる丸めのみ）では、輪郭の<B>位置</B>ずれが画素差の主因になっていた（PSNR 26 dB 相当）。固定後は位置ずれがなくなり、PSNR は 47 dB（g=2）から 31 dB（g=16）へ、サイズとのトレードオフが素直に出る関係になった（実測値）。<b>代价</b>も明示しておく。BBOx を固定すると端点だけが格子から外れるため圧縮率は下がり、g=8 の全体 WOFF2 は 1.667 MB（固定なし）→ 1.76 MB（固定あり）で約 5% 悪化する。<b>行の折り返しが変わる類の変更は避けたい</b>という要件なら、この 5% は妥当な対価である。</p>""")
+    A("""<p><b>BBox を保持することが重要。</b>TrueType では adv（文字送り幅）は輪郭の BBox から算出される phantom point に依存するため、量子化で BBox が 1 単位動くと adv も同じだけ動き、行の折り返し位置が変わる可能性がある。そこで GLC-4 は、xMin / xMax / yMin / yMax を達成する点を元の座標に固定し、BBox を厳密に保つ。この処理を入れる前（ 単なる丸めのみ）では、輪郭の<B>位置</B>ずれが画素差の主因になっていた（PSNR 26 dB 相当）。固定後は位置ずれがなくなり、PSNR は 47 dB（g=2）から 31 dB（g=16）へ、サイズとのトレードオフが素直に出る関係になった（実測値）。<b>代价</b>も明示しておく。BBox を固定すると端点だけが格子から外れるため圧縮率は下がり、g=8 の全体 WOFF2 は 1.667 MB（固定なし）→ 1.76 MB（固定あり）で約 5% 悪化する。<b>行の折り返しが変わる類の変更は避けたい</b>という要件なら、この 5% は妥当な対価である。</p>""")
     A("""<h3>4.2 実装</h3>
 <pre><code># 1) CFF フォントを glyf に変換（quadratic 化、誤差予算 0.1% em）
 python tools/cff2glyf.py -i SourceHanSansJP.otf -o shs.ttf --max-err-ratio 0.001
@@ -605,6 +605,16 @@ uv pip install --python .venv/bin/python fonttools brotli numpy pillow freetype-
 
     # ============================================================ appendix C
     A("""<h2 id='appendix-c'>付録 C：English abstract（Plamo 3 Translate による日本語→英語翻訳）</h2>""")
+    A("""<p class="note"><b>訂正（2026-11-12、ラウンド 3）/ Correction.</b>
+以下の abstract（翻訳元日本語要約を含む）に引用された Noto Sans JP 全体フォントの量子化後サイズ
+（0.2% em で 1.921 MB、0.4% em で 1.667 MB、0.8% em で 1.429 MB）は、BBox 保持を入れる前の
+量子化器で生成された中間ファイルを再利用して測られた古い値であり、現在のパイプラインの実測では
+<b>1.980 MB（−14.0%）/ 1.755 MB（−23.8%）/ 1.547 MB（−32.8%）</b>である（本文 §1 の結論
+1.76 MB は当初から正しい方だった）。同じ原因で M PLUS 1p 全体の量子化行も古く、訂正値は
+<code>measure/out/glc_fullsweep.json</code> の再生成値（grid 8 で 579,796 → 614,540 B）。
+経緯と証拠は <code>docs/round3-2026-11-12.md</code> と <code>measure/out/glc_remeasure.json</code> に残した。
+The full-font figures quoted in the abstract below were measured from stale intermediates produced
+by the pre-bbox-preservation quantiser; the corrected values are 1.980 / 1.755 / 1.547 MB.</p>""")
     q = tr.get("glc_summary_ja_en")
     if q:
         A(f"""<blockquote><span class="quote-ja">{esc(q['translation'])}</span>

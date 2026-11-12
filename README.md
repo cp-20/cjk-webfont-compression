@@ -78,9 +78,13 @@ python scripts/fetch_assets.py --all      # fonts + PLaMo 3 Translate GGUF + lla
 .venv/bin/python measure/glc_final.py              # GLC pipeline comparison
 .venv/bin/python measure/glc_sweep.py               # q sweep: size / time / noise
 .venv/bin/python measure/glc_render.py             # PSNR (FreeType, hinting off)
-.venv/bin/python measure/glc_demo.py               # visual demo PNGs
+.venv/bin/python measure/glc_demo.py               # demo PNGs (round 3: superseded by live rendering; renderer kept, orientation fixed)
 .venv/bin/python measure/reproduce_headline.py     # round 2: re-measure the GLC headline from scratch
 .venv/bin/python measure/combined_study.py         # round 2: delivery x encoding, combined
+.venv/bin/python measure/remeasure_fullfont.py     # round 3: clean-room re-measurement of the full-font tables
+.venv/bin/python measure/combined_study_zhko.py    # round 3: combined study for Chinese / Korean
+.venv/bin/python measure/variable_glc.py           # round 3: can GLC quantise a variable font? (mostly no)
+.venv/bin/python measure/build_demo_assets.py      # round 3: live demo fonts (subset WOFF2 per grid)
 .venv/bin/python report/content.py                  # build report/index.html
 .venv/bin/python report/glc_content.py             # build report/glc.html
 .venv/bin/python report/build_demo.py              # build report/demo.html (interactive demo)
@@ -108,8 +112,9 @@ tools/llama.cpp/build/bin/llama-server -m models/plamo-0.8b-Q4_K_M.gguf \
 | `tools/glc.py` | **the GLC pipeline as one CLI** (stages as flags, ε parameter, safety valve) |
 | `tools/glyphcodec.py` | outline quantisation / canonicalisation (GLC-4 / GLC-3) |
 | `tools/cff2glyf.py` | CFF → glyf conversion (GLC-0) |
-| `report/demo.html` | interactive demo (subset estimator, ε slider, combined results); built by `report/build_demo.py` |
+| `report/demo.html` | interactive demo (subset estimator, ε slider with **live rendering by the real quantised fonts**, combined results for ja/zh/ko); built by `report/build_demo.py`, fonts by `measure/build_demo_assets.py` |
 | `docs/round2-2026-11-12.md` | round-2 progress report: reproduction, the tool, the combined study |
+| `docs/round3-2026-11-12.md` | round-3 progress report: stale-table verdict, zh/ko combined study, variable fonts, live demo |
 | `tools/translate.py` | batch translation client for the local LLM |
 | `fonts/manifest.json` | the 15 CJK fonts: source URL, licence, SHA-256 |
 | `research/sources.md` | research notes: primary sources, quotes, prior art |

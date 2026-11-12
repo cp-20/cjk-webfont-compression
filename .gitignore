@@ -37,3 +37,7 @@ tools/cn-font-split/package.json
 
 # round-2 reproduction intermediates
 measure/out/repro/
+
+# round-3 measurement intermediates (regenerable, not redistributed)
+measure/out/remeasure/
+measure/out/vf/
