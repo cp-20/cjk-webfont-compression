@@ -7,6 +7,8 @@
 > generating real WOFF2 files and measuring them; three ideas that *did not* work are published as well.
 > [日本語版 below](#日本語).
 
+**Live reports (GitHub Pages):** <https://cp-20.github.io/cjk-webfont-compression/>
+
 | Report | Topic | Headline result |
 |---|---|---|
 | [`report/index.html`](report/index.html) | **Which glyphs to send** (delivery layer) | A shared base slice of the 500 most frequent characters cuts the per-page font payload from **509 KiB → 111 KiB** vs. Google Fonts' slicing, with 1 request instead of 43 |
@@ -109,6 +111,7 @@ WOFF2 化しても 1 種で 0.7〜7.8 MB になる。本リポジトリは実フ
 
 - レポート 1: [`report/index.html`](report/index.html) — 「どのグリフを配るか」（配信層）
 - レポート 2: [`report/glc.html`](report/glc.html) — 「グリフをどう符号化するか」（圧縮層・GLC の提案と実測）
+- 公開ページ: <https://cp-20.github.io/cjk-webfont-compression/>
 
 主な実測（2026-11-11〜12）:
 
