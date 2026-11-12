@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "generated": "2026-11-12T14:58:34Z",
+    "lang": "zh",
+    "font": "Noto Sans SC (static 400, instanced from variable)",
+    "pages": 7,
+    "pages_skipped_no_data": [],
+    "base_size": 500,
+    "base_order": "document frequency over the language's pages",
+    "full_font_woff2_bytes": 4192748,
+    "base500_chars": "./012579CEIPcghmnopstv、。一上与专个中为主习二于从以们件优会体何作使保修入全关出分前加动助区参发号合同名后和在地备外多大如字学安定实对小就常平年应度开性情所接推提支改数文新方无日时明是更最月有本机标法流点用的看程第类级组者能自行要见解设这选通造部门问面项题高，：-348:ABFLNSabdeilruwy|“”《》三下不世业举么义之书了云互些交京人介代传你例信元先公共其内写几切创到制务化北十单南博反取受口可台各告员周四回团图型基声复好威子完家容少局工已市布广序库建引张当录影得微心快息意成我战户手技报持指排播收效教散整服术权来查样格次正民注活海版特环现理生电界略白相省真知码研示社神空立端等算管篇精系约经给统续网老而联脱良节表规言计记许论证识话语读调费转载达过运近进重量金长间际集页风首（）？+,6DGORTUW[jk·—万东两事五产享仅今他任依便值假做像免八兰兴具养兼再决准减划列则初利别刷力势包华协占历原双变只史司听命品响商器因国场城域境士处夜天央客密察将展山师帮并底府座康式强形征态思总想感戏打托执承投护探措放政断斯施显景期未杂条极构果案检歌止此每比毛求汇汉治济消深清港",
+    "base500": {
+      "chars": 500,
+      "exact": 78404,
+      "exact_glc4": 71212,
+      "exact_glc8": 65676
+    }
+  },
+  "summary": {
+    "google_fonts": {
+      "median": 732840,
+      "mean": 946540.6,
+      "min": 485820,
+      "max": 2204012
+    },
+    "exact": {
+      "median": 147976,
+      "mean": 147320.6,
+      "min": 70640,
+      "max": 255760
+    },
+    "exact_glc4": {
+      "median": 132324,
+      "mean": 131364,
+      "min": 63536,
+      "max": 226912
+    },
+    "exact_glc8": {
+      "median": 120824,
+      "mean": 119777.1,
+      "min": 58324,
+      "max": 206200
+    },
+    "base_resid_cold": {
+      "median": 155204,
+      "mean": 162257.7,
+      "min": 99640,
+      "max": 262260
+    },
+    "base_resid_warm": {
+      "median": 76800,
+      "mean": 83853.7,
+      "min": 21236,
+      "max": 183856
+    },
+    "base_resid_cold_glc8": {
+      "median": 127728,
+      "mean": 133260.6,
+      "min": 83284,
+      "max": 213108
+    },
+    "base_resid_warm_glc8": {
+      "median": 62052,
+      "mean": 67584.6,
+      "min": 17608,
+      "max": 147432
+    }
+  },
+  "gains": {
+    "glc_gain_on_exact_subsets_pct": {
+      "grid4": 10.58,
+      "grid8": 18.35
+    },
+    "glc_gain_on_base500_pct": 16.23,
+    "glc_gain_on_anchors_pct": {
+      "100": 13.48,
+      "200": 13.1,
+      "300": 14.68,
+      "500": 16.17,
+      "750": 17.58,
+      "1000": 18.44,
+      "1500": 19.23,
+      "2000": 20.36
+    }
+  },
+  "anchors": [
+    {
+      "chars": 100,
+      "exact": 16912,
+      "exact_glc4": 15600,
+      "exact_glc8": 14632,
+      "exact_glc16": 13688
+    },
+    {
+      "chars": 200,
+      "exact": 35640,
+      "exact_glc4": 32956,
+      "exact_glc8": 30972,
+      "exact_glc16": 28652
+    },
+    {
+      "chars": 300,
+      "exact": 48920,
+      "exact_glc4": 44856,
+      "exact_glc8": 41740,
+      "exact_glc16": 38476
+    },
+    {
+      "chars": 500,
+      "exact": 78480,
+      "exact_glc4": 71244,
+      "exact_glc8": 65788,
+      "exact_glc16": 60428
+    },
+    {
+      "chars": 750,
+      "exact": 113980,
+      "exact_glc4": 102380,
+      "exact_glc8": 93940,
+      "exact_glc16": 85784
+    },
+    {
+      "chars": 1000,
+      "exact": 147612,
+      "exact_glc4": 131716,
+      "exact_glc8": 120388,
+      "exact_glc16": 109340
+    },
+    {
+      "chars": 1500,
+      "exact": 217848,
+      "exact_glc4": 193456,
+      "exact_glc8": 175952,
+      "exact_glc16": 159860
+    },
+    {
+      "chars": 2000,
+      "exact": 286788,
+      "exact_glc4": 252216,
+      "exact_glc8": 228412,
+      "exact_glc16": 206284
+    }
+  ],
+  "per_page": [
+    {
+      "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E5%AD%97",
+      "genre": "encyclopedia",
+      "chars": 1694,
+      "google_fonts": 2204012,
+      "exact": 255760,
+      "resid_chars": 1203,
+      "exact_glc4": 226912,
+      "base_resid_cold_glc4": 233908,
+      "base_resid_warm_glc4": 162696,
+      "exact_glc8": 206200,
+      "base_resid_cold_glc8": 213108,
+      "base_resid_warm_glc8": 147432,
+      "base_resid_cold": 262260,
+      "base_resid_warm": 183856
+    },
+    {
+      "url": "https://www.gov.cn/",
+      "genre": "government",
+      "chars": 461,
+      "google_fonts": 485820,
+      "exact": 70640,
+      "resid_chars": 124,
+      "exact_glc4": 63536,
+      "base_resid_cold_glc4": 90340,
+      "base_resid_warm_glc4": 19128,
+      "exact_glc8": 58324,
+      "base_resid_cold_glc8": 83284,
+      "base_resid_warm_glc8": 17608,
+      "base_resid_cold": 99640,
+      "base_resid_warm": 21236
+    },
+    {
+      "url": "https://www.people.com.cn/",
+      "genre": "news",
+      "chars": 1216,
+      "google_fonts": 961632,
+      "exact": 179940,
+      "resid_chars": 724,
+      "exact_glc4": 159368,
+      "base_resid_cold_glc4": 167840,
+      "base_resid_warm_glc4": 96628,
+      "exact_glc8": 144556,
+      "base_resid_cold_glc8": 153264,
+      "base_resid_warm_glc8": 87588,
+      "base_resid_cold": 187984,
+      "base_resid_warm": 109580
+    },
+    {
+      "url": "https://www.xinhuanet.com/",
+      "genre": "news",
+      "chars": 1194,
+      "google_fonts": 1008204,
+      "exact": 176528,
+      "resid_chars": 720,
+      "exact_glc4": 156384,
+      "base_resid_cold_glc4": 166548,
+      "base_resid_warm_glc4": 95336,
+      "exact_glc8": 141924,
+      "base_resid_cold_glc8": 151892,
+      "base_resid_warm_glc8": 86216,
+      "base_resid_cold": 186408,
+      "base_resid_warm": 108004
+    },
+    {
+      "url": "https://www.csdn.net/",
+      "genre": "tech",
+      "chars": 965,
+      "google_fonts": 732840,
+      "exact": 147976,
+      "resid_chars": 494,
+      "exact_glc4": 132324,
+      "base_resid_cold_glc4": 139544,
+      "base_resid_warm_glc4": 68332,
+      "exact_glc8": 120824,
+      "base_resid_cold_glc8": 127728,
+      "base_resid_warm_glc8": 62052,
+      "base_resid_cold": 155204,
+      "base_resid_warm": 76800
+    },
+    {
+      "url": "https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-family",
+      "genre": "tech",
+      "chars": 432,
+      "google_fonts": 521012,
+      "exact": 71020,
+      "resid_chars": 124,
+      "exact_glc4": 65040,
+      "base_resid_cold_glc4": 91520,
+      "base_resid_warm_glc4": 20308,
+      "exact_glc8": 60364,
+      "base_resid_cold_glc8": 84588,
+      "base_resid_warm_glc8": 18912,
+      "base_resid_cold": 100564,
+      "base_resid_warm": 22160
+    },
+    {
+      "url": "https://www.douban.com/",
+      "genre": "community",
+      "chars": 851,
+      "google_fonts": 712264,
+      "exact": 129380,
+      "resid_chars": 424,
+      "exact_glc4": 115984,
+      "base_resid_cold_glc4": 129644,
+      "base_resid_warm_glc4": 58432,
+      "exact_glc8": 106248,
+      "base_resid_cold_glc8": 118960,
+      "base_resid_warm_glc8": 53284,
+      "base_resid_cold": 143744,
+      "base_resid_warm": 65340
+    }
+  ]
+}
