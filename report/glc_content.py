@@ -612,6 +612,12 @@ uv pip install --python .venv/bin/python fonttools brotli numpy pillow freetype-
     else:
         A("<p class='note'>翻訳未生成。</p>")
 
+    A("""<div class="card" style="margin-top:36px">
+<b>インタラクティブデモ（2026-11-12 追加）</b><br>
+GLC は <code>tools/glc.py</code> として単一の CLI になり、配信方式（サブセット／共有ベース）と GLC を組み合わせた実測も追加した。デモでは自分の文章で推定転送量を試し、ε スライダで量子化の見た目と容量のトレードオフを確認できる。<br>
+→ <a href="demo.html">report/demo.html</a> ／ <a href="index.html">report/index.html</a>（配信方式のレポート）
+</div>""")
+
     A("""<footer>本レポートは 2026-11-11〜12 の実測に基づく。実測スクリプトと中間データは <code>measure/</code> に、引用の英日翻訳は Plamo 3 Translate 0.8b（PLaMo Community License）による。</footer>""")
 
     return "".join(P)

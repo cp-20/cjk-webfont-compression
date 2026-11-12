@@ -34,3 +34,6 @@ measure/out/*.ttf
 tools/cn-font-split/node_modules/
 tools/cn-font-split/package-lock.json
 tools/cn-font-split/package.json
+
+# round-2 reproduction intermediates
+measure/out/repro/

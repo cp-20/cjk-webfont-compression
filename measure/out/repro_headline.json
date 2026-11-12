@@ -1,0 +1,55 @@
+{
+  "generated": "2026-11-12T08:25:25Z",
+  "instance_bytes": 5766844,
+  "all_exact": false,
+  "rows": [
+    {
+      "font": "Noto Sans JP (static 400, full)",
+      "grid": 0,
+      "published_bytes": 2302932,
+      "reproduced_bytes": 2302848,
+      "diff_bytes": -84,
+      "exact_match": false
+    },
+    {
+      "font": "Noto Sans JP (static 400, full)",
+      "grid": 2,
+      "published_bytes": 2225392,
+      "reproduced_bytes": 2225624,
+      "diff_bytes": 232,
+      "exact_match": false
+    },
+    {
+      "font": "Noto Sans JP (static 400, full)",
+      "grid": 4,
+      "published_bytes": 1980856,
+      "reproduced_bytes": 1980272,
+      "diff_bytes": -584,
+      "exact_match": false
+    },
+    {
+      "font": "Noto Sans JP (static 400, full)",
+      "grid": 8,
+      "published_bytes": 1755656,
+      "reproduced_bytes": 1755444,
+      "diff_bytes": -212,
+      "exact_match": false
+    },
+    {
+      "font": "Noto Sans JP (static 400, full)",
+      "grid": 16,
+      "published_bytes": 1545836,
+      "reproduced_bytes": 1547056,
+      "diff_bytes": 1220,
+      "exact_match": false
+    },
+    {
+      "font": "Noto Sans JP (static 400, full)",
+      "grid": 32,
+      "published_bytes": 1371932,
+      "reproduced_bytes": 1371236,
+      "diff_bytes": -696,
+      "exact_match": false
+    }
+  ]
+}
