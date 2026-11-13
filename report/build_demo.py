@@ -3,15 +3,18 @@
 
 Usage: python3 report/build_demo.py
 Requires measure/out/{combined_study,combined_study_zh,combined_study_ko,
-glc_fullsweep,demo_assets}.json and the live demo fonts
-report/assets/demo_font_g{0,2,4,8,16,32}.woff2 (built by
-measure/build_demo_assets.py).
+glc_fullsweep,demo_assets,demo_full_zhko}.json and the live demo fonts
+report/assets/demo_font{,_zh,_ko}_g{0,2,4,8,16,32}.woff2 (built by
+measure/build_demo_assets.py; the SC/KR full-font grid references come
+from measure/demo_full_grids_zhko.py).
 
 Round 3: section 2 renders text *live in the browser* with the actual
 quantised subset fonts (FontFace API) instead of swapping pre-rendered
 PNGs; section 3 shows the delivery x GLC layers as animated bars with a
-ja/zh/ko switcher. CSS, JavaScript and numeric data are inline; the
-demo fonts are the only external files, loaded on demand.
+ja/zh/ko switcher. Round 5: the section-2 live preview gets the same
+ja/zh/ko switcher, with per-language subset assets, charsets, samples
+and full-font grid references. CSS, JavaScript and numeric data are
+inline; the demo fonts are the only external files, loaded on demand.
 """
 from __future__ import annotations
 
@@ -88,6 +91,18 @@ def full_grid_bytes(fullsweep):
             grid = number(row.get("grid"))
             if grid in GRIDS:
                 result[str(int(grid))] = number(row.get("bytes"))
+    return result
+
+
+def full_grid_bytes_by_lang(fullsweep, demo_full_zhko):
+    """Per-language full-font WOFF2 bytes per grid (ja from the published
+    sweep, zh/ko from measure/demo_full_grids_zhko.py)."""
+    result = {"ja": full_grid_bytes(fullsweep), "zh": {}, "ko": {}}
+    for row in demo_full_zhko:
+        if isinstance(row, dict) and row.get("lang") in ("zh", "ko"):
+            grid = number(row.get("grid"))
+            if grid in GRIDS:
+                result[row["lang"]][str(int(grid))] = number(row.get("bytes"))
     return result
 
 
@@ -307,15 +322,31 @@ JS = r"""
 
   /* ---------- section 2: live rendering with the real quantised fonts ---------- */
   const grids = [0, 2, 4, 8, 16, 32];
-  const assets = object(data.demo_assets);
-  const assetGrids = object(assets.grids);
-  const charset = new Set(typeof assets.charset === 'string' ? Array.from(assets.charset) : []);
+  const langNames = {ja: 'Noto Sans JP', zh: 'Noto Sans SC', ko: 'Noto Sans KR'};
+  const allAssets = object(data.demo_assets);
+  const fullGrids = object(data.full_grids);
+  let epsLang = 'ja';
   const loadedFaces = new Map();
+  const charsetCache = new Map();
   let loadToken = 0;
+
+  const langAssets = () => object(allAssets[epsLang]);
+  function langCharset() {
+    if (!charsetCache.has(epsLang)) {
+      const cs = langAssets().charset;
+      charsetCache.set(epsLang, new Set(typeof cs === 'string' ? Array.from(cs) : []));
+    }
+    return charsetCache.get(epsLang);
+  }
+  const langUpm = () => {
+    const upm = langAssets().upm;
+    return valid(upm) && upm > 0 ? upm : 1000;
+  };
 
   function renderPreview() {
     const input = element('sample-input');
     if (!input) return;
+    const charset = langCharset();
     const text = input.value || '';
     let oob = 0;
     const build = target => {
@@ -346,18 +377,20 @@ JS = r"""
   }
 
   async function applyGrid(grid) {
+    const assetGrids = object(langAssets().grids);
     const row = object(assetGrids[String(grid)]);
     const token = ++loadToken;
     const status = element('font-status');
     if (!row.file) { put('font-status', 'この格子幅のフォントデータがありません。'); return; }
     if (status) status.textContent = `g=${grid} の実フォントを読み込み中…`;
     try {
-      const family = `GLCDemoLive-g${grid}`;
-      if (!loadedFaces.has(grid)) {
+      const family = `GLCDemoLive-${epsLang}-g${grid}`;
+      const key = `${epsLang}:${grid}`;
+      if (!loadedFaces.has(key)) {
         const face = new FontFace(family, `url("assets/${row.file}")`, {style: 'normal', weight: '400'});
         await face.load();
         document.fonts.add(face);
-        loadedFaces.set(grid, face);
+        loadedFaces.set(key, face);
       }
       if (token !== loadToken) return; // a newer slider position won
       for (const id of ['preview-big', 'preview-body']) {
@@ -371,7 +404,7 @@ JS = r"""
       }
     }
     const base0 = object(assetGrids['0']);
-    const epsilon = grid / (2 * 1000) * 100;
+    const epsilon = grid / (2 * langUpm()) * 100;
     put('grid-value', `g = ${grid}`);
     const slider = element('epsilon-grid');
     if (slider) slider.setAttribute('aria-valuetext', `格子幅 ${grid}、最大誤差 ${format(epsilon, 1)}% em`);
@@ -380,8 +413,8 @@ JS = r"""
     put('asset-delta', valid(row.bytes) && valid(base0.bytes) && base0.bytes > 0
       ? `g=0 比 ${format(100 * (row.bytes / base0.bytes - 1), 1)}%（${format(Math.abs(row.bytes - base0.bytes))} B ${row.bytes <= base0.bytes ? '減' : '増'}）`
       : 'データなし');
-    const full = object(data.full_grids)[String(grid)];
-    const full0 = object(data.full_grids)['0'];
+    const full = object(fullGrids[epsLang])[String(grid)];
+    const full0 = object(fullGrids[epsLang])['0'];
     put('full-bytes', bytes(full));
     put('full-ratio', valid(full) && valid(full0) && full0 > 0
       ? `${format(full / full0 * 100, 1)}%（g=0 を 100%）` : 'データなし');
@@ -397,6 +430,27 @@ JS = r"""
     if (!slider) return;
     const grid = grids[Number(slider.value)];
     if (grid !== undefined) applyGrid(grid);
+  }
+
+  function showEpsLang(lang) {
+    if (!allAssets[lang]) return;
+    const prevSample = langAssets().sample;
+    epsLang = lang;
+    for (const btn of document.querySelectorAll('[data-eps-btn]')) {
+      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-eps-btn') === lang));
+    }
+    put('eps-font-name', langNames[lang] || lang);
+    const cs = langAssets().charset_size;
+    put('eps-charset-size', valid(cs) ? format(cs) : '数千');
+    put('eps-upm', format(langUpm()));
+    const input = element('sample-input');
+    const sample = langAssets().sample;
+    if (input && typeof sample === 'string' && sample &&
+        (input.value === prevSample || input.value === '')) {
+      input.value = sample; // untouched sample follows the language switch
+    }
+    renderPreview();
+    updateGrid();
   }
 
   /* ---------- section 3: language switcher + bar animation ---------- */
@@ -423,23 +477,23 @@ JS = r"""
   for (const btn of document.querySelectorAll('[data-lang-btn]')) {
     btn.addEventListener('click', () => showStudy(btn.getAttribute('data-lang-btn')));
   }
+  for (const btn of document.querySelectorAll('[data-eps-btn]')) {
+    btn.addEventListener('click', () => showEpsLang(btn.getAttribute('data-eps-btn')));
+  }
   updateText();
-  renderPreview();
-  updateGrid();
+  showEpsLang('ja');
   showStudy('ja');
 })();
 """
 
 
-def build(combined, studies, fullsweep, demo_assets):
-    meta = obj(combined.get("meta"))
-    summary = obj(combined.get("summary"))
-    base = obj(meta.get("base500"))
-    asset_rows = {}
-    for row in demo_assets.get("grids", []):
+def lang_asset_payload(entry):
+    """One language's demo-asset block for the embedded payload."""
+    rows = {}
+    for row in entry.get("grids", []):
         if isinstance(row, dict) and number(row.get("grid")) in GRIDS:
             fid = obj(row.get("fidelity"))
-            asset_rows[str(int(row["grid"]))] = {
+            rows[str(int(row["grid"]))] = {
                 "file": row.get("file"),
                 "bytes": number(row.get("bytes")),
                 "fidelity": {
@@ -448,17 +502,32 @@ def build(combined, studies, fullsweep, demo_assets):
                     "psnr_db": number(fid.get("psnr_db")),
                 },
             }
+    return {
+        "charset": entry.get("charset") if isinstance(entry.get("charset"), str) else "",
+        "charset_size": number(entry.get("charset_size")),
+        "upm": number(entry.get("upm")),
+        "sample": entry.get("sample") if isinstance(entry.get("sample"), str) else "",
+        "grids": rows,
+    }
+
+
+def build(combined, studies, fullsweep, demo_assets, demo_full_zhko):
+    meta = obj(combined.get("meta"))
+    summary = obj(combined.get("summary"))
+    base = obj(meta.get("base500"))
+    languages = obj(demo_assets.get("languages"))
+    if not languages:
+        # Round-3 shape: top-level fields are the Japanese entry.
+        languages = {"ja": demo_assets}
+    assets_payload = {lang: lang_asset_payload(obj(languages.get(lang)))
+                      for lang, _, _ in LANGS}
     payload = {
         "meta": {"base500_chars": meta.get("base500_chars") if isinstance(meta.get("base500_chars"), str) else None,
                  "base500": {key: number(base.get(key)) for key in ("exact", "exact_glc8")}},
         "anchors": [{key: number(obj(row).get(key)) for key in ("chars", "exact", "exact_glc8")}
                     for row in combined.get("anchors", [])] if isinstance(combined.get("anchors"), list) else [],
-        "full_grids": full_grid_bytes(fullsweep),
-        "demo_assets": {
-            "charset": demo_assets.get("charset") if isinstance(demo_assets.get("charset"), str) else "",
-            "charset_size": number(demo_assets.get("charset_size")),
-            "grids": asset_rows,
-        },
+        "full_grids": full_grid_bytes_by_lang(fullsweep, demo_full_zhko),
+        "demo_assets": assets_payload,
     }
     estimate_rows = "".join(
         f'<tr><th scope="row">{esc(label)} <span class="tag est">推定</span></th>'
@@ -466,11 +535,15 @@ def build(combined, studies, fullsweep, demo_assets):
     )
     full_label = esc(byte_label(meta.get("full_font_woff2_bytes")))
     google_label = esc(byte_label(obj(summary.get("google_fonts")).get("median")))
-    sample_text = demo_assets.get("sample") if isinstance(demo_assets.get("sample"), str) else SAMPLE
-    charset_size = payload["demo_assets"]["charset_size"]
+    ja_assets = obj(languages.get("ja"))
+    sample_text = ja_assets.get("sample") if isinstance(ja_assets.get("sample"), str) else SAMPLE
+    charset_size = assets_payload["ja"]["charset_size"]
     charset_label = f"{charset_size:,.0f}" if charset_size is not None else "数千"
     lang_buttons = "".join(
         f'<button type="button" data-lang-btn="{lang}" aria-pressed="{"true" if lang == "ja" else "false"}">{esc(label)}</button>'
+        for lang, label, _ in LANGS)
+    eps_buttons = "".join(
+        f'<button type="button" data-eps-btn="{lang}" aria-pressed="{"true" if lang == "ja" else "false"}">{esc(label)}</button>'
         for lang, label, _ in LANGS)
     blocks = "".join(
         study_block(lang, label, font_label, studies[lang], lang == "ja")
@@ -489,7 +562,7 @@ def build(combined, studies, fullsweep, demo_assets):
 <h1>CJK Web フォント圧縮を試す</h1>
 <p class="sub">必要な文字を選ぶ配信方式と、輪郭の精度を調整する GLC を組み合わせる</p>
 <p class="small" lang="en">Interactive demo · Live font rendering, text payload estimates, and combined measurements</p>
-<p class="meta">対象: Noto Sans JP ／ 実測 JSON と実フォントに基づく比較</p>
+<p class="meta">対象: Noto Sans JP / SC / KR ／ 実測 JSON と実フォントに基づく比較</p>
 </header>
 <p class="lead">文章を入力して転送量の目安を確認し、格子幅スライダーでは<b>実際の量子化フォントを
 ブラウザに読み込んで、その場で文字を描き直します</b>（画像の差し替えではありません）。
@@ -528,13 +601,15 @@ def build(combined, studies, fullsweep, demo_assets):
 <section aria-labelledby="epsilon">
 <h2 id="epsilon">2. 許容誤差と見た目（ライブ描画）<span class="en" lang="en">Epsilon slider · Live rendering with the real fonts</span></h2>
 <p>GLC は輪郭座標を格子に丸めます。スライダーを動かすと、その格子幅で実際に量子化した
-サブセットフォント（{charset_label} 文字収録）をブラウザが読み込み、下の文章を描き直します。
+サブセットフォント（<span id="eps-font-name">Noto Sans JP</span>、<span id="eps-charset-size">{charset_label}</span> 文字収録）をブラウザが読み込み、下の文章を描き直します。
+言語を切り替えると中国語・韓国語の実フォントでも同じ体験ができます。
 文章は編集できます。サブセットに無い文字は赤く表示され、代替フォントで描かれます。</p>
+<div class="lang-switch" role="group" aria-label="プレビューの言語切替">{eps_buttons}</div>
 <div class="card">
 <label for="epsilon-grid">格子幅 <output id="grid-value" for="epsilon-grid" class="control-value">g = 8</output></label>
 <input id="epsilon-grid" type="range" min="0" max="5" step="1" value="3" aria-describedby="epsilon-model">
 <div class="grid-labels" aria-hidden="true"><span>0</span><span>2</span><span>4</span><span>8</span><span>16</span><span>32</span></div>
-<p class="note" id="epsilon-model">最大座標誤差 ε = g / (2 × UPM) × 100%。UPM = 1000、g=0 は基準です。</p>
+<p class="note" id="epsilon-model">最大座標誤差 ε = g / (2 × UPM) × 100%。UPM = <span id="eps-upm">1000</span>、g=0 は基準です。</p>
 <label for="sample-input">プレビューの文章（編集可）</label>
 <textarea id="sample-input" spellcheck="false">{esc(sample_text)}</textarea>
 <p class="note" id="font-status" role="status">フォントを読み込んでいません。</p>
@@ -566,12 +641,12 @@ def build(combined, studies, fullsweep, demo_assets):
 {blocks}
 <p class="note">削減率 = (1 − 各中央値または参考値 / Google Fonts 方式の中央値) × 100%。負の値は増加を表します。
 中央値はページ別の比率の中央値とは一致しません。cold / warm のキャッシュ条件はセクション1と同じです。
-韓国語は文字集合の記録がある 4 ページのみが対象です（記録のない大手ポータル2件は除外し、各ブロックに明記）。</p>
+中国語・韓国語は文字集合の記録があるページのみが対象です（記録のないページは各ブロックに明記）。</p>
 </section>
 <footer>
 <p><a href="index.html">配信方式のレポート</a> ／ <a href="glc.html">GLC のレポート</a></p>
 <p>出典の数値は実フォントでの測定値です（data: <code>measure/out/*.json</code>）。
-入力文の転送量は実測アンカーに基づく推定です。ライブ描画には <code>assets/demo_font_g*.woff2</code>
+入力文の転送量は実測アンカーに基づく推定です。ライブ描画には <code>assets/demo_font{{,_zh,_ko}}_g*.woff2</code>
 （<code>measure/build_demo_assets.py</code> で生成）を使います。</p>
 <p>生成: <code>report/build_demo.py</code> ／ CSS・JavaScript・数値データはこの HTML 内に収録。</p>
 </footer>
@@ -591,12 +666,16 @@ def main():
     }
     fullsweep = read_json("glc_fullsweep.json", list)
     demo_assets = read_json("demo_assets.json", dict)
-    for grid in GRIDS:
-        asset = REPORT / "assets" / f"demo_font_g{grid}.woff2"
-        if not asset.is_file():
-            raise SystemExit(f"Missing demo font {asset} -- run measure/build_demo_assets.py first")
+    demo_full_zhko = read_json("demo_full_zhko.json", list)
+    prefixes = {"ja": "demo_font", "zh": "demo_font_zh", "ko": "demo_font_ko"}
+    for lang, prefix in prefixes.items():
+        for grid in GRIDS:
+            asset = REPORT / "assets" / f"{prefix}_g{grid}.woff2"
+            if not asset.is_file():
+                raise SystemExit(f"Missing demo font {asset} -- run measure/build_demo_assets.py first")
     output = REPORT / "demo.html"
-    output.write_text(build(combined, studies, fullsweep, demo_assets), encoding="utf-8")
+    output.write_text(build(combined, studies, fullsweep, demo_assets,
+                            demo_full_zhko), encoding="utf-8")
     print(f"Wrote {output} ({output.stat().st_size:,} bytes)")
     return 0
 

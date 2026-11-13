@@ -54,7 +54,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from cff2glyf import cff_to_glyf  # noqa: E402
-from glyphcodec import process_font, process_variable_font  # noqa: E402
+from glyphcodec import (process_font, process_variable_font,  # noqa: E402
+                        vf_glyph_errors_at, vf_sample_locations)
 
 CFF_ERR_RATIO = 0.001  # GLC-0 budget: 0.1 % of em, as published
 
@@ -99,6 +100,126 @@ def font_info(path: Path) -> dict:
     return info
 
 
+def loc_label(loc: dict) -> str:
+    return ",".join(f"{k}={v:g}" for k, v in sorted(loc.items()))
+
+
+def measure_vf_errors(stock: Path, quant: Path, locations: list[dict]):
+    """Worst per-glyph error of `quant` vs `stock` over all locations.
+
+    Returns (per_glyph_max, rows, mismatches): rows has one entry per
+    location with that location's max error; mismatches is the total
+    point-count mismatch count over locations (must stay 0).
+    """
+    per_glyph: dict[str, float] = {}
+    rows = []
+    mismatches = 0
+    for loc in locations:
+        errs, mm = vf_glyph_errors_at(str(stock), str(quant), loc)
+        mismatches += mm
+        rows.append({"location": loc_label(loc),
+                     "max_error_units": max(errs.values(), default=0)})
+        for name, e in errs.items():
+            if e > per_glyph.get(name, 0):
+                per_glyph[name] = e
+    return per_glyph, rows, mismatches
+
+
+def process_variable_font_protected(src: Path, dst: Path, grid: int,
+                                    drop_vertical: bool, work: Path) -> dict:
+    """--quantize-variable plus M3 tail exemption (design study §5/§8).
+
+    Build the unprotected quantised font, instance it at the fvar peaks
+    (vf_sample_locations) against the stock font, exempt every glyph
+    whose interpolated error exceeds the bound 2*grid, rebuild, and
+    verify. Exempt glyphs keep their exact default outlines, so their
+    own error collapses to ~0 and no other glyph's error changes; the
+    verify pass re-measures everything anyway and the loop repeats
+    (max 3 rounds) if anything still exceeds the bound.
+    """
+    bound = 2 * grid
+    stock_font = TTFont(str(src))
+    locations = vf_sample_locations(stock_font)
+    stock_font.close()
+
+    unprot = work / "vf_unprotected.ttf"
+    stats = process_variable_font(str(src), str(unprot), grid=grid,
+                                  drop_vertical=drop_vertical)
+    unprot_bytes = woff2_encode(unprot, work / "vf_unprotected.woff2")
+    per_glyph, rows_before, mm_before = measure_vf_errors(src, unprot, locations)
+
+    exempt: set[str] = set()
+    cur_ttf, cur_stats = unprot, stats
+    rows_after = rows_before
+    mm_after = mm_before
+    for _ in range(3):
+        new = {g for g, e in per_glyph.items() if e > bound}
+        if not new - exempt:
+            break
+        exempt |= new
+        cur_ttf = work / "vf_protected.ttf"
+        cur_stats = process_variable_font(str(src), str(cur_ttf), grid=grid,
+                                          drop_vertical=drop_vertical,
+                                          exempt=exempt)
+        per_glyph, rows_after, mm_after = measure_vf_errors(src, cur_ttf,
+                                                            locations)
+    shutil.copyfile(cur_ttf, dst)
+    prot_bytes = woff2_encode(cur_ttf, work / "vf_protected.woff2")
+    worst_after = max((r["max_error_units"] for r in rows_after), default=0)
+    return {
+        **cur_stats,
+        "protected": True,
+        "bound_units": bound,
+        "exempt_glyphs": len(exempt),
+        "sample_locations": [r["location"] for r in rows_after],
+        "max_error_before": {r["location"]: r["max_error_units"]
+                             for r in rows_before},
+        "max_error_after": {r["location"]: r["max_error_units"]
+                            for r in rows_after},
+        "worst_max_error_after_units": worst_after,
+        "bound_met": worst_after <= bound,
+        "point_count_mismatches_before": mm_before,
+        "point_count_mismatches_after": mm_after,
+        "unprotected_woff2_bytes": unprot_bytes,
+        "protected_woff2_bytes": prot_bytes,
+    }
+
+
+def arm_a_reference(src: Path, grid: int, keep_vertical: bool,
+                    work: Path) -> dict | None:
+    """Arm A reference price: GLC instances at wght 400 + 700, summed.
+
+    The published recommendation (round 4) is instancing {400, 700};
+    the protected single file is only worth its size if it competes
+    with that bundle. Returns None for fonts without a wght axis.
+    Mirrors this CLI's own --instance flow (instance -> drop vertical
+    -> process_font -> WOFF2).
+    """
+    f = TTFont(str(src), lazy=True)
+    if "fvar" not in f:
+        f.close()
+        return None
+    axis = next((a for a in f["fvar"].axes if a.axisTag == "wght"), None)
+    f.close()
+    if axis is None:
+        return None
+    weights = sorted({min(max(w, axis.minValue), axis.maxValue)
+                      for w in (400.0, 700.0)})
+    total = 0
+    per = {}
+    for w in weights:
+        inst = work / f"arma_{w:g}.ttf"
+        run([sys.executable, "-m", "fontTools.varLib.instancer", str(src),
+             f"wght={w:g}", "-o", str(inst)])
+        if not keep_vertical:
+            drop_vertical(inst)
+        out = work / f"arma_{w:g}_glc.ttf"
+        process_font(str(inst), str(out), canonical=False, grid=grid)
+        per[f"wght={w:g}"] = woff2_encode(out, work / f"arma_{w:g}.woff2")
+        total += per[f"wght={w:g}"]
+    return {"weights": per, "total_woff2_bytes": total}
+
+
 def drop_vertical(path: Path) -> None:
     from fontTools.ttLib import TTFont
     f = TTFont(str(path))
@@ -130,6 +251,11 @@ def main() -> int:
                     help="quantise a variable font's default outlines in place, keeping gvar "
                          "(one file, all weights; the GLC-4 max-error guarantee does NOT hold "
                          "away from the default weight -- see docstring)")
+    ap.add_argument("--quantize-variable-protected", action="store_true",
+                    help="like --quantize-variable, plus M3 tail protection: measure the "
+                         "interpolated error at the fvar peaks, exempt the glyphs that "
+                         "exceed 2*grid units (their default outlines stay exact), rebuild "
+                         "and verify (experimental; measured numbers in the docstring)")
     ap.add_argument("--subset-file", help="file whose characters define the subset")
     ap.add_argument("--subset-text", help="literal characters defining the subset")
     ap.add_argument("--unicodes", help="comma list like U+3042,U+4E00-4E10")
@@ -196,11 +322,15 @@ def main() -> int:
         shutil.copyfile(src, cur)
 
         info = font_info(cur)
-        vf_mode = bool(info["variable"] and args.quantize_variable and not args.instance)
-        if info["variable"] and not args.instance and not args.quantize_variable:
+        protected = bool(args.quantize_variable_protected)
+        vf_mode = bool(info["variable"] and (args.quantize_variable or protected)
+                       and not args.instance)
+        if info["variable"] and not args.instance and not vf_mode:
             ap.error("variable font: pass --instance (e.g. --instance wght=400) for the "
-                     "guaranteed per-weight flow, or --quantize-variable to quantise the "
-                     "default outlines in place (max-error guarantee lost; see docstring)")
+                     "guaranteed per-weight flow, --quantize-variable to quantise the "
+                     "default outlines in place (max-error guarantee lost), or "
+                     "--quantize-variable-protected for the peak-verified variant "
+                     "(see docstring)")
         if vf_mode and (unicodes is not None or args.desubroutinize):
             ap.error("--quantize-variable covers the full font; subsetting a variable "
                      "font is out of scope (instance it first, then subset the instance)")
@@ -258,7 +388,26 @@ def main() -> int:
         err_stats = {}
         if has_glyf and (grid > 0 or (args.canonical and not vf_mode)):
             dst = work / "step4.ttf"
-            if vf_mode:
+            if vf_mode and protected:
+                vf_src = cur  # vf_mode forbids earlier stages: still pristine
+                err_stats = process_variable_font_protected(
+                    vf_src, dst, grid=grid,
+                    drop_vertical=not args.keep_vertical, work=work)
+                err_stats["arm_a_reference"] = arm_a_reference(
+                    vf_src, grid, args.keep_vertical, work)
+                cur = dst
+                worst_before = max(err_stats["max_error_before"].values(),
+                                   default=0)
+                note(f"GLC-4 quantise VARIABLE PROTECTED grid={grid} "
+                     f"(eps {grid / (2 * info['upm']) * 100:.2f}% em)", None,
+                     f"{err_stats.get('quantized', 0):,} simple glyphs quantised, "
+                     f"{err_stats.get('exempt_glyphs', 0)} tail glyphs exempted "
+                     f"(M3); peak max error {worst_before} -> "
+                     f"{err_stats.get('worst_max_error_after_units', 0)} units "
+                     f"(bound {err_stats.get('bound_units', 0)}); protected WOFF2 "
+                     f"{err_stats.get('protected_woff2_bytes', 0):,} B vs unprotected "
+                     f"{err_stats.get('unprotected_woff2_bytes', 0):,} B")
+            elif vf_mode:
                 err_stats = process_variable_font(
                     str(cur), str(dst), grid=grid,
                     drop_vertical=not args.keep_vertical)
@@ -295,6 +444,7 @@ def main() -> int:
     report = {
         "input": str(src), "output": str(out_path),
         "variable_quantized": vf_mode,
+        "variable_protected": bool(vf_mode and protected),
         "upm": info["upm"], "grid": grid if has_glyf else 0,
         "stock_woff2_bytes": stock_bytes, "glc_woff2_bytes": glc_bytes,
         "kept": kept, "final_bytes": final_bytes,
@@ -311,7 +461,21 @@ def main() -> int:
     print(f"GLC   WOFF2 : {glc_bytes:>10,} B")
     print(f"kept        : {kept} -> {out_path} ({final_bytes:,} B, "
           f"{report['delta_vs_stock_pct']:+.1f}% vs stock)")
-    if vf_mode:
+    if vf_mode and protected:
+        arm_a = err_stats.get("arm_a_reference") or {}
+        print("NOTE: variable font quantised in place WITH M3 tail protection\n"
+              "(experimental). Glyphs whose interpolated error at the fvar peaks\n"
+              f"exceeded {err_stats.get('bound_units', 0)} units were exempted from\n"
+              "quantisation; the rebuilt font was re-measured at the same peaks:\n"
+              f"  max error before: {err_stats.get('max_error_before', {})}\n"
+              f"  max error after : {err_stats.get('max_error_after', {})}\n"
+              f"  exempt glyphs   : {err_stats.get('exempt_glyphs', 0)}\n"
+              f"  size            : protected {err_stats.get('protected_woff2_bytes', 0):,} B "
+              f"vs unprotected {err_stats.get('unprotected_woff2_bytes', 0):,} B"
+              + (f" vs Arm A {{400,700}} instances "
+                 f"{arm_a.get('total_woff2_bytes', 0):,} B" if arm_a else "")
+              + "\n--instance per weight remains the recommended flow.")
+    elif vf_mode:
         print("NOTE: variable font quantised in place. Mean outline error stays at the\n"
               "static level at every weight, but the MAX point error grows away from\n"
               "the default weight (gvar IUP interpolation): measured 4 units at the\n"
