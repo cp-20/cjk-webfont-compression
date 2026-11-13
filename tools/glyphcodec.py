@@ -180,7 +180,8 @@ def process_font(path: str, out: str, canonical: bool = True, grid: int = 0,
 
 
 def process_variable_font(path: str, out: str, grid: int = 0,
-                          drop_vertical: bool = False) -> dict:
+                          drop_vertical: bool = False,
+                          exempt: set | None = None) -> dict:
     """Quantise a variable font's *default* outlines in place (GLC for VF).
 
     gvar addresses glyph points by index, so this path is deliberately
@@ -208,15 +209,23 @@ def process_variable_font(path: str, out: str, grid: int = 0,
     font = TTFont(path, recalcBBoxes=False, recalcTimestamp=False)
     if "fvar" not in font:
         raise ValueError("process_variable_font: input is not a variable font")
+    exempt = exempt or set()
     glyf = font["glyf"]
-    stats = {"quantized": 0, "glyphs": 0, "composites_kept": 0}
+    stats = {"quantized": 0, "glyphs": 0, "composites_kept": 0, "exempted": 0}
     for gn in font.getGlyphOrder():
         if gn not in glyf.glyphs:
             continue
         g = glyf[gn]  # indexing decompiles the lazy glyph
         if g.numberOfContours > 0:
             stats["glyphs"] += 1
-            if grid and quantize_glyph(g, grid):
+            if gn in exempt:
+                # M3 exemption (docs/gvar-aware-quantiser-design.md): the
+                # glyph's default outline keeps full precision, so gvar's
+                # IUP ratios are computed from exact geometry and this
+                # glyph's interpolated error collapses to ~0. Everything
+                # else (hinting strip below) still applies.
+                stats["exempted"] += 1
+            elif grid and quantize_glyph(g, grid):
                 stats["quantized"] += 1
                 try:
                     g.recalcBounds(glyf)
@@ -242,6 +251,101 @@ def process_variable_font(path: str, out: str, grid: int = 0,
                 del font[tag]
     font.save(out)
     return stats
+
+
+def vf_sample_locations(font) -> list[dict]:
+    """Instancer locations at which to measure a quantised VF's error.
+
+    Per the design study (docs/gvar-aware-quantiser-design.md §5.1):
+    the IUP ratio term is maximised at tuple peaks, and midpoints guard
+    the implementation. For each axis the sweep is {min, default, max}
+    plus every gvar tuple peak plus the midpoints between consecutive
+    values of that set, swept one axis at a time with the other axes at
+    their defaults; the all-min and all-max corners are added. The
+    default location comes first. `font` is a TTFont with fvar.
+    """
+    fvar = font["fvar"]
+    defaults = {a.axisTag: a.defaultValue for a in fvar.axes}
+    peaks = {a.axisTag: set() for a in fvar.axes}
+    if "gvar" in font:
+        for variations in font["gvar"].variations.values():
+            for tup in variations:
+                for tag, (_start, peak, _end) in tup.axes.items():
+                    if peak:
+                        axis = next(a for a in fvar.axes if a.axisTag == tag)
+                        peaks[tag].add(axis.minValue + peak *
+                                       (axis.maxValue - axis.minValue))
+    locations: list[dict] = []
+
+    def add(loc):
+        if loc not in locations:
+            locations.append(loc)
+
+    add(dict(defaults))
+    for axis in fvar.axes:
+        if axis.minValue == axis.maxValue:
+            continue
+        vals = sorted({axis.minValue, axis.defaultValue, axis.maxValue}
+                      | peaks[axis.axisTag])
+        vals += [(a + b) / 2 for a, b in zip(vals, vals[1:])]
+        for v in sorted(set(vals)):
+            loc = dict(defaults)
+            loc[axis.axisTag] = v
+            add(loc)
+    for extreme in ("minValue", "maxValue"):
+        add({a.axisTag: getattr(a, extreme) for a in fvar.axes})
+    return locations
+
+
+def vf_glyph_errors_at(stock_path: str, quant_path: str,
+                       location: dict) -> tuple[dict, int]:
+    """Per-glyph max coordinate error of quant vs stock at one location.
+
+    Both fonts are instanced at `location` and simple-glyph outlines
+    compared point by point (same convention as
+    measure/iup_amplification.py: composites are skipped, point-count
+    mismatches are counted, not compared). The instanced fonts are
+    round-tripped through glyf serialisation before comparing, so
+    coordinates are the integers a shipped file would carry -- the
+    round-3/4 harness compared saved instance files, and in-memory
+    interpolation can otherwise report half-unit errors (16.5 where
+    the saved instance measures 16). Returns (errors, mismatches)
+    with errors mapping glyph name -> max abs coordinate difference.
+    """
+    import io
+
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    def instanced(path):
+        f = TTFont(path)
+        instantiateVariableFont(f, location, inplace=True)
+        buf = io.BytesIO()
+        f.save(buf)
+        f.close()
+        buf.seek(0)
+        return TTFont(buf)
+
+    fq, fs = instanced(quant_path), instanced(stock_path)
+    gq, gs = fq["glyf"], fs["glyf"]
+    errs: dict[str, float] = {}
+    mismatches = 0
+    for name in fq.getGlyphOrder():
+        try:
+            a, b = gq[name], gs[name]
+        except Exception:  # noqa: BLE001
+            mismatches += 1
+            continue
+        if a.isComposite() or b.isComposite() or not hasattr(a, "coordinates"):
+            continue
+        ca, cb = a.coordinates, b.coordinates
+        if len(ca) != len(cb):
+            mismatches += 1
+            continue
+        errs[name] = max((max(abs(x1 - x2), abs(y1 - y2))
+                          for (x1, y1), (x2, y2) in zip(ca, cb)), default=0)
+    fq.close()
+    fs.close()
+    return errs, mismatches
 
 
 def main():

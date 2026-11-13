@@ -1,0 +1,98 @@
+[
+  {
+    "lang": "zh",
+    "font": "Noto Sans SC",
+    "grid": 0,
+    "bytes": 4192764,
+    "prep_s": 15.57,
+    "encode_s": 64.24
+  },
+  {
+    "lang": "zh",
+    "font": "Noto Sans SC",
+    "grid": 2,
+    "bytes": 3989416,
+    "prep_s": 37.6,
+    "encode_s": 90.83
+  },
+  {
+    "lang": "zh",
+    "font": "Noto Sans SC",
+    "grid": 4,
+    "bytes": 3477200,
+    "prep_s": 38.9,
+    "encode_s": 99.79
+  },
+  {
+    "lang": "zh",
+    "font": "Noto Sans SC",
+    "grid": 8,
+    "bytes": 3046964,
+    "prep_s": 52.88,
+    "encode_s": 107.84
+  },
+  {
+    "lang": "zh",
+    "font": "Noto Sans SC",
+    "grid": 16,
+    "bytes": 2655320,
+    "prep_s": 45.08,
+    "encode_s": 87.15
+  },
+  {
+    "lang": "zh",
+    "font": "Noto Sans SC",
+    "grid": 32,
+    "bytes": 2328296,
+    "prep_s": 41.85,
+    "encode_s": 94.9
+  },
+  {
+    "lang": "ko",
+    "font": "Noto Sans KR",
+    "grid": 0,
+    "bytes": 2073104,
+    "prep_s": 13.26,
+    "encode_s": 72.07
+  },
+  {
+    "lang": "ko",
+    "font": "Noto Sans KR",
+    "grid": 2,
+    "bytes": 2001084,
+    "prep_s": 27.48,
+    "encode_s": 77.42
+  },
+  {
+    "lang": "ko",
+    "font": "Noto Sans KR",
+    "grid": 4,
+    "bytes": 1782348,
+    "prep_s": 40.08,
+    "encode_s": 87.13
+  },
+  {
+    "lang": "ko",
+    "font": "Noto Sans KR",
+    "grid": 8,
+    "bytes": 1585340,
+    "prep_s": 42.67,
+    "encode_s": 86.52
+  },
+  {
+    "lang": "ko",
+    "font": "Noto Sans KR",
+    "grid": 16,
+    "bytes": 1405804,
+    "prep_s": 42.94,
+    "encode_s": 83.39
+  },
+  {
+    "lang": "ko",
+    "font": "Noto Sans KR",
+    "grid": 32,
+    "bytes": 1253168,
+    "prep_s": 15.86,
+    "encode_s": 28.81
+  }
+]
