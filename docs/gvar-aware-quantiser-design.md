@@ -45,9 +45,10 @@ font, GLC grid 8 unless stated:
 
 - Arm B2 ("VF-safe": quantise the default outline and the gvar deltas of
   a live variable font) shrinks the full-axis WOFF2 by only **−8.6%**
-  (re-verified in round 4 from the surviving artifacts:
-  <!--PROTO:b2size-->), against **−23.8%** for a static instance
-  quantised at one weight.
+  (re-verified in round 4 from the surviving artifacts: stock VF
+  4,350,156 B → B2 3,977,116 B; WOFF2 re-encoding wobbles ±0.02%
+  between runs), against **−23.8%** for a static instance quantised at
+  one weight.
 - Error at the default weight — which for Noto Sans JP is **wght 100**
   (its fvar default): max **4 units** per coordinate, for every glyph —
   exactly grid/2, as guaranteed by construction. (Round 4's prototype
@@ -338,11 +339,15 @@ simultaneously:
 2. **Size**: one file, all weights, smaller than what a site otherwise
    ships for the weights it actually uses. Round 4's usage analysis
    (docs/round4-2026-11-13.md §2) says that is two weights for almost
-   every site, so the bar is **< Arm A's {400,700} GLC total**
-   (<!--PROTO:armA700-->), while covering all nine weights. B2's
-   unprotected file is <!--PROTO:b2size2-->, so the protection budget —
-   everything M1–M3 may cost before the route stops winning — is
-   <!--PROTO:budget-->.
+   every site, so the bar is **< Arm A's {400,700} GLC total =
+   3,566,128 B**, while covering all nine weights. Measured reality:
+   B2's unprotected file is already **3,977,116 B** — it exceeds the
+   two-weight bar by 411 KB *before* any protection, because gvar data
+   does not quantise and glyf-side gains alone cannot close the gap.
+   Against the three-weight bundle ({400,500,700} = 5,358,272 B) the
+   protection budget would be 1.38 MB and M3 spends 8.5 KB of it; the
+   two-weight case is simply lost on size for this font, no matter how
+   good the error protection is.
 3. **No regressions**: glyf-side GLC gains retained on certified
    glyphs; the font instances cleanly with fontTools and renders
    identically to B2 at the default weight (same defaults for certified
@@ -350,7 +355,47 @@ simultaneously:
 
 ## 8. Verdict
 
-<!--PROTO:verdict-->
+**The error problem is solved in principle, and cheaply; the size
+problem is not, and on this font it is decisive. Do not implement the
+full gvar-aware quantiser now.**
+
+What the prototypes proved (§6):
+
+- The amplification is a tail phenomenon (1.3% of glyphs over 16 units
+  at wght 900; median amplification 1.0×). The certificate of §4 has a
+  small, findable failure set on a real font — the design's central
+  premise holds.
+- Even the crudest mitigation (M3 exemption of the whole tail) caps the
+  worst-case error at ε_hard = 2g (16 units at grid 8) for +0.21% file
+  size. With M1/M2 or a lower M3 threshold, ε_target = g is within
+  reach. Error protection is *not* the expensive part.
+
+What blocks the route (§7): with protection included, the single file
+is ≈ 3.99 MB — larger than the two GLC instances (3.57 MB) that round
+4's usage analysis shows are all but ~0.13% of real rendered text needs.
+The gvar-aware quantiser would be a large engineering project
+(certificate machinery, joint rounding, a verifier in the loop per font
+release) whose product loses to the incumbent flow in the common case.
+Round 3's product decision therefore stands, now with a mechanism and
+numbers behind it: `--instance` per weight remains the recommendation;
+`--quantize-variable` stays a labelled experiment.
+
+The verdict flips if any of these change:
+
+1. **The audience changes**: sites that genuinely ship ≥ 3 weights
+   (against {400,500,700} = 5.36 MB the protected single file wins by
+   1.37 MB and covers all nine weights), or a design system that needs
+   true single-file all-weight delivery with a hard error guarantee.
+2. **The font changes**: a VF whose gvar share is smaller (fewer tuples,
+   more referenced points) starts closer to the bar; the certificate
+   pass would price it exactly.
+3. **The cheap subset ships first**: an M3-style "protected" mode for
+   `--quantize-variable` — measure the tail per font build, exempt it,
+   verify — is ~one extra instancing pass on top of
+   `process_variable_font`, not the full joint optimiser. It caps the
+   error at 2g for ~+0.2% and would make the experimental flag honest
+   to ship. That is a round-5-sized task; the full design in §5 is
+   justified only together with condition 1 or 2.
 
 ## References
 

@@ -1,131 +1,144 @@
 {
   "meta": {
-    "generated": "2026-11-12T15:00:37Z",
+    "generated": "2026-11-13T01:17:11Z",
     "lang": "ko",
     "font": "Noto Sans KR (static 400, instanced from variable)",
-    "pages": 4,
+    "pages": 15,
     "pages_skipped_no_data": [
       "https://news.naver.com/",
-      "https://www.daum.net/"
+      "https://www.daum.net/",
+      "https://namu.wiki/w/%ED%95%9C%EA%B5%AD",
+      "https://www.hankyung.com/",
+      "https://www.ohmynews.com/",
+      "https://www.mois.go.kr/",
+      "https://velog.io/"
     ],
     "base_size": 500,
     "base_order": "document frequency over the language's pages",
-    "full_font_woff2_bytes": 2073072,
-    "base500_chars": "'(),.012345679·…가감게견국권금급기까날내는능다대데도된뒤드등락로른리마매미반발보부브비사상서성세수스승어에오외우운위으은을의이인일입자장전주준지체출카코트포피하한합했향형후\"%-/:?ABDEFIKMNPSTW[]kmp~‘’“”「」각간강같개거건검것겨격결경계고곳공과관광교구군규그극근글김께나난남너년념노높누눈뉴늘니단달당더독동되득든들디따때뜻라란래랫럼렇려력련례론료류르를린릴림립만많말맞메며명모목무문물민바박받방배범법변별병복본북분불빈삭산생석선설소속송순술쉬습시식신실심아안않알야약양억언업없었엔엘여역연열영예온올와완왜요용울워원월유육음응익임있작잠재쟁저적절점정제조족종중즈직진집차착찬참창찾채책처천철청초총최추축춤충취치칼커컴크키타택터통투특틀파퍼페편평표풍퓨프플핑학할함해행험현협호혼화확환회훈휘히힘!&*8<>CGHJLORUVY_abcdefghijlnorstuvwxyz↑《》上國美갈걱걸곡곤골곱귀긴길꼬꾸뀌끝끼낌났낮낸냈널넘네녀논놀농느닌님닥담답던덜덟돌될두둔둘둥듬듯땅떠떤떨또띠람랍랐랑램량러런럽렀레렵령록롭롯루륙률름링막맛망맨머먹멈면몇몬못묘묵뮤므믿밀및",
+    "full_font_woff2_bytes": 2072964,
+    "base500_chars": ",.기다대등에의이한()1236AI…가게국도로른를미발보비사상성세오외은을인일자전조지직카후-0459BE·개건격경계고과관금급까나내는능데된드들디려리마명문반부불서수스승시신심아안야어여연영요용운원위임장정제주준중진체최충코터통피하해했화7?CFMNPST[]emt간감강결공교규그난날너년늘니단달동되뒤라락란력록르린립만말맞매모무물민바방번법북브산석선소속술습알양업없었엔예와우유으음입작재차참처청출트특파편포프학할행현형호황회'8Oknors‘’“”각거걸검견구남노뉴당더독돌두든때람래러럼련메며면박백별병분생설송순식실애억언열온울육있저적절종집책천초총추축치크키타탄평표함합향험확훈!%/:DGHKacgilu겨광권근김담따또레론료륜림목받배버범변복본손슨않앞약역올완월익쟁점접존즈징째착창찾철케태택토투페품풍필협혼환활히JLRVbdfpvy~것골군극글긴께넘네논높누던될둘득땅떠랐런렸루류망묘밀및벌삼숨악왜움워윤잡젠족증질찬찰채첫취측친클퇴티판퍼플항획힘\"&Uhw韓갈같객굴길꾸끝났녀념느님뜻랑령례름링막많머베봉블빛살새색센숙슬십았웠율응잘좋줄춤층침커쿠틀팀폐폭풀혁혹희<>XYx갖겠곳귀",
     "base500": {
       "chars": 500,
-      "exact": 48392,
-      "exact_glc4": 44672,
-      "exact_glc8": 41964
+      "exact": 48040,
+      "exact_glc4": 44068,
+      "exact_glc8": 41040
     }
   },
   "summary": {
     "google_fonts": {
-      "median": 390964,
-      "mean": 412243,
-      "min": 140048,
-      "max": 802040
+      "median": 315920,
+      "mean": 408966.1,
+      "min": 57040,
+      "max": 1170572
     },
     "exact": {
-      "median": 72020,
-      "mean": 48614,
-      "min": 11360,
-      "max": 74276
+      "median": 53112,
+      "mean": 52684.3,
+      "min": 10912,
+      "max": 116368
     },
     "exact_glc4": {
-      "median": 65468,
-      "mean": 44006,
-      "min": 10616,
-      "max": 66540
+      "median": 47764,
+      "mean": 47657.6,
+      "min": 10172,
+      "max": 104880
     },
     "exact_glc8": {
-      "median": 60964,
-      "mean": 40760,
-      "min": 10076,
-      "max": 61032
+      "median": 44160,
+      "mean": 44018.9,
+      "min": 9616,
+      "max": 96416
     },
     "base_resid_cold": {
-      "median": 75232,
-      "mean": 65114,
-      "min": 49760,
-      "max": 80668
+      "median": 62764,
+      "mean": 67889.9,
+      "min": 48784,
+      "max": 118664
     },
     "base_resid_warm": {
-      "median": 26840,
-      "mean": 16722,
-      "min": 1368,
-      "max": 32276
+      "median": 14724,
+      "mean": 19849.9,
+      "min": 744,
+      "max": 70624
     },
     "base_resid_cold_glc8": {
-      "median": 64500,
-      "mean": 55690,
-      "min": 43280,
-      "max": 67488
+      "median": 53444,
+      "mean": 57537.3,
+      "min": 41764,
+      "max": 99312
     },
     "base_resid_warm_glc8": {
-      "median": 22536,
-      "mean": 13726,
-      "min": 1316,
-      "max": 25524
+      "median": 12404,
+      "mean": 16497.3,
+      "min": 724,
+      "max": 58272
     }
   },
   "gains": {
     "glc_gain_on_exact_subsets_pct": {
-      "grid4": 9.17,
-      "grid8": 15.6
+      "grid4": 9.28,
+      "grid8": 15.97
     },
-    "glc_gain_on_base500_pct": 13.28,
+    "glc_gain_on_base500_pct": 14.57,
     "glc_gain_on_anchors_pct": {
-      "100": 9.33,
-      "200": 10.2,
-      "300": 12.99,
-      "500": 13.3,
-      "750": 15.11,
-      "1000": 16.89
+      "100": 10.95,
+      "200": 12.89,
+      "300": 13.67,
+      "500": 14.37,
+      "750": 16.79,
+      "1000": 17.33,
+      "1500": 17.87
     }
   },
   "anchors": [
     {
       "chars": 100,
-      "exact": 10888,
-      "exact_glc4": 10400,
-      "exact_glc8": 9872,
-      "exact_glc16": 9324
+      "exact": 9864,
+      "exact_glc4": 9252,
+      "exact_glc8": 8784,
+      "exact_glc16": 8172
     },
     {
       "chars": 200,
-      "exact": 20228,
-      "exact_glc4": 19092,
-      "exact_glc8": 18164,
-      "exact_glc16": 16960
+      "exact": 18772,
+      "exact_glc4": 17460,
+      "exact_glc8": 16352,
+      "exact_glc16": 15080
     },
     {
       "chars": 300,
-      "exact": 26292,
-      "exact_glc4": 24380,
-      "exact_glc8": 22876,
-      "exact_glc16": 21040
+      "exact": 27624,
+      "exact_glc4": 25352,
+      "exact_glc8": 23848,
+      "exact_glc16": 21972
     },
     {
       "chars": 500,
-      "exact": 48392,
-      "exact_glc4": 44752,
-      "exact_glc8": 41956,
-      "exact_glc16": 38348
+      "exact": 48056,
+      "exact_glc4": 43984,
+      "exact_glc8": 41148,
+      "exact_glc16": 37380
     },
     {
       "chars": 750,
-      "exact": 72424,
-      "exact_glc4": 66172,
-      "exact_glc8": 61480,
-      "exact_glc16": 56208
+      "exact": 67444,
+      "exact_glc4": 60808,
+      "exact_glc8": 56120,
+      "exact_glc16": 50972
     },
     {
       "chars": 1000,
-      "exact": 88816,
-      "exact_glc4": 80144,
-      "exact_glc8": 73812,
-      "exact_glc16": 67112
+      "exact": 84752,
+      "exact_glc4": 76184,
+      "exact_glc8": 70064,
+      "exact_glc16": 63552
+    },
+    {
+      "chars": 1500,
+      "exact": 137900,
+      "exact_glc4": 123392,
+      "exact_glc8": 113264,
+      "exact_glc16": 102976
     }
   ],
   "per_page": [
@@ -134,64 +147,240 @@
       "genre": "encyclopedia",
       "chars": 752,
       "google_fonts": 802040,
-      "exact": 72020,
-      "resid_chars": 274,
-      "exact_glc4": 65468,
-      "base_resid_cold_glc4": 69084,
-      "base_resid_warm_glc4": 24412,
-      "exact_glc8": 60964,
-      "base_resid_cold_glc8": 64500,
-      "base_resid_warm_glc8": 22536,
-      "base_resid_cold": 75232,
-      "base_resid_warm": 26840
+      "exact": 71916,
+      "resid_chars": 296,
+      "exact_glc4": 65604,
+      "base_resid_cold_glc4": 70008,
+      "base_resid_warm_glc4": 25940,
+      "exact_glc8": 61036,
+      "base_resid_cold_glc8": 65044,
+      "base_resid_warm_glc8": 24004,
+      "base_resid_cold": 76332,
+      "base_resid_warm": 28292
     },
     {
       "url": "https://www.yna.co.kr/",
       "genre": "news",
       "chars": 115,
       "google_fonts": 140048,
-      "exact": 11360,
-      "resid_chars": 7,
-      "exact_glc4": 10616,
-      "base_resid_cold_glc4": 46012,
-      "base_resid_warm_glc4": 1340,
-      "exact_glc8": 10076,
-      "base_resid_cold_glc8": 43280,
-      "base_resid_warm_glc8": 1316,
-      "base_resid_cold": 49760,
-      "base_resid_warm": 1368
+      "exact": 11384,
+      "resid_chars": 8,
+      "exact_glc4": 10636,
+      "base_resid_cold_glc4": 45440,
+      "base_resid_warm_glc4": 1372,
+      "exact_glc8": 10088,
+      "base_resid_cold_glc8": 42392,
+      "base_resid_warm_glc8": 1352,
+      "base_resid_cold": 49452,
+      "base_resid_warm": 1412
     },
     {
       "url": "https://www.korea.kr/",
       "genre": "government",
       "chars": 442,
       "google_fonts": 315920,
-      "exact": 36800,
-      "resid_chars": 59,
-      "exact_glc4": 33400,
-      "base_resid_cold_glc4": 50544,
-      "base_resid_warm_glc4": 5872,
-      "exact_glc8": 30968,
-      "base_resid_cold_glc8": 47492,
-      "base_resid_warm_glc8": 5528,
-      "base_resid_cold": 54796,
-      "base_resid_warm": 6404
+      "exact": 36772,
+      "resid_chars": 76,
+      "exact_glc4": 33432,
+      "base_resid_cold_glc4": 51420,
+      "base_resid_warm_glc4": 7352,
+      "exact_glc8": 30900,
+      "base_resid_cold_glc8": 47956,
+      "base_resid_warm_glc8": 6916,
+      "base_resid_cold": 56016,
+      "base_resid_warm": 7976
     },
     {
       "url": "https://brunch.co.kr/",
       "genre": "blog",
       "chars": 901,
       "google_fonts": 390964,
-      "exact": 74276,
-      "resid_chars": 410,
-      "exact_glc4": 66540,
-      "base_resid_cold_glc4": 73208,
-      "base_resid_warm_glc4": 28536,
-      "exact_glc8": 61032,
-      "base_resid_cold_glc8": 67488,
-      "base_resid_warm_glc8": 25524,
-      "base_resid_cold": 80668,
-      "base_resid_warm": 32276
+      "exact": 74332,
+      "resid_chars": 412,
+      "exact_glc4": 66608,
+      "base_resid_cold_glc4": 72644,
+      "base_resid_warm_glc4": 28576,
+      "exact_glc8": 60872,
+      "base_resid_cold_glc8": 67024,
+      "base_resid_warm_glc8": 25984,
+      "base_resid_cold": 80224,
+      "base_resid_warm": 32184
+    },
+    {
+      "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80",
+      "genre": "encyclopedia",
+      "chars": 1157,
+      "google_fonts": 1170572,
+      "exact": 116368,
+      "resid_chars": 670,
+      "exact_glc4": 104880,
+      "base_resid_cold_glc4": 107416,
+      "base_resid_warm_glc4": 63348,
+      "exact_glc8": 96416,
+      "base_resid_cold_glc8": 99312,
+      "base_resid_warm_glc8": 58272,
+      "base_resid_cold": 118664,
+      "base_resid_warm": 70624
+    },
+    {
+      "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8",
+      "genre": "encyclopedia",
+      "chars": 1056,
+      "google_fonts": 1063252,
+      "exact": 99076,
+      "resid_chars": 557,
+      "exact_glc4": 89100,
+      "base_resid_cold_glc4": 92028,
+      "base_resid_warm_glc4": 47960,
+      "exact_glc8": 82028,
+      "base_resid_cold_glc8": 84928,
+      "base_resid_warm_glc8": 43888,
+      "base_resid_cold": 101516,
+      "base_resid_warm": 53476
+    },
+    {
+      "url": "https://www.hani.co.kr/",
+      "genre": "news",
+      "chars": 104,
+      "google_fonts": 112516,
+      "exact": 10912,
+      "resid_chars": 2,
+      "exact_glc4": 10172,
+      "base_resid_cold_glc4": 45044,
+      "base_resid_warm_glc4": 976,
+      "exact_glc8": 9616,
+      "base_resid_cold_glc8": 42028,
+      "base_resid_warm_glc8": 988,
+      "base_resid_cold": 49052,
+      "base_resid_warm": 1012
+    },
+    {
+      "url": "https://www.chosun.com/",
+      "genre": "news",
+      "chars": 348,
+      "google_fonts": 292936,
+      "exact": 30736,
+      "resid_chars": 48,
+      "exact_glc4": 27884,
+      "base_resid_cold_glc4": 49456,
+      "base_resid_warm_glc4": 5388,
+      "exact_glc8": 25872,
+      "base_resid_cold_glc8": 46148,
+      "base_resid_warm_glc8": 5108,
+      "base_resid_cold": 53880,
+      "base_resid_warm": 5840
+    },
+    {
+      "url": "https://www.joongang.co.kr/",
+      "genre": "news",
+      "chars": 820,
+      "google_fonts": 392756,
+      "exact": 69280,
+      "resid_chars": 329,
+      "exact_glc4": 62056,
+      "base_resid_cold_glc4": 68356,
+      "base_resid_warm_glc4": 24288,
+      "exact_glc8": 56696,
+      "base_resid_cold_glc8": 63088,
+      "base_resid_warm_glc8": 22048,
+      "base_resid_cold": 75224,
+      "base_resid_warm": 27184
+    },
+    {
+      "url": "https://www.etnews.com/",
+      "genre": "news",
+      "chars": 493,
+      "google_fonts": 205040,
+      "exact": 43912,
+      "resid_chars": 98,
+      "exact_glc4": 39592,
+      "base_resid_cold_glc4": 52260,
+      "base_resid_warm_glc4": 8192,
+      "exact_glc8": 36768,
+      "base_resid_cold_glc8": 48684,
+      "base_resid_warm_glc8": 7644,
+      "base_resid_cold": 57032,
+      "base_resid_warm": 8992
+    },
+    {
+      "url": "https://www.khan.co.kr/",
+      "genre": "news",
+      "chars": 719,
+      "google_fonts": 321160,
+      "exact": 63200,
+      "resid_chars": 233,
+      "exact_glc4": 56996,
+      "base_resid_cold_glc4": 62616,
+      "base_resid_warm_glc4": 18548,
+      "exact_glc8": 52372,
+      "base_resid_cold_glc8": 57972,
+      "base_resid_warm_glc8": 16932,
+      "base_resid_cold": 68780,
+      "base_resid_warm": 20740
+    },
+    {
+      "url": "https://www.donga.com/",
+      "genre": "news",
+      "chars": 599,
+      "google_fonts": 407120,
+      "exact": 53112,
+      "resid_chars": 160,
+      "exact_glc4": 47764,
+      "base_resid_cold_glc4": 57720,
+      "base_resid_warm_glc4": 13652,
+      "exact_glc8": 44160,
+      "base_resid_cold_glc8": 53444,
+      "base_resid_warm_glc8": 12404,
+      "base_resid_cold": 62764,
+      "base_resid_warm": 14724
+    },
+    {
+      "url": "https://www.seoul.go.kr/",
+      "genre": "government",
+      "chars": 458,
+      "google_fonts": 199228,
+      "exact": 42292,
+      "resid_chars": 73,
+      "exact_glc4": 38604,
+      "base_resid_cold_glc4": 51808,
+      "base_resid_warm_glc4": 7740,
+      "exact_glc8": 35872,
+      "base_resid_cold_glc8": 48428,
+      "base_resid_warm_glc8": 7388,
+      "base_resid_cold": 56248,
+      "base_resid_warm": 8208
+    },
+    {
+      "url": "https://tech.kakao.com/blog/",
+      "genre": "tech-blog",
+      "chars": 61,
+      "google_fonts": 57040,
+      "exact": 11500,
+      "resid_chars": 1,
+      "exact_glc4": 11208,
+      "base_resid_cold_glc4": 44788,
+      "base_resid_warm_glc4": 720,
+      "exact_glc8": 10804,
+      "base_resid_cold_glc8": 41764,
+      "base_resid_warm_glc8": 724,
+      "base_resid_cold": 48784,
+      "base_resid_warm": 744
+    },
+    {
+      "url": "https://www.clien.net/service/",
+      "genre": "community",
+      "chars": 597,
+      "google_fonts": 263900,
+      "exact": 55472,
+      "resid_chars": 178,
+      "exact_glc4": 50328,
+      "base_resid_cold_glc4": 58928,
+      "base_resid_warm_glc4": 14860,
+      "exact_glc8": 46784,
+      "base_resid_cold_glc8": 54848,
+      "base_resid_warm_glc8": 13808,
+      "base_resid_cold": 64380,
+      "base_resid_warm": 16340
     }
   ]
 }
