@@ -15,9 +15,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import shutil
 import subprocess
 import sys
+import tempfile
 import urllib.request
+import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,7 +64,22 @@ def fetch_fonts(force: bool = False) -> int:
         if dest.exists() and not force:
             print(f"  skip {f['id']} (exists)")
             continue
-        download(f["source_url"], dest)
+        if f["source_url"] is None:
+            print(f"  warning: skip {f['id']} (source_url is null; "
+                  "local/derived asset must be supplied separately)", file=sys.stderr)
+            continue
+        if f.get("source_archive_member"):
+            with tempfile.TemporaryDirectory() as directory:
+                archive = Path(directory) / "source.zip"
+                download(f["source_url"], archive)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                tmp = dest.with_suffix(dest.suffix + ".part")
+                with zipfile.ZipFile(archive) as z, \
+                        z.open(f["source_archive_member"]) as source, tmp.open("wb") as target:
+                    shutil.copyfileobj(source, target)
+                tmp.replace(dest)
+        else:
+            download(f["source_url"], dest)
         digest = sha256(dest)
         if digest != f["sha256"]:
             print(f"  !! SHA-256 mismatch for {f['id']}: {digest} != {f['sha256']}", file=sys.stderr)
