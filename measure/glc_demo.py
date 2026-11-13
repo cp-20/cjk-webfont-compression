@@ -5,11 +5,15 @@ Produces PNGs (in report/assets/) that show, for each grid width, the same
 Japanese text rendered with the baseline font and with the quantised font,
 plus a 6x zoom of a region with complex kanji and an amplified difference
 image that makes the noise visible.
+
+Use --legacy-orientation to reproduce the mirrored figures published before
+the round-3 orientation fix (including gh-pages b40afeb).
 """
 from __future__ import annotations
 
-import base64
+import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -31,7 +35,7 @@ PX = 24
 ZOOM = 6
 
 
-def render(face, text, px):
+def render(face, text, px, legacy_orientation=False):
     face.set_char_size(px * 64)
     rows = []
     pen = 0
@@ -49,7 +53,7 @@ def render(face, text, px):
             # the baseline->top distance, so the top row lands at px - top.
             # (Was px + top - row until round 3: every glyph came out
             # vertically mirrored -- the "upside-down demo" bug.)
-            y = px - top + row
+            y = px + top - row if legacy_orientation else px - top + row
             if not (0 <= y < height):
                 continue
             for col in range(w):
@@ -66,13 +70,24 @@ def to_image(canvas, w, h):
 
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--legacy-orientation", action="store_true")
+    args = ap.parse_args()
+    WORK.mkdir(parents=True, exist_ok=True)
     src = ROOT / "measure/out/NotoSansJP-Regular.ttf"
+    if not src.exists():
+        # Use the same static 400 instance as reproduce_headline.py.
+        subprocess.run([
+            sys.executable, "-m", "fontTools.varLib.instancer",
+            str(ROOT / "fonts" / "NotoSansJP[wght].ttf"),
+            "wght=400", "-o", str(src),
+        ], check=True)
     base_ttf = WORK / "Noto_Sans_JP_q0.ttf"
     if not base_ttf.exists():
         process_font(str(src), str(base_ttf), canonical=False, grid=0)
     base_face = freetype.Face(str(base_ttf))
-    base_line, bw, bh = render(base_face, TEXT, PX)
-    base_zoom, zw, zh = render(base_face, ZOOM_TEXT, PX)
+    base_line, bw, bh = render(base_face, TEXT, PX, args.legacy_orientation)
+    base_zoom, zw, zh = render(base_face, ZOOM_TEXT, PX, args.legacy_orientation)
     base_line_im = to_image(base_line, bw, bh)
     base_zoom_im = to_image(base_zoom, zw, zh)
 
@@ -82,8 +97,8 @@ def main():
         if not ttf.exists():
             process_font(str(src), str(ttf), canonical=False, grid=grid)
         face = freetype.Face(str(ttf))
-        line, w, h = render(face, TEXT, PX)
-        zoom, zw2, zh2 = render(face, ZOOM_TEXT, PX)
+        line, w, h = render(face, TEXT, PX, args.legacy_orientation)
+        zoom, zw2, zh2 = render(face, ZOOM_TEXT, PX, args.legacy_orientation)
         line_im = to_image(line, w, h)
         zoom_im = to_image(zoom, zw2, zh2)
         # difference (amplified) of the zoom area

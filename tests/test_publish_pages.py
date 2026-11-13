@@ -1,5 +1,7 @@
 """Offline integration tests: python3 -m unittest discover -s tests -v."""
 import pathlib
+import base64
+import json
 import subprocess
 import tempfile
 import unittest
@@ -34,6 +36,14 @@ class PublishPagesTest(unittest.TestCase):
             self.assertIn('report/demo.html', (tree / 'index.html').read_text())
             for name in ('index.html', 'glc.html', 'demo.html'):
                 self.assertTrue((tree / 'report' / name).stat().st_size)
+            figures = json.loads((ROOT / 'measure/out/glc_demo.json').read_text())
+            self.assertEqual([d['grid'] for d in figures], [0, 2, 4, 8, 16, 32])
+            glc = (tree / 'report/glc.html').read_text()
+            for figure in figures:
+                png = (tree / 'report/assets' / figure['file']).read_bytes()
+                self.assertEqual(len(png), figure['bytes'])
+                self.assertIn('data:image/png;base64,' +
+                              base64.b64encode(png).decode(), glc)
             for font in (ROOT / 'report/assets').glob('*.woff2'):
                 self.assertEqual(font.read_bytes(),
                                  (tree / 'report/assets' / font.name).read_bytes())
