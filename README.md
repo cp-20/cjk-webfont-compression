@@ -50,9 +50,13 @@ Reproduction status (2026-11-12, [`measure/reproduce_headline.py`](measure/repro
 the Noto Sans JP headline reproduces within ±0.08 % at every grid (2,302,848 → 1,755,444 B measured here
 vs. 2,302,932 → 1,755,656 B published; the residual is the undocumented instancing step, now scripted),
 and the Nanum Gothic safety-valve case reproduces exactly (stock subset 61,928 B; quantised 68,428 B,
-+10.5 %, stock kept). One discrepancy: the published M PLUS 1p *quantised* full-font rows do not
-reproduce (grid 0 matches exactly); they appear to come from stale cached intermediates — see
-[`docs/round2-2026-11-12.md`](docs/round2-2026-11-12.md).
++10.5 %, stock kept). One discrepancy found in round 2 is now resolved: the published M PLUS 1p
+*quantised* full-font rows (and the quantised side of `glc_fullfont.json`) did not reproduce because
+they were stale outputs of the pre-BBox-preservation quantiser, kept alive by the sweep scripts'
+exists-check caches. Round 3 re-measured both tables with always-fresh intermediates and proved the
+mechanism with a forensic re-run; corrected values are in the regenerated JSONs (e.g. M PLUS 1p
+grid 8: 579,796 → 614,540 B) — see [`docs/round3-2026-11-12.md`](docs/round3-2026-11-12.md) §1 and
+`measure/out/glc_remeasure.json`.
 
 ## Negative results (published, not hidden)
 
