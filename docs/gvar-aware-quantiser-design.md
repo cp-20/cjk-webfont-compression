@@ -48,11 +48,15 @@ font, GLC grid 8 unless stated:
   (re-verified in round 4 from the surviving artifacts:
   <!--PROTO:b2size-->), against **−23.8%** for a static instance
   quantised at one weight.
-- Error at the default weight (400): max **4 units** per coordinate —
-  exactly grid/2, as guaranteed by construction.
-- Error at wght 900: worst **138 units**; at wght 100: 4 units. Mean
-  error ≈ **2.6 units** at every weight. Zero point-count mismatches at
-  all nine weights (the quantised font instances cleanly).
+- Error at the default weight — which for Noto Sans JP is **wght 100**
+  (its fvar default): max **4 units** per coordinate, for every glyph —
+  exactly grid/2, as guaranteed by construction. (Round 4's prototype
+  re-measured this per glyph; see §6.)
+- Error grows with distance from the default: worst **54 units** at
+  wght 400 and **138 units** at wght 900. Mean error ≈ **2.6 units** at
+  every weight, and even at 900 the *median* glyph's error is still 4.
+  Zero point-count mismatches at all nine weights (the quantised font
+  instances cleanly).
 - Grid 2 spot check: worst error at 900 is still **88 units** and the
   file size barely moves (~0.1%). Finer grids buy accuracy very
   inefficiently — the tail is not a "grid too coarse" problem.
@@ -128,9 +132,9 @@ with an unmoved mean (rare geometry, huge local factor); the weak
 response to grid 2 (88 — once `|Δx|` is comparable to `g`, shrinking `g`
 4× does not shrink the ill-conditioning proportionally, because the
 number of near-degenerate pairs at scale `g` also shrinks); and the
-growth towards the axis extremes (movements `|Δd|` are largest at
-wght 100/900, smallest near the default 400 — hence 4 units at 100 is
-luck of small deltas there, and the design must budget for the extremes).
+growth with distance from the default (movements `|Δd|` are zero at the
+default, wght 100 for this font, and largest at the far end, wght 900 —
+which is where the worst case sits, with wght 400 already at 54).
 
 A secondary contributor: IUP runs **per axis**, so a point between its
 referenced neighbours on x but outside them on y (or vice versa) mixes
@@ -282,12 +286,45 @@ Costs of the design, per font:
 Whether this is cheap depends entirely on the tail size, which is an
 empirical question. **Prototype** (`measure/iup_amplification.py`, run
 on round 3's surviving artifacts — no new quantisation): per-glyph max
-outline error of the VF-safe quantised font at the default (400) vs. at
-wght 900, over all simple glyphs of Noto Sans JP:
+outline error of the VF-safe quantised font at the default (wght 100),
+mid-axis (400) and far end (900), over all 17,932 simple glyphs of
+Noto Sans JP:
 
-<!--PROTO:tail-->
+| weight | median | p90 | p99 | max | glyphs > 4 | glyphs > 16 |
+|---|---|---|---|---|---|---|
+| 100 (default) | 4 | 4 | 4 | **4** | 0 | 0 |
+| 400 | 4 | 4 | 19 | 54 | 350 (2.0%) | 194 (1.1%) |
+| 900 | 4 | 4 | 50 | **138** | 418 (2.3%) | 231 (1.3%) |
 
-Reading of the prototype: <!--PROTO:verdict-reading-->
+Per-glyph amplification (err900 / err100, over the 17,721 glyphs that
+move at the default): median **1.0×**, p90 **1.0×**, p99 12.75×, max
+34.5×. In words: for 90% of glyphs the error at the far end of the axis
+is *identical* to the error at the default; the entire 4 → 138 blow-up
+lives in a tail of ~1–2% of glyphs (worst: `uni318E` 138, `summation`
+113, `uni63CF` 95). The concentration the design bets on is real, and
+it is extreme.
+
+**Mitigation probe** (`measure/iup_mitigation_probe.py`): the crudest
+mitigation, M3 exemption of the 231 glyphs with err900 > 16 (the
+wght-400 tail added no further glyphs), applied to an otherwise
+identically quantised font:
+
+- size: 3,977,116 → 3,985,656 B WOFF2 — **+8,540 B (+0.21%)**, ≈ 37 B
+  per exempted glyph;
+- error after M3: wght 900 max **138 → 16** (zero glyphs over 16),
+  wght 400 max 54 → 9; wght 100 unchanged at 4;
+- residual: 80 glyphs sit in the (8, 16] band at wght 900 — inside the
+  hard certificate ε_hard = 2g but above the empirical target
+  ε_target = g. Closing that band is precisely the job of M1/M2 in a
+  real implementation (or of lowering the M3 threshold to 8, at a
+  still-trivial byte cost).
+
+Reading of the prototypes: the protection the design needs is *cheap
+beyond expectation* — the most expensive mitigation, applied to the
+whole tail, costs 0.2% of the file. The binding constraint on the
+gvar-aware route is therefore not bytes; it is the engineering cost of
+the certificate + joint rounding machinery and its per-font
+verification (§5.3), weighed against the size bar in §7.
 
 ## 7. The bar (from round 3 §3, priced in round 4)
 

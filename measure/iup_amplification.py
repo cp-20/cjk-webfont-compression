@@ -11,10 +11,11 @@ instancing and the design would be pointless.
 
 This script tests the claim on round 3's surviving artifacts: it
 instances nothing new -- it compares, glyph by glyph, the outline errors
-of the VF-safe quantised font (arm_b2_vfsafe_{400,900}.ttf) against the
-stock instances (stock_{400,900}.ttf). Weight 400 is the default, where
-quantisation error is bounded by grid/2 = 4 units by construction;
-weight 900 is where round 3 measured the 138-unit worst case.
+of the VF-safe quantised font (arm_b2_vfsafe_{w}.ttf) against the stock
+instances (stock_{w}.ttf) at three weights. Weight 100 is this font's
+fvar default, where quantisation error is bounded by grid/2 = 4 units
+by construction; weight 400 is mid-axis; weight 900 is where round 3
+measured the 138-unit worst case.
 
 Output: measure/out/iup_amplification.json (percentiles + tail counts).
 Usage:  .venv/bin/python measure/iup_amplification.py
@@ -79,34 +80,41 @@ def describe(errs):
 
 
 def main() -> int:
+    e100, sk100 = glyph_errors(VF / "arm_b2_vfsafe_100.ttf",
+                               VF / "stock_100.ttf")
     e400, sk400 = glyph_errors(VF / "arm_b2_vfsafe_400.ttf",
                                VF / "stock_400.ttf")
     e900, sk900 = glyph_errors(VF / "arm_b2_vfsafe_900.ttf",
                                VF / "stock_900.ttf")
-    print("wght 400 (default):", describe(e400), "skipped:", sk400)
+    print("wght 100 (fvar default):", describe(e100), "skipped:", sk100)
+    print("wght 400 (mid-axis):", describe(e400), "skipped:", sk400)
     print("wght 900:", describe(e900), "skipped:", sk900)
 
     # Amplification among glyphs that actually moved at the default:
-    # ratio err900 / err400 for glyphs with err400 >= 2.
-    ratios = sorted(e900[g] / e400[g] for g in e400
-                    if e400.get(g, 0) >= 2 and g in e900)
-    tail = sorted(((e900[g], g, e400[g]) for g in e900
+    # ratio err900 / err100 for glyphs with err100 >= 2.
+    ratios = sorted(e900[g] / e100[g] for g in e100
+                    if e100.get(g, 0) >= 2 and g in e900)
+    tail = sorted(((e900[g], g, e100[g]) for g in e900
                    if e900[g] > 16), reverse=True)
     out = {
         "provenance": {"utc": time.strftime("%Y-%m-%dT%H:%M:%SZ",
                                             time.gmtime()),
-                       "inputs": ["vf/arm_b2_vfsafe_400.ttf",
+                       "fvar_default_weight": 100,
+                       "inputs": ["vf/arm_b2_vfsafe_100.ttf",
+                                  "vf/stock_100.ttf",
+                                  "vf/arm_b2_vfsafe_400.ttf",
                                   "vf/stock_400.ttf",
                                   "vf/arm_b2_vfsafe_900.ttf",
                                   "vf/stock_900.ttf"]},
-        "wght400_default": describe(e400),
+        "wght100_default": describe(e100),
+        "wght400_midaxis": describe(e400),
         "wght900": describe(e900),
-        "amplification_ratio_err400_ge2": {
+        "amplification_ratio_err100_ge2": {
             "glyphs": len(ratios),
             "p50": pct(ratios, 0.5), "p90": pct(ratios, 0.9),
             "p99": pct(ratios, 0.99), "max": ratios[-1] if ratios else 0},
         "tail_over_16_at_900": [
-            {"glyph": g, "err900": e9, "err400": e4} for e9, g, e4 in tail],
+            {"glyph": g, "err900": e9, "err100": e1} for e9, g, e1 in tail],
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1),
                    encoding="utf-8")
