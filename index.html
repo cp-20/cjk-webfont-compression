@@ -1,24 +1,13 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CJK ウェブフォントの圧縮・最適化</title>
-<style>
-:root{--fg:#1b1b1f;--muted:#5b5b66;--line:#e3e3e8;--soft:#f6f6f9;--accent:#2f5fd0}
-@media (prefers-color-scheme: dark){:root{--fg:#e8e8ee;--muted:#a0a0ae;--line:#282a33;--soft:#181a21;--accent:#8fb0ff}}
-body{margin:0;background:#fff;color:var(--fg);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;line-height:1.8}
-@media (prefers-color-scheme: dark){body{background:#111318}}
-.wrap{max-width:760px;margin:0 auto;padding:64px 24px}
-h1{font-size:1.7rem;margin:0 0 6px;letter-spacing:.01em}
-p{color:var(--muted)}
-.card{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0;background:var(--soft)}
-.card:hover{border-color:var(--accent)}
-.card b{display:block;font-size:1.05rem;margin-bottom:4px;color:var(--fg)}
-.card span{font-size:.9rem;color:var(--muted)}
-a{color:var(--accent)}
-code{background:var(--soft);padding:.1em .35em;border-radius:4px;font-size:.9em}
-</style></head><body><div class="wrap">
-<h1>CJK ウェブフォントの圧縮・最適化</h1>
-<p>実測にもとづく技術レポート 2 本（日本語）。ソースと再現手順は <a href="https://github.com/cp-20/cjk-webfont-compression">GitHub リポジトリ</a>。</p>
-<a class="card" href="report/index.html"><b>レポート 1 — 配信層：どのグリフを配るか</b><span>実測 12 種の CJK フォント / 実ページ 44 サイト / Google Fonts の実スライス / 方式比較と 3 層配信の提案</span></a>
-<a class="card" href="report/glc.html"><b>レポート 2 — 圧縮層：WOFF2 を超える手法「GLC」</b><span>量子化パラメータのスイープ（サイズ・圧縮時間・画素ノイズ）、描画デモ、否定結果 3 件</span></a>
-<p>主要数値: Noto Sans JP 静的 400 重み全体で WOFF2 2.303 MB → GLC 1.756 MB（誤差 0.4% em）／ CFF の Source Han Sans JP は 553 KiB → 380 KiB。</p>
-</div></body></html>
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CJK web font compression reports</title>
+<h1>CJK web font compression / CJK ウェブフォントの圧縮</h1>
+<ul>
+<li><a href="report/index.html">Delivery report / 配信層レポート</a></li>
+<li><a href="report/glc.html">GLC compression report / 圧縮層レポート</a></li>
+<li><a href="report/demo.html">Interactive demo (ja / zh / ko) / デモ</a></li>
+</ul>
+<p><a href="https://github.com/cp-20/cjk-webfont-compression">Source and reproduction instructions / ソースと再現手順</a></p>
+</html>
