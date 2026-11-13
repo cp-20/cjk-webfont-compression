@@ -64,11 +64,30 @@ def build():
     cssz = load("google_css_sizes.json", {}) or {}
     sl = read_json(OUT / "slicing_results.json", {}) or {}
     gsl = read_json(WEB / "google_slices.json", {}) or {}
-    corpus = read_json(WEB / "corpus.json", []) or []
+    # The corpus summary (character sets + Google Fonts estimates, page text
+    # omitted) is committed to the repo, so the report is reproducible from a
+    # public checkout. The full corpus.json (with page text) is *not*
+    # redistributed; it is only a fallback for local builds. If neither is
+    # present, fail loudly instead of silently dropping the corpus sections
+    # (that silent drop is what this used to do before round 4).
+    corpus = read_json(WEB / "corpus_stats.json") or read_json(WEB / "corpus.json")
+    if not corpus:
+        raise SystemExit(
+            "FATAL: no corpus data found (measure/web/corpus_stats.json). "
+            "Refusing to build a report with silently missing sections; "
+            "see measure/web/fetch_corpus.py.")
     tr = translations()
     dict_exp = load("shared_dictionary.json", {}) or {}
 
     ja_pages = [r for r in corpus if r.get("lang") == "ja" and "gf_estimate" in r]
+    if not ja_pages:
+        raise SystemExit(
+            "FATAL: corpus data present but no usable Japanese pages; "
+            "refusing to build a report with silently missing sections.")
+    n_sites = len(corpus)
+    n_by_lang = {lang: sum(1 for r in corpus if r.get("lang") == lang)
+                 for lang in ("ja", "zh", "ko")}
+    ja_n, zh_n, ko_n = n_by_lang["ja"], n_by_lang["zh"], n_by_lang["ko"]
     gf_fam = {f["family"]: f for f in gsl.get("families", [])}
     schemes = sl.get("schemes", {})
     ex = sl.get("exact_subsets", {})
@@ -79,9 +98,9 @@ def build():
     A = P.append
 
     # ============================================================ header
-    A("""<header class="top">
+    A(f"""<header class="top">
 <h1>CJK ウェブフォントの圧縮・最適化：実測による手法の比較と、新手法の提案</h1>
-<p class="sub">実測 12 種の CJK フォント / 実ページ 44 サイト / W3C・IETF 仕様・研究論文・OSS を突合した技術レポート</p>
+<p class="sub">実測 12 種の CJK フォント / 実ページ {n_sites} サイト / W3C・IETF 仕様・研究論文・OSS を突合した技術レポート</p>
 <p class="meta">測定日 2026-11-11〜12 ／ 英日翻訳: pfnet/plamo-3-translate-0.8b（Q4_K_M、llama.cpp でローカル実行）／ 再現スクリプト: <code>measure/</code>・<code>tools/</code></p>
 </header>""")
 
@@ -124,7 +143,7 @@ def build():
 <li><a href="#background">2. 背景：なぜ CJK フォントは巨大か（実測）</a></li>
 <li><a href="#methods">3. 現状の圧縮・配信手法と長所・短所</a></li>
 <li><a href="#gf">4. 実測：Google Fonts の日本語スライス分け</a></li>
-<li><a href="#pages">5. 実測：44 サイトの日本語ページで何が起きるか</a></li>
+<li><a href="#pages">5. 実測：実サイトの日本語ページで何が起きるか</a></li>
 <li><a href="#compare">6. 方式比較（実測）</a></li>
 <li><a href="#problems">7. 現行手法の構造的問題</a></li>
 <li><a href="#proposal">8. 提案：3 層配信の設計</a></li>
@@ -287,8 +306,8 @@ def build():
             "https://developers.googleblog.com/google-fonts-launches-japanese-support/"))
 
     # ============================================================ 5 pages
-    A("<h2 id='pages'>5. 実測：44 サイトの日本語ページで何が起きるか</h2>")
-    A("""<p>日本・中国・韓国の実サイト 44 ページ（Wikipedia・新聞・官公庁・青空文庫・技術ブログ・EC など）を取得し、可視テキストの文字集合と、Google Fonts のスライスがどれだけ必要かを実測した。取得は robots.txt を尊重し、可視テキストのみを抽出した。</p>""")
+    A(f"<h2 id='pages'>5. 実測：{n_sites} サイトの日本語ページで何が起きるか</h2>")
+    A(f"""<p>日本・中国・韓国の実サイト {n_sites} ページ（Wikipedia・新聞・官公庁・青空文庫・技術ブログ・EC など）を取得し、可視テキストの文字集合と、Google Fonts のスライスがどれだけ必要かを実測した。取得は robots.txt を尊重し、可視テキストのみを抽出した。本章の表と KPI は日本語 {len(ja_pages)} ページに基づく。</p>""")
     if ja_pages:
         rows = []
         for r in sorted(ja_pages, key=lambda r: -r["gf_estimate"]["bytes_used"])[:12]:
@@ -588,13 +607,13 @@ def build():
             A(q)
 
     # ============================================================ 付録 B
-    A("""<h2 id='appendix-b'>付録 B：測定手順と再現コマンド</h2>
+    A(f"""<h2 id='appendix-b'>付録 B：測定手順と再現コマンド</h2>
 <h3>B.1 手順</h3>
 <ol>
 <li><b>フォント収集</b>：google/fonts（Noto Sans / Serif JP・SC・KR、M PLUS 1p、Zen Kaku Gothic New、Kosugi Maru、Shippori / Sawarabi Mincho、LXGW WenKai、Nanum Gothic）、Adobe Source Han Sans、Noto Sans CJK。計 15 ファイル、139 MiB。</li>
 <li><b>形式別サイズ測定</b>：fontTools で WOFF2 化（Brotli quality 11）、gzip -9、Brotli q11 を同条件で比較。テーブル別バイト数も取得。</li>
 <li><b>Google Fonts スライス実測</b>：CSS API から CSS を取得し、@font-face を解析、各 woff2 を HEAD で Content-Length 測定。</li>
-<li><b>ページ収集</b>：日本 31・中国 7・韓国 6 ページ。robots.txt を尊重し、script/style/nav/footer 等を除いて可視テキストのみ抽出。</li>
+<li><b>ページ収集</b>：日本 {ja_n}・中国 {zh_n}・韓国 {ko_n} ページ（記録数。取得できなかったページもエラー記録として残る）。robots.txt を尊重し、script/style/nav/footer 等を除いて可視テキストのみ抽出。ページ本文は再配布しないため、公開リポジトリには文字集合と推定値だけをまとめた <code>measure/web/corpus_stats.json</code> を収録し、本レポートはそれから生成できる。</li>
 <li><b>方式比較</b>：Noto Sans JP を静的 400 重みにインスタンス化し、方式ごとにサブセットを実生成して実 WOFF2 バイトを測定。ページは train 21 / test 10 に分割し方式構築は train のみ。</li>
 </ol>
 <h3>B.2 再現コマンド</h3>
