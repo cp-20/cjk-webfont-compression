@@ -30,6 +30,16 @@ Examples:
 
     # explicit quantisation grid instead of an epsilon
     python tools/glc.py -i fonts/MPLUS1p-Regular.ttf --grid 8 -o mplus.woff2
+
+Variable fonts: the recommended flow is --instance per weight you ship
+(each instance keeps the GLC-4 guarantee, error <= grid/2 everywhere).
+--quantize-variable instead quantises the default outlines in place and
+keeps gvar -- one file for all weights, measurably smaller than stock
+(Noto Sans JP: -8.6 % at grid 8), but the guarantee does NOT survive:
+gvar's IUP interpolation of untouched points amplifies the perturbation
+away from the default weight (max point error 4 units at wght=100 but
+138 units at wght=900, grid 8; mean error stays ~2.6 units). See
+measure/variable_glc.py and docs/round3-2026-11-12.md before using it.
 """
 from __future__ import annotations
 
@@ -44,7 +54,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from cff2glyf import cff_to_glyf  # noqa: E402
-from glyphcodec import process_font  # noqa: E402
+from glyphcodec import process_font, process_variable_font  # noqa: E402
 
 CFF_ERR_RATIO = 0.001  # GLC-0 budget: 0.1 % of em, as published
 
@@ -116,6 +126,10 @@ def main() -> int:
     ap.add_argument("-o", "--output", help="output .woff2 (default: <input>.glc.woff2)")
     ap.add_argument("--instance", action="append", default=[], metavar="AXIS=VALUE",
                     help="pin a variable-font axis, e.g. --instance wght=400 (repeatable)")
+    ap.add_argument("--quantize-variable", action="store_true",
+                    help="quantise a variable font's default outlines in place, keeping gvar "
+                         "(one file, all weights; the GLC-4 max-error guarantee does NOT hold "
+                         "away from the default weight -- see docstring)")
     ap.add_argument("--subset-file", help="file whose characters define the subset")
     ap.add_argument("--subset-text", help="literal characters defining the subset")
     ap.add_argument("--unicodes", help="comma list like U+3042,U+4E00-4E10")
@@ -182,9 +196,16 @@ def main() -> int:
         shutil.copyfile(src, cur)
 
         info = font_info(cur)
-        if info["variable"] and not args.instance:
-            ap.error("variable font: pass --instance (e.g. --instance wght=400); "
-                     "quantising a variable font in place would corrupt its gvar deltas")
+        vf_mode = bool(info["variable"] and args.quantize_variable and not args.instance)
+        if info["variable"] and not args.instance and not args.quantize_variable:
+            ap.error("variable font: pass --instance (e.g. --instance wght=400) for the "
+                     "guaranteed per-weight flow, or --quantize-variable to quantise the "
+                     "default outlines in place (max-error guarantee lost; see docstring)")
+        if vf_mode and (unicodes is not None or args.desubroutinize):
+            ap.error("--quantize-variable covers the full font; subsetting a variable "
+                     "font is out of scope (instance it first, then subset the instance)")
+        if vf_mode and info["cff"]:
+            ap.error("--quantize-variable supports glyf variable fonts only (not CFF2)")
 
         # ---- stage: instance (not a GLC stage, just an input normalisation)
         if args.instance:
@@ -221,8 +242,9 @@ def main() -> int:
                  f"budget {args.cff_error * 100:.2f}% em, {stats['points']:,} points")
             info = font_info(cur)
 
-        # ---- GLC-2: drop vertical metrics
-        if not args.keep_vertical:
+        # ---- GLC-2: drop vertical metrics (in vf_mode this happens inside
+        #      process_variable_font, which must control the save itself)
+        if not args.keep_vertical and not vf_mode:
             before = cur.stat().st_size
             drop_vertical(cur)
             note("GLC-2 drop vhea/vmtx", cur, f"TTF {before:,} -> {cur.stat().st_size:,} B")
@@ -234,18 +256,29 @@ def main() -> int:
         has_glyf = "glyf" in _probe
         _probe.close()
         err_stats = {}
-        if has_glyf and (grid > 0 or args.canonical):
+        if has_glyf and (grid > 0 or (args.canonical and not vf_mode)):
             dst = work / "step4.ttf"
-            err_stats = process_font(str(cur), str(dst), canonical=args.canonical, grid=grid)
-            cur = dst
-            label = []
-            if args.canonical:
-                label.append("GLC-3 canonical")
-            if grid > 0:
-                label.append(f"GLC-4 quantise grid={grid} "
-                             f"(eps {grid / (2 * info['upm']) * 100:.2f}% em)")
-            note(" + ".join(label), cur,
-                 f"max point error {err_stats.get('max_point_error_units', 0)} units")
+            if vf_mode:
+                err_stats = process_variable_font(
+                    str(cur), str(dst), grid=grid,
+                    drop_vertical=not args.keep_vertical)
+                cur = dst
+                note(f"GLC-4 quantise VARIABLE grid={grid} "
+                     f"(eps {grid / (2 * info['upm']) * 100:.2f}% em)", cur,
+                     f"{err_stats.get('quantized', 0):,} simple glyphs quantised, "
+                     f"{err_stats.get('composites_kept', 0):,} composites kept; "
+                     "max-error guarantee does not hold away from the default weight")
+            else:
+                err_stats = process_font(str(cur), str(dst), canonical=args.canonical, grid=grid)
+                cur = dst
+                label = []
+                if args.canonical:
+                    label.append("GLC-3 canonical")
+                if grid > 0:
+                    label.append(f"GLC-4 quantise grid={grid} "
+                                 f"(eps {grid / (2 * info['upm']) * 100:.2f}% em)")
+                note(" + ".join(label), cur,
+                     f"max point error {err_stats.get('max_point_error_units', 0)} units")
 
         glc_w = work / "glc.woff2"
         glc_bytes = woff2_encode(cur, glc_w)
@@ -261,6 +294,7 @@ def main() -> int:
     final_bytes = out_path.stat().st_size
     report = {
         "input": str(src), "output": str(out_path),
+        "variable_quantized": vf_mode,
         "upm": info["upm"], "grid": grid if has_glyf else 0,
         "stock_woff2_bytes": stock_bytes, "glc_woff2_bytes": glc_bytes,
         "kept": kept, "final_bytes": final_bytes,
@@ -277,6 +311,12 @@ def main() -> int:
     print(f"GLC   WOFF2 : {glc_bytes:>10,} B")
     print(f"kept        : {kept} -> {out_path} ({final_bytes:,} B, "
           f"{report['delta_vs_stock_pct']:+.1f}% vs stock)")
+    if vf_mode:
+        print("NOTE: variable font quantised in place. Mean outline error stays at the\n"
+              "static level at every weight, but the MAX point error grows away from\n"
+              "the default weight (gvar IUP interpolation): measured 4 units at the\n"
+              "default vs 138 units at wght=900 for grid 8 on Noto Sans JP.\n"
+              "For a guaranteed error bound, use --instance per weight instead.")
     if args.report_json:
         Path(args.report_json).write_text(json.dumps(report, ensure_ascii=False, indent=2),
                                           encoding="utf-8")

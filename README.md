@@ -50,9 +50,13 @@ Reproduction status (2026-11-12, [`measure/reproduce_headline.py`](measure/repro
 the Noto Sans JP headline reproduces within ±0.08 % at every grid (2,302,848 → 1,755,444 B measured here
 vs. 2,302,932 → 1,755,656 B published; the residual is the undocumented instancing step, now scripted),
 and the Nanum Gothic safety-valve case reproduces exactly (stock subset 61,928 B; quantised 68,428 B,
-+10.5 %, stock kept). One discrepancy: the published M PLUS 1p *quantised* full-font rows do not
-reproduce (grid 0 matches exactly); they appear to come from stale cached intermediates — see
-[`docs/round2-2026-11-12.md`](docs/round2-2026-11-12.md).
++10.5 %, stock kept). One discrepancy found in round 2 is now resolved: the published M PLUS 1p
+*quantised* full-font rows (and the quantised side of `glc_fullfont.json`) did not reproduce because
+they were stale outputs of the pre-BBox-preservation quantiser, kept alive by the sweep scripts'
+exists-check caches. Round 3 re-measured both tables with always-fresh intermediates and proved the
+mechanism with a forensic re-run; corrected values are in the regenerated JSONs (e.g. M PLUS 1p
+grid 8: 579,796 → 614,540 B) — see [`docs/round3-2026-11-12.md`](docs/round3-2026-11-12.md) §1 and
+`measure/out/glc_remeasure.json`.
 
 ## Negative results (published, not hidden)
 
@@ -78,9 +82,13 @@ python scripts/fetch_assets.py --all      # fonts + PLaMo 3 Translate GGUF + lla
 .venv/bin/python measure/glc_final.py              # GLC pipeline comparison
 .venv/bin/python measure/glc_sweep.py               # q sweep: size / time / noise
 .venv/bin/python measure/glc_render.py             # PSNR (FreeType, hinting off)
-.venv/bin/python measure/glc_demo.py               # visual demo PNGs
+.venv/bin/python measure/glc_demo.py               # demo PNGs (round 3: superseded by live rendering; renderer kept, orientation fixed)
 .venv/bin/python measure/reproduce_headline.py     # round 2: re-measure the GLC headline from scratch
 .venv/bin/python measure/combined_study.py         # round 2: delivery x encoding, combined
+.venv/bin/python measure/remeasure_fullfont.py     # round 3: clean-room re-measurement of the full-font tables
+.venv/bin/python measure/combined_study_zhko.py    # round 3: combined study for Chinese / Korean
+.venv/bin/python measure/variable_glc.py           # round 3: can GLC quantise a variable font? (mostly no)
+.venv/bin/python measure/build_demo_assets.py      # round 3: live demo fonts (subset WOFF2 per grid)
 .venv/bin/python report/content.py                  # build report/index.html
 .venv/bin/python report/glc_content.py             # build report/glc.html
 .venv/bin/python report/build_demo.py              # build report/demo.html (interactive demo)
@@ -108,8 +116,9 @@ tools/llama.cpp/build/bin/llama-server -m models/plamo-0.8b-Q4_K_M.gguf \
 | `tools/glc.py` | **the GLC pipeline as one CLI** (stages as flags, ε parameter, safety valve) |
 | `tools/glyphcodec.py` | outline quantisation / canonicalisation (GLC-4 / GLC-3) |
 | `tools/cff2glyf.py` | CFF → glyf conversion (GLC-0) |
-| `report/demo.html` | interactive demo (subset estimator, ε slider, combined results); built by `report/build_demo.py` |
+| `report/demo.html` | interactive demo (subset estimator, ε slider with **live rendering by the real quantised fonts**, combined results for ja/zh/ko); built by `report/build_demo.py`, fonts by `measure/build_demo_assets.py` |
 | `docs/round2-2026-11-12.md` | round-2 progress report: reproduction, the tool, the combined study |
+| `docs/round3-2026-11-12.md` | round-3 progress report: stale-table verdict, zh/ko combined study, variable fonts, live demo |
 | `tools/translate.py` | batch translation client for the local LLM |
 | `fonts/manifest.json` | the 15 CJK fonts: source URL, licence, SHA-256 |
 | `research/sources.md` | research notes: primary sources, quotes, prior art |

@@ -38,7 +38,14 @@ def render(path: str, text: str, px: int):
     for (pen_x, left, top, w, h, buf) in out:
         for row in range(h):
             src = buf[row * w:(row + 1) * w]
-            y = px + top - row
+            # Bitmap row 0 is the TOP row; bitmap_top is baseline->top, so
+            # the top row lands at px - top. (Was px + top - row until
+            # round 3, which mirrored every glyph vertically. The metrics
+            # from this module are differences between two canvases drawn
+            # by the same renderer, so published values are unaffected --
+            # mirroring both sides permutes pixels identically. Verified
+            # in round 3; see docs/round3-2026-11-12.md.)
+            y = px - top + row
             if not (0 <= y < height):
                 continue
             for col in range(w):

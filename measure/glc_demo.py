@@ -45,7 +45,11 @@ def render(face, text, px):
     canvas = bytearray(width * height)
     for (pen_x, left, top, w, h, buf) in rows:
         for row in range(h):
-            y = px + top - row
+            # FreeType bitmap row 0 is the glyph's TOP row and bitmap_top is
+            # the baseline->top distance, so the top row lands at px - top.
+            # (Was px + top - row until round 3: every glyph came out
+            # vertically mirrored -- the "upside-down demo" bug.)
+            y = px - top + row
             if not (0 <= y < height):
                 continue
             for col in range(w):

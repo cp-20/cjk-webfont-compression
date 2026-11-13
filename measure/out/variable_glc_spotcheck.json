@@ -1,0 +1,23 @@
+{
+  "generated": "2026-11-12T15:14:27Z",
+  "grid": 2,
+  "quantize_info": {
+    "simple_glyphs_quantized": 17932,
+    "composite_glyphs_kept": 0
+  },
+  "woff2": 4346256,
+  "outline_error_vs_stock_instance": {
+    "100": {
+      "glyphs_compared": 17932,
+      "point_count_mismatches": 0,
+      "max_abs_delta_units": 1,
+      "mean_abs_delta_units": 0.724
+    },
+    "900": {
+      "glyphs_compared": 17932,
+      "point_count_mismatches": 0,
+      "max_abs_delta_units": 88,
+      "mean_abs_delta_units": 0.728
+    }
+  }
+}

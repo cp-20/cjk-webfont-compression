@@ -19,12 +19,13 @@ rows = []
 src = ROOT / "measure/out/NotoSansJP-Regular.ttf"
 for name, grid in [("woff2_baseline", 0), ("glc_g4", 4), ("glc_g8", 8), ("glc_g16", 16)]:
     ttf = WORK / f"full_{name}.ttf"
-    if name == "woff2_baseline":
-        if not ttf.exists():
-            process_font(str(src), str(ttf), canonical=False, grid=0)
-    else:
-        if not ttf.exists():
-            process_font(str(src), str(ttf), canonical=False, grid=grid)
+    # Always regenerate the intermediate. Until round 3 this script reused
+    # an existing TTF, and the published glc_fullfont.json silently kept
+    # quantised rows produced by a pre-bbox-preservation build of
+    # process_font (grid 8: 1,667,400 B instead of 1,755,656 B). A cached
+    # intermediate is a measurement of whatever code wrote it, not of the
+    # current pipeline -- see measure/remeasure_fullfont.py.
+    process_font(str(src), str(ttf), canonical=False, grid=grid)
     w = WORK / f"full_{name}.woff2"
     size, secs = woff2(ttf, w)
     rows.append({"font": "Noto Sans JP (static 400, full)", "variant": name, "bytes": size, "encode_s": secs})

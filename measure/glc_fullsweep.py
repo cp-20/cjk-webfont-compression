@@ -41,8 +41,12 @@ def main():
         for grid in GRIDS:
             ttf = WORK / f"full_{tag}_q{grid}.ttf"
             t0 = time.time()
-            if not ttf.exists():
-                process_font(str(src), str(ttf), canonical=False, grid=grid)
+            # Always regenerate: the originally published M PLUS 1p
+            # quantised rows had prep_s = 0.0 because this script reused
+            # intermediates written by an older code state, and those
+            # rows did not reproduce (round 2/3). A cached intermediate
+            # measures whatever code wrote it, not the current pipeline.
+            process_font(str(src), str(ttf), canonical=False, grid=grid)
             prep_s = round(time.time() - t0, 2)
             w = WORK / f"full_{tag}_q{grid}.woff2"
             size, enc_s = woff2(ttf, w)

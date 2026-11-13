@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "generated": "2026-11-12T15:00:37Z",
+    "lang": "ko",
+    "font": "Noto Sans KR (static 400, instanced from variable)",
+    "pages": 4,
+    "pages_skipped_no_data": [
+      "https://news.naver.com/",
+      "https://www.daum.net/"
+    ],
+    "base_size": 500,
+    "base_order": "document frequency over the language's pages",
+    "full_font_woff2_bytes": 2073072,
+    "base500_chars": "'(),.012345679·…가감게견국권금급기까날내는능다대데도된뒤드등락로른리마매미반발보부브비사상서성세수스승어에오외우운위으은을의이인일입자장전주준지체출카코트포피하한합했향형후\"%-/:?ABDEFIKMNPSTW[]kmp~‘’“”「」각간강같개거건검것겨격결경계고곳공과관광교구군규그극근글김께나난남너년념노높누눈뉴늘니단달당더독동되득든들디따때뜻라란래랫럼렇려력련례론료류르를린릴림립만많말맞메며명모목무문물민바박받방배범법변별병복본북분불빈삭산생석선설소속송순술쉬습시식신실심아안않알야약양억언업없었엔엘여역연열영예온올와완왜요용울워원월유육음응익임있작잠재쟁저적절점정제조족종중즈직진집차착찬참창찾채책처천철청초총최추축춤충취치칼커컴크키타택터통투특틀파퍼페편평표풍퓨프플핑학할함해행험현협호혼화확환회훈휘히힘!&*8<>CGHJLORUVY_abcdefghijlnorstuvwxyz↑《》上國美갈걱걸곡곤골곱귀긴길꼬꾸뀌끝끼낌났낮낸냈널넘네녀논놀농느닌님닥담답던덜덟돌될두둔둘둥듬듯땅떠떤떨또띠람랍랐랑램량러런럽렀레렵령록롭롯루륙률름링막맛망맨머먹멈면몇몬못묘묵뮤므믿밀및",
+    "base500": {
+      "chars": 500,
+      "exact": 48392,
+      "exact_glc4": 44672,
+      "exact_glc8": 41964
+    }
+  },
+  "summary": {
+    "google_fonts": {
+      "median": 390964,
+      "mean": 412243,
+      "min": 140048,
+      "max": 802040
+    },
+    "exact": {
+      "median": 72020,
+      "mean": 48614,
+      "min": 11360,
+      "max": 74276
+    },
+    "exact_glc4": {
+      "median": 65468,
+      "mean": 44006,
+      "min": 10616,
+      "max": 66540
+    },
+    "exact_glc8": {
+      "median": 60964,
+      "mean": 40760,
+      "min": 10076,
+      "max": 61032
+    },
+    "base_resid_cold": {
+      "median": 75232,
+      "mean": 65114,
+      "min": 49760,
+      "max": 80668
+    },
+    "base_resid_warm": {
+      "median": 26840,
+      "mean": 16722,
+      "min": 1368,
+      "max": 32276
+    },
+    "base_resid_cold_glc8": {
+      "median": 64500,
+      "mean": 55690,
+      "min": 43280,
+      "max": 67488
+    },
+    "base_resid_warm_glc8": {
+      "median": 22536,
+      "mean": 13726,
+      "min": 1316,
+      "max": 25524
+    }
+  },
+  "gains": {
+    "glc_gain_on_exact_subsets_pct": {
+      "grid4": 9.17,
+      "grid8": 15.6
+    },
+    "glc_gain_on_base500_pct": 13.28,
+    "glc_gain_on_anchors_pct": {
+      "100": 9.33,
+      "200": 10.2,
+      "300": 12.99,
+      "500": 13.3,
+      "750": 15.11,
+      "1000": 16.89
+    }
+  },
+  "anchors": [
+    {
+      "chars": 100,
+      "exact": 10888,
+      "exact_glc4": 10400,
+      "exact_glc8": 9872,
+      "exact_glc16": 9324
+    },
+    {
+      "chars": 200,
+      "exact": 20228,
+      "exact_glc4": 19092,
+      "exact_glc8": 18164,
+      "exact_glc16": 16960
+    },
+    {
+      "chars": 300,
+      "exact": 26292,
+      "exact_glc4": 24380,
+      "exact_glc8": 22876,
+      "exact_glc16": 21040
+    },
+    {
+      "chars": 500,
+      "exact": 48392,
+      "exact_glc4": 44752,
+      "exact_glc8": 41956,
+      "exact_glc16": 38348
+    },
+    {
+      "chars": 750,
+      "exact": 72424,
+      "exact_glc4": 66172,
+      "exact_glc8": 61480,
+      "exact_glc16": 56208
+    },
+    {
+      "chars": 1000,
+      "exact": 88816,
+      "exact_glc4": 80144,
+      "exact_glc8": 73812,
+      "exact_glc16": 67112
+    }
+  ],
+  "per_page": [
+    {
+      "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%96%B4",
+      "genre": "encyclopedia",
+      "chars": 752,
+      "google_fonts": 802040,
+      "exact": 72020,
+      "resid_chars": 274,
+      "exact_glc4": 65468,
+      "base_resid_cold_glc4": 69084,
+      "base_resid_warm_glc4": 24412,
+      "exact_glc8": 60964,
+      "base_resid_cold_glc8": 64500,
+      "base_resid_warm_glc8": 22536,
+      "base_resid_cold": 75232,
+      "base_resid_warm": 26840
+    },
+    {
+      "url": "https://www.yna.co.kr/",
+      "genre": "news",
+      "chars": 115,
+      "google_fonts": 140048,
+      "exact": 11360,
+      "resid_chars": 7,
+      "exact_glc4": 10616,
+      "base_resid_cold_glc4": 46012,
+      "base_resid_warm_glc4": 1340,
+      "exact_glc8": 10076,
+      "base_resid_cold_glc8": 43280,
+      "base_resid_warm_glc8": 1316,
+      "base_resid_cold": 49760,
+      "base_resid_warm": 1368
+    },
+    {
+      "url": "https://www.korea.kr/",
+      "genre": "government",
+      "chars": 442,
+      "google_fonts": 315920,
+      "exact": 36800,
+      "resid_chars": 59,
+      "exact_glc4": 33400,
+      "base_resid_cold_glc4": 50544,
+      "base_resid_warm_glc4": 5872,
+      "exact_glc8": 30968,
+      "base_resid_cold_glc8": 47492,
+      "base_resid_warm_glc8": 5528,
+      "base_resid_cold": 54796,
+      "base_resid_warm": 6404
+    },
+    {
+      "url": "https://brunch.co.kr/",
+      "genre": "blog",
+      "chars": 901,
+      "google_fonts": 390964,
+      "exact": 74276,
+      "resid_chars": 410,
+      "exact_glc4": 66540,
+      "base_resid_cold_glc4": 73208,
+      "base_resid_warm_glc4": 28536,
+      "exact_glc8": 61032,
+      "base_resid_cold_glc8": 67488,
+      "base_resid_warm_glc8": 25524,
+      "base_resid_cold": 80668,
+      "base_resid_warm": 32276
+    }
+  ]
+}
