@@ -1,0 +1,631 @@
+{
+ "provenance": {
+  "method": "simple-cascade approximation; see module docstring",
+  "pages_measured": 56,
+  "pages_in_corpus": 60,
+  "pages_skipped": [
+   "https://www.aozora.gr.jp/cards/000081/files/456_15050.html",
+   "https://www.yna.co.kr/",
+   "https://www.korea.kr/",
+   "https://brunch.co.kr/"
+  ],
+  "utc": "2026-11-13T01:15:10Z"
+ },
+ "overall": {
+  "chars_by_weight": {
+   "400": 977176,
+   "500": 7,
+   "600": 1351,
+   "700": 53780,
+   "900": 18
+  },
+  "total_chars": 1032332,
+  "share_pct": {
+   "400": 94.66,
+   "500": 0.0,
+   "600": 0.13,
+   "700": 5.21,
+   "900": 0.0
+  }
+ },
+ "by_lang": {
+  "ja": {
+   "chars_by_weight": {
+    "400": 635234,
+    "600": 1351,
+    "700": 33168
+   },
+   "total_chars": 669753,
+   "share_pct": {
+    "400": 94.85,
+    "600": 0.2,
+    "700": 4.95
+   }
+  },
+  "zh": {
+   "chars_by_weight": {
+    "400": 160185,
+    "500": 7,
+    "700": 7811
+   },
+   "total_chars": 168003,
+   "share_pct": {
+    "400": 95.35,
+    "500": 0.0,
+    "700": 4.65
+   }
+  },
+  "ko": {
+   "chars_by_weight": {
+    "400": 181757,
+    "700": 12801,
+    "900": 18
+   },
+   "total_chars": 194576,
+   "share_pct": {
+    "400": 93.41,
+    "700": 6.58,
+    "900": 0.01
+   }
+  }
+ },
+ "pages": [
+  {
+   "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%AA%9E",
+   "lang": "ja",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 104241,
+    "700": 1863
+   },
+   "total_chars": 106104
+  },
+  {
+   "url": "https://ja.wikipedia.org/wiki/%E6%BC%A2%E5%AD%97",
+   "lang": "ja",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 48506,
+    "700": 422
+   },
+   "total_chars": 48928
+  },
+  {
+   "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC",
+   "lang": "ja",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 22801,
+    "700": 458
+   },
+   "total_chars": 23259
+  },
+  {
+   "url": "https://www3.nhk.or.jp/news/",
+   "lang": "ja",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 2635,
+    "700": 178
+   },
+   "total_chars": 2813
+  },
+  {
+   "url": "https://www.asahi.com/",
+   "lang": "ja",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 13601,
+    "700": 3813
+   },
+   "total_chars": 17414
+  },
+  {
+   "url": "https://www.yomiuri.co.jp/",
+   "lang": "ja",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 2407,
+    "700": 6280
+   },
+   "total_chars": 8687
+  },
+  {
+   "url": "https://www.sankei.com/",
+   "lang": "ja",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 1170,
+    "700": 1418
+   },
+   "total_chars": 2588
+  },
+  {
+   "url": "https://www.nikkei.com/",
+   "lang": "ja",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 2359,
+    "700": 836
+   },
+   "total_chars": 3195
+  },
+  {
+   "url": "https://www.itmedia.co.jp/",
+   "lang": "ja",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 9094,
+    "700": 4203
+   },
+   "total_chars": 13297
+  },
+  {
+   "url": "https://www.gizmodo.jp/",
+   "lang": "ja",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 2761,
+    "700": 1144
+   },
+   "total_chars": 3905
+  },
+  {
+   "url": "https://www.kantei.go.jp/",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 678,
+    "700": 28
+   },
+   "total_chars": 706
+  },
+  {
+   "url": "https://www.soumu.go.jp/",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 5174,
+    "700": 108
+   },
+   "total_chars": 5282
+  },
+  {
+   "url": "https://www.bunka.go.jp/",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 2501,
+    "700": 206
+   },
+   "total_chars": 2707
+  },
+  {
+   "url": "https://www.ndl.go.jp/",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 678,
+    "700": 36
+   },
+   "total_chars": 714
+  },
+  {
+   "url": "https://www.jma.go.jp/jma/index.html",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 1444,
+    "700": 57
+   },
+   "total_chars": 1501
+  },
+  {
+   "url": "https://www.metro.tokyo.lg.jp/",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 1854,
+    "700": 3414
+   },
+   "total_chars": 5268
+  },
+  {
+   "url": "https://www.u-tokyo.ac.jp/ja/index.html",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 2337,
+    "700": 259
+   },
+   "total_chars": 2596
+  },
+  {
+   "url": "https://www.kyoto-u.ac.jp/ja",
+   "lang": "ja",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 3133,
+    "700": 495
+   },
+   "total_chars": 3628
+  },
+  {
+   "url": "https://www.aozora.gr.jp/cards/000148/files/789_14547.html",
+   "lang": "ja",
+   "genre": "literature",
+   "chars_by_weight": {
+    "400": 365829,
+    "700": 23
+   },
+   "total_chars": 365852
+  },
+  {
+   "url": "https://qiita.com/",
+   "lang": "ja",
+   "genre": "tech",
+   "chars_by_weight": {
+    "400": 90,
+    "600": 1351,
+    "700": 9
+   },
+   "total_chars": 1450
+  },
+  {
+   "url": "https://zenn.dev/",
+   "lang": "ja",
+   "genre": "tech",
+   "chars_by_weight": {
+    "400": 30,
+    "700": 40
+   },
+   "total_chars": 70
+  },
+  {
+   "url": "https://developer.mozilla.org/ja/docs/Web/CSS/font-family",
+   "lang": "ja",
+   "genre": "tech",
+   "chars_by_weight": {
+    "400": 7532,
+    "700": 263
+   },
+   "total_chars": 7795
+  },
+  {
+   "url": "https://developers.cyberagent.co.jp/blog/",
+   "lang": "ja",
+   "genre": "tech-blog",
+   "chars_by_weight": {
+    "400": 1001
+   },
+   "total_chars": 1001
+  },
+  {
+   "url": "https://tech.smarthr.jp/",
+   "lang": "ja",
+   "genre": "tech-blog",
+   "chars_by_weight": {
+    "400": 1332,
+    "700": 330
+   },
+   "total_chars": 1662
+  },
+  {
+   "url": "https://blog.recruit.co.jp/",
+   "lang": "ja",
+   "genre": "tech-blog",
+   "chars_by_weight": {
+    "400": 326,
+    "700": 891
+   },
+   "total_chars": 1217
+  },
+  {
+   "url": "https://note.com/",
+   "lang": "ja",
+   "genre": "blog",
+   "chars_by_weight": {
+    "400": 6,
+    "700": 4
+   },
+   "total_chars": 10
+  },
+  {
+   "url": "https://b.hatena.ne.jp/",
+   "lang": "ja",
+   "genre": "social-bookmark",
+   "chars_by_weight": {
+    "400": 31177,
+    "700": 6238
+   },
+   "total_chars": 37415
+  },
+  {
+   "url": "https://jp.mercari.com/",
+   "lang": "ja",
+   "genre": "ecommerce",
+   "chars_by_weight": {
+    "700": 4
+   },
+   "total_chars": 4
+  },
+  {
+   "url": "https://www.rakuten.co.jp/",
+   "lang": "ja",
+   "genre": "ecommerce",
+   "chars_by_weight": {
+    "400": 41
+   },
+   "total_chars": 41
+  },
+  {
+   "url": "https://www.yahoo.co.jp/",
+   "lang": "ja",
+   "genre": "portal",
+   "chars_by_weight": {
+    "400": 496,
+    "700": 148
+   },
+   "total_chars": 644
+  },
+  {
+   "url": "https://zh.wikipedia.org/wiki/%E6%B1%89%E5%AD%97",
+   "lang": "zh",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 29351,
+    "700": 707
+   },
+   "total_chars": 30058
+  },
+  {
+   "url": "https://www.gov.cn/",
+   "lang": "zh",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 2523,
+    "700": 217
+   },
+   "total_chars": 2740
+  },
+  {
+   "url": "https://www.people.com.cn/",
+   "lang": "zh",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 11961,
+    "700": 337
+   },
+   "total_chars": 12298
+  },
+  {
+   "url": "https://www.xinhuanet.com/",
+   "lang": "zh",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 6014,
+    "700": 30
+   },
+   "total_chars": 6044
+  },
+  {
+   "url": "https://www.csdn.net/",
+   "lang": "zh",
+   "genre": "tech",
+   "chars_by_weight": {
+    "400": 6505,
+    "700": 107
+   },
+   "total_chars": 6612
+  },
+  {
+   "url": "https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-family",
+   "lang": "zh",
+   "genre": "tech",
+   "chars_by_weight": {
+    "400": 5232,
+    "700": 194
+   },
+   "total_chars": 5426
+  },
+  {
+   "url": "https://www.douban.com/",
+   "lang": "zh",
+   "genre": "community",
+   "chars_by_weight": {
+    "400": 2769,
+    "700": 279
+   },
+   "total_chars": 3048
+  },
+  {
+   "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EC%96%B4",
+   "lang": "ko",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 23325,
+    "700": 269
+   },
+   "total_chars": 23594
+  },
+  {
+   "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80",
+   "lang": "ko",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 30893,
+    "700": 350
+   },
+   "total_chars": 31243
+  },
+  {
+   "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8",
+   "lang": "ko",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 89950,
+    "700": 900
+   },
+   "total_chars": 90850
+  },
+  {
+   "url": "https://www.hani.co.kr/",
+   "lang": "ko",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 197,
+    "700": 24
+   },
+   "total_chars": 221
+  },
+  {
+   "url": "https://www.chosun.com/",
+   "lang": "ko",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 8550
+   },
+   "total_chars": 8550
+  },
+  {
+   "url": "https://www.joongang.co.kr/",
+   "lang": "ko",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 8167,
+    "700": 6107
+   },
+   "total_chars": 14274
+  },
+  {
+   "url": "https://www.etnews.com/",
+   "lang": "ko",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 1426,
+    "700": 1462
+   },
+   "total_chars": 2888
+  },
+  {
+   "url": "https://www.khan.co.kr/",
+   "lang": "ko",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 8799,
+    "700": 92,
+    "900": 18
+   },
+   "total_chars": 8909
+  },
+  {
+   "url": "https://www.donga.com/",
+   "lang": "ko",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 1628,
+    "700": 2643
+   },
+   "total_chars": 4271
+  },
+  {
+   "url": "https://www.seoul.go.kr/",
+   "lang": "ko",
+   "genre": "government",
+   "chars_by_weight": {
+    "400": 4346,
+    "700": 772
+   },
+   "total_chars": 5118
+  },
+  {
+   "url": "https://tech.kakao.com/blog/",
+   "lang": "ko",
+   "genre": "tech-blog",
+   "chars_by_weight": {
+    "400": 199,
+    "700": 13
+   },
+   "total_chars": 212
+  },
+  {
+   "url": "https://www.clien.net/service/",
+   "lang": "ko",
+   "genre": "community",
+   "chars_by_weight": {
+    "400": 4277,
+    "700": 169
+   },
+   "total_chars": 4446
+  },
+  {
+   "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%87",
+   "lang": "zh",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 27820,
+    "700": 809
+   },
+   "total_chars": 28629
+  },
+  {
+   "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC",
+   "lang": "zh",
+   "genre": "encyclopedia",
+   "chars_by_weight": {
+    "400": 54742,
+    "700": 2187
+   },
+   "total_chars": 56929
+  },
+  {
+   "url": "https://www.zaobao.com/",
+   "lang": "zh",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 106,
+    "700": 1196
+   },
+   "total_chars": 1302
+  },
+  {
+   "url": "https://www.jiemian.com/",
+   "lang": "zh",
+   "genre": "news",
+   "chars_by_weight": {
+    "400": 6981
+   },
+   "total_chars": 6981
+  },
+  {
+   "url": "https://www.cnblogs.com/",
+   "lang": "zh",
+   "genre": "tech",
+   "chars_by_weight": {
+    "400": 178
+   },
+   "total_chars": 178
+  },
+  {
+   "url": "https://www.v2ex.com/",
+   "lang": "zh",
+   "genre": "community",
+   "chars_by_weight": {
+    "400": 4483,
+    "500": 7,
+    "700": 844
+   },
+   "total_chars": 5334
+  },
+  {
+   "url": "https://segmentfault.com/",
+   "lang": "zh",
+   "genre": "tech",
+   "chars_by_weight": {
+    "400": 1520,
+    "700": 904
+   },
+   "total_chars": 2424
+  }
+ ]
+}

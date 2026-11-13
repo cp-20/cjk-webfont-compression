@@ -1,144 +1,156 @@
 {
   "meta": {
-    "generated": "2026-11-12T14:58:34Z",
+    "generated": "2026-11-13T01:12:32Z",
     "lang": "zh",
     "font": "Noto Sans SC (static 400, instanced from variable)",
-    "pages": 7,
-    "pages_skipped_no_data": [],
+    "pages": 14,
+    "pages_skipped_no_data": [
+      "https://www.thepaper.cn/",
+      "https://juejin.cn/",
+      "https://www.jianshu.com/"
+    ],
     "base_size": 500,
     "base_order": "document frequency over the language's pages",
-    "full_font_woff2_bytes": 4192748,
-    "base500_chars": "./012579CEIPcghmnopstv、。一上与专个中为主习二于从以们件优会体何作使保修入全关出分前加动助区参发号合同名后和在地备外多大如字学安定实对小就常平年应度开性情所接推提支改数文新方无日时明是更最月有本机标法流点用的看程第类级组者能自行要见解设这选通造部门问面项题高，：-348:ABFLNSabdeilruwy|“”《》三下不世业举么义之书了云互些交京人介代传你例信元先公共其内写几切创到制务化北十单南博反取受口可台各告员周四回团图型基声复好威子完家容少局工已市布广序库建引张当录影得微心快息意成我战户手技报持指排播收效教散整服术权来查样格次正民注活海版特环现理生电界略白相省真知码研示社神空立端等算管篇精系约经给统续网老而联脱良节表规言计记许论证识话语读调费转载达过运近进重量金长间际集页风首（）？+,6DGORTUW[jk·—万东两事五产享仅今他任依便值假做像免八兰兴具养兼再决准减划列则初利别刷力势包华协占历原双变只史司听命品响商器因国场城域境士处夜天央客密察将展山师帮并底府座康式强形征态思总想感戏打托执承投护探措放政断斯施显景期未杂条极构果案检歌止此每比毛求汇汉治济消深清港",
+    "full_font_woff2_bytes": 4193100,
+    "base500_chars": ".C与全出合大接文新更本法题高012579EIchmnopst。一上个中为习二代件会作入关分前加区发后和在复多如学实小常年度开推提数方日时明是月有点理用的级续者能自行解设进通造部，34ALPSadegilruv、下不业主之了于人从们优体信修务动助化单南同地备外子安定家工平应建得微心性成我持指效教无最机构注现生目看码社程立第精系组经要读调这选重门问？-/68BFNORTbkw“”三专么些交以何你保元免内创到制包参取口可台号各名员品商回场型基好威字完容对就已市布广序库强当录影情意战所手技投报支收改放整服来果查模正活流消热版物电白直真知科端算类统网老节表见规言计议起转过运近还金链长集面项频风（）：+:DGMUWy|万东两书事云互五产京今传低使值公共兴其写几列别力北十协原反受只告周器四因团国图城境声天密局师并底式引张快思息据排播斯术权标格案次民求治海游特环球省研票空突站等管索线结维置美联致英视记许论证识话说费资达都里量间际首HVj·世举义乐亚享什任位例供便做像先八兰具再决准利刷势升半华博占印及双变司否听命响围域增士处头存客导少山州态感戏户房打护探政易普景期未极样核歌止步武每比水没济深清港演然率",
     "base500": {
       "chars": 500,
-      "exact": 78404,
-      "exact_glc4": 71212,
-      "exact_glc8": 65676
+      "exact": 79080,
+      "exact_glc4": 71844,
+      "exact_glc8": 66296
     }
   },
   "summary": {
     "google_fonts": {
-      "median": 732840,
-      "mean": 946540.6,
-      "min": 485820,
+      "median": 758304,
+      "mean": 959256.6,
+      "min": 324752,
       "max": 2204012
     },
     "exact": {
-      "median": 147976,
-      "mean": 147320.6,
-      "min": 70640,
-      "max": 255760
+      "median": 148012,
+      "mean": 144238.3,
+      "min": 10644,
+      "max": 292720
     },
     "exact_glc4": {
-      "median": 132324,
-      "mean": 131364,
-      "min": 63536,
-      "max": 226912
+      "median": 132316,
+      "mean": 128432,
+      "min": 9800,
+      "max": 256640
     },
     "exact_glc8": {
-      "median": 120824,
-      "mean": 119777.1,
-      "min": 58324,
-      "max": 206200
+      "median": 120780,
+      "mean": 116983.7,
+      "min": 9176,
+      "max": 231888
     },
     "base_resid_cold": {
-      "median": 155204,
-      "mean": 162257.7,
-      "min": 99640,
-      "max": 262260
+      "median": 155552,
+      "mean": 164615.7,
+      "min": 82124,
+      "max": 299996
     },
     "base_resid_warm": {
-      "median": 76800,
-      "mean": 83853.7,
-      "min": 21236,
-      "max": 183856
+      "median": 76472,
+      "mean": 85535.7,
+      "min": 3044,
+      "max": 220916
     },
     "base_resid_cold_glc8": {
-      "median": 127728,
-      "mean": 133260.6,
-      "min": 83284,
-      "max": 213108
+      "median": 128128,
+      "mean": 135095.7,
+      "min": 68940,
+      "max": 240464
     },
     "base_resid_warm_glc8": {
-      "median": 62052,
-      "mean": 67584.6,
-      "min": 17608,
-      "max": 147432
+      "median": 61832,
+      "mean": 68799.7,
+      "min": 2644,
+      "max": 174168
     }
   },
   "gains": {
     "glc_gain_on_exact_subsets_pct": {
-      "grid4": 10.58,
-      "grid8": 18.35
+      "grid4": 10.53,
+      "grid8": 18.23
     },
-    "glc_gain_on_base500_pct": 16.23,
+    "glc_gain_on_base500_pct": 16.17,
     "glc_gain_on_anchors_pct": {
-      "100": 13.48,
-      "200": 13.1,
-      "300": 14.68,
-      "500": 16.17,
-      "750": 17.58,
-      "1000": 18.44,
-      "1500": 19.23,
-      "2000": 20.36
+      "100": 12.47,
+      "200": 13.61,
+      "300": 15.04,
+      "500": 16.06,
+      "750": 17.05,
+      "1000": 18.21,
+      "1500": 19.53,
+      "2000": 20.71,
+      "3000": 21.38
     }
   },
   "anchors": [
     {
       "chars": 100,
-      "exact": 16912,
-      "exact_glc4": 15600,
-      "exact_glc8": 14632,
-      "exact_glc16": 13688
+      "exact": 20916,
+      "exact_glc4": 19364,
+      "exact_glc8": 18308,
+      "exact_glc16": 16992
     },
     {
       "chars": 200,
-      "exact": 35640,
-      "exact_glc4": 32956,
-      "exact_glc8": 30972,
-      "exact_glc16": 28652
+      "exact": 38500,
+      "exact_glc4": 35560,
+      "exact_glc8": 33260,
+      "exact_glc16": 30632
     },
     {
       "chars": 300,
-      "exact": 48920,
-      "exact_glc4": 44856,
-      "exact_glc8": 41740,
-      "exact_glc16": 38476
+      "exact": 52304,
+      "exact_glc4": 47808,
+      "exact_glc8": 44436,
+      "exact_glc16": 40848
     },
     {
       "chars": 500,
-      "exact": 78480,
-      "exact_glc4": 71244,
-      "exact_glc8": 65788,
-      "exact_glc16": 60428
+      "exact": 79036,
+      "exact_glc4": 71772,
+      "exact_glc8": 66344,
+      "exact_glc16": 60872
     },
     {
       "chars": 750,
-      "exact": 113980,
-      "exact_glc4": 102380,
-      "exact_glc8": 93940,
-      "exact_glc16": 85784
+      "exact": 113300,
+      "exact_glc4": 102144,
+      "exact_glc8": 93984,
+      "exact_glc16": 85764
     },
     {
       "chars": 1000,
-      "exact": 147612,
-      "exact_glc4": 131716,
-      "exact_glc8": 120388,
-      "exact_glc16": 109340
+      "exact": 146852,
+      "exact_glc4": 131704,
+      "exact_glc8": 120112,
+      "exact_glc16": 109308
     },
     {
       "chars": 1500,
-      "exact": 217848,
-      "exact_glc4": 193456,
-      "exact_glc8": 175952,
-      "exact_glc16": 159860
+      "exact": 217080,
+      "exact_glc4": 192216,
+      "exact_glc8": 174680,
+      "exact_glc16": 157916
     },
     {
       "chars": 2000,
-      "exact": 286788,
-      "exact_glc4": 252216,
-      "exact_glc8": 228412,
-      "exact_glc16": 206284
+      "exact": 292140,
+      "exact_glc4": 256408,
+      "exact_glc8": 231636,
+      "exact_glc16": 209208
+    },
+    {
+      "chars": 3000,
+      "exact": 443388,
+      "exact_glc4": 386936,
+      "exact_glc8": 348584,
+      "exact_glc16": 313108
     }
   ],
   "per_page": [
@@ -147,112 +159,224 @@
       "genre": "encyclopedia",
       "chars": 1694,
       "google_fonts": 2204012,
-      "exact": 255760,
-      "resid_chars": 1203,
-      "exact_glc4": 226912,
-      "base_resid_cold_glc4": 233908,
-      "base_resid_warm_glc4": 162696,
-      "exact_glc8": 206200,
-      "base_resid_cold_glc8": 213108,
-      "base_resid_warm_glc8": 147432,
-      "base_resid_cold": 262260,
-      "base_resid_warm": 183856
+      "exact": 255908,
+      "resid_chars": 1205,
+      "exact_glc4": 227016,
+      "base_resid_cold_glc4": 234408,
+      "base_resid_warm_glc4": 162564,
+      "exact_glc8": 206380,
+      "base_resid_cold_glc8": 213464,
+      "base_resid_warm_glc8": 147168,
+      "base_resid_cold": 262724,
+      "base_resid_warm": 183644
     },
     {
       "url": "https://www.gov.cn/",
       "genre": "government",
       "chars": 461,
       "google_fonts": 485820,
-      "exact": 70640,
-      "resid_chars": 124,
-      "exact_glc4": 63536,
-      "base_resid_cold_glc4": 90340,
-      "base_resid_warm_glc4": 19128,
-      "exact_glc8": 58324,
-      "base_resid_cold_glc8": 83284,
-      "base_resid_warm_glc8": 17608,
-      "base_resid_cold": 99640,
-      "base_resid_warm": 21236
+      "exact": 70652,
+      "resid_chars": 141,
+      "exact_glc4": 63668,
+      "base_resid_cold_glc4": 93288,
+      "base_resid_warm_glc4": 21444,
+      "exact_glc8": 58304,
+      "base_resid_cold_glc8": 86004,
+      "base_resid_warm_glc8": 19708,
+      "base_resid_cold": 102792,
+      "base_resid_warm": 23712
     },
     {
       "url": "https://www.people.com.cn/",
       "genre": "news",
       "chars": 1216,
       "google_fonts": 961632,
-      "exact": 179940,
-      "resid_chars": 724,
-      "exact_glc4": 159368,
-      "base_resid_cold_glc4": 167840,
-      "base_resid_warm_glc4": 96628,
-      "exact_glc8": 144556,
-      "base_resid_cold_glc8": 153264,
-      "base_resid_warm_glc8": 87588,
-      "base_resid_cold": 187984,
-      "base_resid_warm": 109580
+      "exact": 179920,
+      "resid_chars": 734,
+      "exact_glc4": 159156,
+      "base_resid_cold_glc4": 169900,
+      "base_resid_warm_glc4": 98056,
+      "exact_glc8": 144512,
+      "base_resid_cold_glc8": 155120,
+      "base_resid_warm_glc8": 88824,
+      "base_resid_cold": 190216,
+      "base_resid_warm": 111136
     },
     {
       "url": "https://www.xinhuanet.com/",
       "genre": "news",
       "chars": 1194,
       "google_fonts": 1008204,
-      "exact": 176528,
-      "resid_chars": 720,
-      "exact_glc4": 156384,
-      "base_resid_cold_glc4": 166548,
-      "base_resid_warm_glc4": 95336,
-      "exact_glc8": 141924,
-      "base_resid_cold_glc8": 151892,
-      "base_resid_warm_glc8": 86216,
-      "base_resid_cold": 186408,
-      "base_resid_warm": 108004
+      "exact": 176648,
+      "resid_chars": 722,
+      "exact_glc4": 156356,
+      "base_resid_cold_glc4": 167720,
+      "base_resid_warm_glc4": 95876,
+      "exact_glc8": 141712,
+      "base_resid_cold_glc8": 153112,
+      "base_resid_warm_glc8": 86816,
+      "base_resid_cold": 187672,
+      "base_resid_warm": 108592
     },
     {
       "url": "https://www.csdn.net/",
       "genre": "tech",
       "chars": 965,
       "google_fonts": 732840,
-      "exact": 147976,
-      "resid_chars": 494,
-      "exact_glc4": 132324,
-      "base_resid_cold_glc4": 139544,
-      "base_resid_warm_glc4": 68332,
-      "exact_glc8": 120824,
-      "base_resid_cold_glc8": 127728,
-      "base_resid_warm_glc8": 62052,
-      "base_resid_cold": 155204,
-      "base_resid_warm": 76800
+      "exact": 148012,
+      "resid_chars": 493,
+      "exact_glc4": 132316,
+      "base_resid_cold_glc4": 139868,
+      "base_resid_warm_glc4": 68024,
+      "exact_glc8": 120780,
+      "base_resid_cold_glc8": 128128,
+      "base_resid_warm_glc8": 61832,
+      "base_resid_cold": 155552,
+      "base_resid_warm": 76472
     },
     {
       "url": "https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-family",
       "genre": "tech",
       "chars": 432,
       "google_fonts": 521012,
-      "exact": 71020,
-      "resid_chars": 124,
-      "exact_glc4": 65040,
-      "base_resid_cold_glc4": 91520,
-      "base_resid_warm_glc4": 20308,
-      "exact_glc8": 60364,
-      "base_resid_cold_glc8": 84588,
-      "base_resid_warm_glc8": 18912,
-      "base_resid_cold": 100564,
-      "base_resid_warm": 22160
+      "exact": 71004,
+      "resid_chars": 136,
+      "exact_glc4": 65212,
+      "base_resid_cold_glc4": 93112,
+      "base_resid_warm_glc4": 21268,
+      "exact_glc8": 60384,
+      "base_resid_cold_glc8": 86032,
+      "base_resid_warm_glc8": 19736,
+      "base_resid_cold": 102340,
+      "base_resid_warm": 23260
     },
     {
       "url": "https://www.douban.com/",
       "genre": "community",
       "chars": 851,
       "google_fonts": 712264,
-      "exact": 129380,
-      "resid_chars": 424,
-      "exact_glc4": 115984,
-      "base_resid_cold_glc4": 129644,
-      "base_resid_warm_glc4": 58432,
-      "exact_glc8": 106248,
-      "base_resid_cold_glc8": 118960,
-      "base_resid_warm_glc8": 53284,
-      "base_resid_cold": 143744,
-      "base_resid_warm": 65340
+      "exact": 129468,
+      "resid_chars": 435,
+      "exact_glc4": 115920,
+      "base_resid_cold_glc4": 131600,
+      "base_resid_warm_glc4": 59756,
+      "exact_glc8": 106080,
+      "base_resid_cold_glc8": 120744,
+      "base_resid_warm_glc8": 54448,
+      "base_resid_cold": 145888,
+      "base_resid_warm": 66808
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%87",
+      "genre": "encyclopedia",
+      "chars": 1430,
+      "google_fonts": 1442024,
+      "exact": 212244,
+      "resid_chars": 937,
+      "exact_glc4": 188612,
+      "base_resid_cold_glc4": 196400,
+      "base_resid_warm_glc4": 124556,
+      "exact_glc8": 171272,
+      "base_resid_cold_glc8": 179224,
+      "base_resid_warm_glc8": 112928,
+      "base_resid_cold": 219608,
+      "base_resid_warm": 140528
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC",
+      "genre": "encyclopedia",
+      "chars": 1984,
+      "google_fonts": 2044400,
+      "exact": 292720,
+      "resid_chars": 1484,
+      "exact_glc4": 256640,
+      "base_resid_cold_glc4": 265380,
+      "base_resid_warm_glc4": 193536,
+      "exact_glc8": 231888,
+      "base_resid_cold_glc8": 240464,
+      "base_resid_warm_glc8": 174168,
+      "base_resid_cold": 299996,
+      "base_resid_warm": 220916
+    },
+    {
+      "url": "https://www.zaobao.com/",
+      "genre": "news",
+      "chars": 634,
+      "google_fonts": 733740,
+      "exact": 98044,
+      "resid_chars": 301,
+      "exact_glc4": 87836,
+      "base_resid_cold_glc4": 114524,
+      "base_resid_warm_glc4": 42680,
+      "exact_glc8": 80456,
+      "base_resid_cold_glc8": 105252,
+      "base_resid_warm_glc8": 38956,
+      "base_resid_cold": 126856,
+      "base_resid_warm": 47776
+    },
+    {
+      "url": "https://www.jiemian.com/",
+      "genre": "news",
+      "chars": 1167,
+      "google_fonts": 907696,
+      "exact": 173252,
+      "resid_chars": 692,
+      "exact_glc4": 153472,
+      "base_resid_cold_glc4": 164268,
+      "base_resid_warm_glc4": 92424,
+      "exact_glc8": 139408,
+      "base_resid_cold_glc8": 149768,
+      "base_resid_warm_glc8": 83472,
+      "base_resid_cold": 183680,
+      "base_resid_warm": 104600
+    },
+    {
+      "url": "https://www.cnblogs.com/",
+      "genre": "tech",
+      "chars": 62,
+      "google_fonts": 324752,
+      "exact": 10644,
+      "resid_chars": 11,
+      "exact_glc4": 9800,
+      "base_resid_cold_glc4": 74672,
+      "base_resid_warm_glc4": 2828,
+      "exact_glc8": 9176,
+      "base_resid_cold_glc8": 68940,
+      "base_resid_warm_glc8": 2644,
+      "base_resid_cold": 82124,
+      "base_resid_warm": 3044
+    },
+    {
+      "url": "https://www.v2ex.com/",
+      "genre": "community",
+      "chars": 682,
+      "google_fonts": 758304,
+      "exact": 114572,
+      "resid_chars": 315,
+      "exact_glc4": 103732,
+      "base_resid_cold_glc4": 121824,
+      "base_resid_warm_glc4": 49980,
+      "exact_glc8": 95224,
+      "base_resid_cold_glc8": 111944,
+      "base_resid_warm_glc8": 45648,
+      "base_resid_cold": 134168,
+      "base_resid_warm": 55088
+    },
+    {
+      "url": "https://segmentfault.com/",
+      "genre": "tech",
+      "chars": 516,
+      "google_fonts": 592892,
+      "exact": 86248,
+      "resid_chars": 189,
+      "exact_glc4": 78312,
+      "base_resid_cold_glc4": 100916,
+      "base_resid_warm_glc4": 29072,
+      "exact_glc8": 72196,
+      "base_resid_cold_glc8": 93144,
+      "base_resid_warm_glc8": 26848,
+      "base_resid_cold": 111004,
+      "base_resid_warm": 31924
     }
   ]
 }
