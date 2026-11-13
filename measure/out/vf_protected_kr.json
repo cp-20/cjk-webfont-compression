@@ -1,0 +1,60 @@
+{
+  "input": "fonts/NotoSansKR[wght].ttf",
+  "output": "measure/out/vf/kr_protected_q8.woff2",
+  "variable_quantized": true,
+  "variable_protected": true,
+  "upm": 1000,
+  "grid": 8,
+  "stock_woff2_bytes": 3908716,
+  "glc_woff2_bytes": 3625092,
+  "kept": "glc",
+  "final_bytes": 3625092,
+  "delta_vs_stock_pct": 7.26,
+  "stages": [
+    {
+      "stage": "stock WOFF2 (safety-valve reference)",
+      "note": "3,908,716 B"
+    },
+    {
+      "stage": "GLC-4 quantise VARIABLE PROTECTED grid=8 (eps 0.40% em)",
+      "note": "24,373 simple glyphs quantised, 379 tail glyphs exempted (M3); peak max error 138 -> 16 units (bound 16); protected WOFF2 3,625,092 B vs unprotected 3,610,788 B"
+    }
+  ],
+  "process_stats": {
+    "quantized": 24373,
+    "glyphs": 24957,
+    "composites_kept": 0,
+    "exempted": 379,
+    "protected": true,
+    "bound_units": 16,
+    "exempt_glyphs": 379,
+    "sample_locations": [
+      "wght=100",
+      "wght=500",
+      "wght=900"
+    ],
+    "max_error_before": {
+      "wght=100": 4,
+      "wght=500": 77,
+      "wght=900": 138
+    },
+    "max_error_after": {
+      "wght=100": 4,
+      "wght=500": 10,
+      "wght=900": 16
+    },
+    "worst_max_error_after_units": 16,
+    "bound_met": true,
+    "point_count_mismatches_before": 0,
+    "point_count_mismatches_after": 0,
+    "unprotected_woff2_bytes": 3610788,
+    "protected_woff2_bytes": 3625092,
+    "arm_a_reference": {
+      "weights": {
+        "wght=400": 1573548,
+        "wght=700": 1617704
+      },
+      "total_woff2_bytes": 3191252
+    }
+  }
+}
