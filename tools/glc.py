@@ -40,6 +40,20 @@ gvar's IUP interpolation of untouched points amplifies the perturbation
 away from the default weight (max point error 4 units at wght=100 but
 138 units at wght=900, grid 8; mean error stays ~2.6 units). See
 measure/variable_glc.py and docs/round3-2026-11-12.md before using it.
+
+--quantize-variable-protected adds M3 tail exemption (design study
+docs/gvar-aware-quantiser-design.md §5/§8, implemented in round 5):
+it builds the unprotected quantised font, instances it at the fvar
+peaks, exempts every glyph whose interpolated error exceeds 2*grid,
+rebuilds, and re-measures until the bound holds (max 3 rounds). On
+Noto Sans JP at grid 8: 231 of 17,932 glyphs (1.3 %) exempted, peak
+max error 138 -> 16 units (wght=900; 77 -> 11 at wght=500, 4 at the
+wght=100 default), for +8,744 B (+0.22 %) over the unprotected file
+(3,974,768 B vs 3,966,024 B; -8.6 % vs the 4,350,080 B stock WOFF2).
+The protected single file still loses on size to the two static
+instances real pages need (Arm A {400,700}: 3,544,244 B), so it only
+wins for >= 3-weight delivery; --instance per weight remains the
+recommended flow.
 """
 from __future__ import annotations
 
@@ -199,7 +213,8 @@ def arm_a_reference(src: Path, grid: int, keep_vertical: bool,
     if "fvar" not in f:
         f.close()
         return None
-    axis = next((a for a in f["fvar"].axes if a.axisTag == "wght"), None)
+    axes = list(f["fvar"].axes)
+    axis = next((a for a in axes if a.axisTag == "wght"), None)
     f.close()
     if axis is None:
         return None
@@ -209,8 +224,13 @@ def arm_a_reference(src: Path, grid: int, keep_vertical: bool,
     per = {}
     for w in weights:
         inst = work / f"arma_{w:g}.ttf"
+        # Pin every axis (others at their defaults): pinning wght alone
+        # would leave a multi-axis font variable, and the "instance"
+        # price would not be a static instance's price.
+        pins = [f"{a.axisTag}={(w if a.axisTag == 'wght'
+                                else a.defaultValue):g}" for a in axes]
         run([sys.executable, "-m", "fontTools.varLib.instancer", str(src),
-             f"wght={w:g}", "-o", str(inst)])
+             *pins, "-o", str(inst)])
         if not keep_vertical:
             drop_vertical(inst)
         out = work / f"arma_{w:g}_glc.ttf"
