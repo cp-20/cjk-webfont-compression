@@ -184,18 +184,28 @@ def page_weights(html: bytes, url: str) -> Counter:
     return counts
 
 
+PARTIAL = HERE / "out" / "weight_usage_partial.json"
+
+
 def main() -> int:
     stats = json.loads(STATS.read_text(encoding="utf-8"))
     pages = [r for r in stats if r.get("unique_chars") and r.get("gf_estimate")]
-    per_page = []
+    # Resumable: per-page results are cached, so an interrupted run can be
+    # re-run and only fetches the pages it has not measured yet.
+    cache: dict[str, dict] = {}
+    if PARTIAL.exists():
+        cache = {p["url"]: p for p in
+                 json.loads(PARTIAL.read_text(encoding="utf-8"))}
     for rec in pages:
         url = rec["url"]
+        if url in cache:
+            continue
         allowed, _ = robots_allowed(url)
         if not allowed:
             print(f"SKIP robots {url}")
             continue
         try:
-            r = S.get(url, timeout=45)
+            r = S.get(url, timeout=30)
             if r.status_code != 200:
                 print(f"SKIP status={r.status_code} {url}")
                 continue
@@ -204,14 +214,19 @@ def main() -> int:
             print(f"SKIP error {url}: {e!r}"[:140])
             continue
         total = sum(counts.values())
-        per_page.append({
+        cache[url] = {
             "url": url, "lang": rec["lang"], "genre": rec.get("genre"),
             "chars_by_weight": {str(k): v for k, v in sorted(counts.items())},
             "total_chars": total,
-        })
+        }
+        PARTIAL.parent.mkdir(exist_ok=True)
+        PARTIAL.write_text(json.dumps(list(cache.values()),
+                                      ensure_ascii=False),
+                           encoding="utf-8")
         top = counts.most_common(3)
         print(f"{rec['lang']} total={total:6d} top={top} {url[:60]}")
         time.sleep(0.4)
+    per_page = [cache[r["url"]] for r in pages if r["url"] in cache]
 
     def aggregate(rows):
         tot: Counter = Counter()
@@ -228,6 +243,8 @@ def main() -> int:
             "method": "simple-cascade approximation; see module docstring",
             "pages_measured": len(per_page),
             "pages_in_corpus": len(pages),
+            "pages_skipped": [r["url"] for r in pages
+                              if r["url"] not in cache],
             "utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         },
         "overall": aggregate(per_page),
